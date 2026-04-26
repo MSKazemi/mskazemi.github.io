@@ -1,1 +1,367 @@
-I am Mohsen Seyedkazemi Ardebili, a postdoc researcher at the University of Bologna, Italy, with experience collaborating on several international/EU research projects. I hold a Master's degree in Telecommunications Engineering from the same university, where I worked on Software-defined networking. I also have a Ph.D. in Electronic, Telecommunications, and Information Technologies Engineering from the same university, where I conducted research on the design, analysis, and management of high-performance computing systems under the supervision of Professor Luca Benini. In addition to my academic achievements, I have 7 years of experience in industry Power Plants as a Network and System Administrator.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohsen Seyedkazemi Ardebili — AI Systems · HPC · MLOps</title>
+  <meta name="description" content="Platform engineer building autonomous AI systems for datacenter-scale infrastructure — LLM-orchestrated Kubernetes agents, anomaly detection on Tier-0 HPC clusters, and hybrid HPC/cloud orchestration." />
+  <meta property="og:title" content="Mohsen Seyedkazemi Ardebili" />
+  <meta property="og:description" content="Platform engineer building autonomous AI systems for datacenter infrastructure." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">MSK</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-tag">PhD · AI Systems · HPC + Cloud</p>
+      <h1>Mohsen<br/>Seyedkazemi<br/><span class="accent">Ardebili</span></h1>
+      <p class="hero-sub">
+        I build autonomous AI systems that act on infrastructure — not just explain it.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="https://github.com/mskazemi" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Platform engineer and researcher at the University of Bologna specialising in MLOps, AIOps, and Kubernetes-native infrastructure. I architect production-grade LLM agent systems, anomaly detection pipelines, and hybrid HPC/cloud orchestration frameworks for datacenter-scale environments.
+          </p>
+          <p>
+            Seven years of hands-on systems and network engineering in mission-critical industrial environments (power plants, enterprise OT networks) before a PhD in High-Performance Computing gives me a lens most ML researchers lack: I care about uptime, observability, and correctness in production — not just benchmark performance.
+          </p>
+          <p>
+            My current focus is autonomous infrastructure control: systems that detect failures, reason about root causes, and propose or execute remediation with human approval gates.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Years critical infra ops</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">PhD</span>
+            <span class="stat-label">HPC Systems · UniBo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">22</span>
+            <span class="stat-label">Papers published</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">179</span>
+            <span class="stat-label">Scholar citations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="card card-featured">
+          <div class="card-header">
+            <span class="card-tag">Featured</span>
+            <div class="card-links">
+              <a href="https://github.com/MSKazemi/kubeintellect" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://arxiv.org/abs/2509.02449" target="_blank" rel="noopener">arXiv ↗</a>
+              <a href="https://kubeintellect.com" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </div>
+          <h3>KubeIntellect</h3>
+          <p>LLM-orchestrated multi-agent framework for autonomous Kubernetes operations — root cause analysis, diagnosis, and HITL-gated cluster actions across the full API surface.</p>
+          <div class="metrics">
+            <div class="metric"><span class="metric-val">93%</span><span class="metric-label">Tool synthesis</span></div>
+            <div class="metric"><span class="metric-val">100%</span><span class="metric-label">Reliability / 200+ queries</span></div>
+          </div>
+          <ul class="card-bullets">
+            <li>LangGraph FSM supervisor with PostgreSQL checkpoints</li>
+            <li>Human-in-the-loop approval gates for write operations</li>
+            <li>Dynamic sandboxed tool synthesis at runtime</li>
+            <li>Deployed on Azure AKS with Terraform + Prometheus</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>LangGraph</span><span>FastAPI</span><span>Kubernetes</span><span>PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-links">
+              <a href="https://github.com/MSKazemi/GRAAFE" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>GRAAFE</h3>
+          <p>Graph anomaly anticipation framework for exascale HPC — topology-aware node failure prediction on Tier-0 CINECA supercomputer (Marconi100).</p>
+          <div class="metrics">
+            <div class="metric"><span class="metric-val">0.91</span><span class="metric-label">AUC (1h forecast)</span></div>
+            <div class="metric"><span class="metric-val">1000+</span><span class="metric-label">Production nodes</span></div>
+          </div>
+          <ul class="card-bullets">
+            <li>Rack-level Graph Convolutional Networks (GCN)</li>
+            <li>Integrates ExaMon telemetry (IPMI, Ganglia, Nagios)</li>
+            <li>&lt;0.2% CPU overhead, ~116 full-rack inferences/hour</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>GCN</span><span>Prometheus</span><span>HPC</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-links">
+              <a href="https://github.com/MSKazemi/HazardNet" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>HazardNet</h3>
+          <p>Thermal hazard prediction framework for datacenters — multi-modal deep learning for sub-100ms thermal failure forecasting at minimal runtime overhead.</p>
+          <div class="metrics">
+            <div class="metric"><span class="metric-val">&lt;100ms</span><span class="metric-label">Inference latency</span></div>
+            <div class="metric"><span class="metric-val">F1 0.99</span><span class="metric-label">Detection accuracy</span></div>
+          </div>
+          <ul class="card-bullets">
+            <li>Temporal Convolutional Networks + LSTM ensemble</li>
+            <li>LIME/SHAP explainability for operator adoption</li>
+            <li>Validated on thousands of production HPC nodes</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>PyTorch</span><span>TCN</span><span>LSTM</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-links">
+              <a href="https://github.com/MSKazemi/ExaBench-QA" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>ExaBench-QA</h3>
+          <p>Benchmark and evaluation framework for LLM-based AI agents operating in HPC environments — deterministic environment snapshots and trace-based scoring.</p>
+          <ul class="card-bullets">
+            <li>Deterministic HPC environment snapshots</li>
+            <li>Tool-constrained evaluation scenarios</li>
+            <li>Trace-based scoring framework for reproducibility</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>Jupyter</span><span>LLM Eval</span><span>HPC</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-links">
+              <a href="https://github.com/MSKazemi/kube_q" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>kube_q</h3>
+          <p>CLI and Python SDK for interacting with KubeIntellect from the terminal — streaming responses, Rich TUI, and pipeline-friendly output formats.</p>
+          <ul class="card-bullets">
+            <li>Full KubeIntellect API coverage via CLI</li>
+            <li>Streaming output with Rich formatting</li>
+            <li>Scriptable for CI/CD and automation workflows</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>Rich</span><span>CLI</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-links">
+              <a href="https://github.com/MSKazemi/mcp-zenodo" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>mcp-zenodo</h3>
+          <p>MCP server exposing the Zenodo research data repository to LLM tool calls — part of the growing Model Context Protocol ecosystem.</p>
+          <ul class="card-bullets">
+            <li>Full Zenodo deposit and search API via MCP</li>
+            <li>LLM-native interface for research data management</li>
+            <li>FastAPI backend, MCP-compliant protocol</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>FastAPI</span><span>MCP</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <h2 class="section-title">Research</h2>
+      <div class="research-meta">
+        <div class="research-stat"><span>179</span> citations</div>
+        <div class="research-stat"><span>h-index 7</span></div>
+        <div class="research-stat"><span>22</span> publications</div>
+        <a href="https://scholar.google.com/citations?user=xP64pZsAAAAJ" target="_blank" rel="noopener" class="scholar-link">Google Scholar ↗</a>
+      </div>
+
+      <div class="eu-projects">
+        <span class="eu-label">EU Projects</span>
+        <span class="eu-tag">DECICE</span>
+        <span class="eu-tag">Graph-Massivizer</span>
+        <span class="eu-tag">EUROPEAN PILOT</span>
+        <span class="eu-tag">REGALE</span>
+        <span class="eu-tag">EPI SGA1</span>
+        <span class="eu-tag">SEANERGYS</span>
+      </div>
+
+      <div class="pubs">
+        <article class="pub">
+          <div class="pub-meta"><span class="pub-venue">arXiv · 2025</span></div>
+          <h4><a href="https://arxiv.org/abs/2509.02449" target="_blank" rel="noopener">KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management</a></h4>
+        </article>
+        <article class="pub">
+          <div class="pub-meta"><span class="pub-venue">Nature Scientific Data · 2023</span> <span class="pub-cites">50 citations</span></div>
+          <h4><a href="https://www.nature.com/articles/s41597-023-02174-3" target="_blank" rel="noopener">M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer</a></h4>
+        </article>
+        <article class="pub">
+          <div class="pub-meta"><span class="pub-venue">SC'23 Workshops · 2023</span> <span class="pub-cites">21 citations</span></div>
+          <h4>PM100: A Job Power Consumption Dataset of a Large-Scale Production HPC System</h4>
+        </article>
+        <article class="pub">
+          <div class="pub-meta"><span class="pub-venue">Future Generation Computer Systems · 2024</span> <span class="pub-cites">17 citations</span></div>
+          <h4><a href="https://github.com/MSKazemi/GRAAFE" target="_blank" rel="noopener">GRAAFE: Graph Anomaly Anticipation Framework for Exascale HPC Systems</a></h4>
+        </article>
+        <article class="pub">
+          <div class="pub-meta"><span class="pub-venue">Future Generation Computer Systems · 2024</span></div>
+          <h4>HazardNet: Thermal Hazard Prediction Framework for Datacenters</h4>
+        </article>
+        <article class="pub">
+          <div class="pub-meta"><span class="pub-venue">ACM Computing Frontiers · 2022</span></div>
+          <h4>Multi-level Anomaly Prediction in Tier-0 Datacenter</h4>
+        </article>
+      </div>
+
+      <div class="service">
+        <h3>Academic Service</h3>
+        <div class="service-grid">
+          <div>
+            <h4>Program Committee</h4>
+            <p>PDP 2025 · PDP 2026 · AsHES 2026</p>
+          </div>
+          <div>
+            <h4>Reviewer</h4>
+            <p>IEEE TCAD · FGCS · Journal of Grid Computing · SC · ACM CF · DATE · PDP · AsHES</p>
+          </div>
+          <div>
+            <h4>Supervision</h4>
+            <p>2 PhD co-advisees (ongoing) · 5 MSc theses · Lab of Big Data Architectures, UniBo (2020–2024)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="container">
+      <h2 class="section-title">Stack</h2>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <h4>Platform &amp; Infrastructure</h4>
+          <div class="stack-pills">
+            <span>Kubernetes</span><span>Helm</span><span>Terraform</span>
+            <span>Azure</span><span>Docker</span><span>Linux</span><span>NGINX</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h4>AI / ML</h4>
+          <div class="stack-pills">
+            <span>Python</span><span>PyTorch</span><span>LangGraph</span>
+            <span>FastAPI</span><span>Kubeflow</span><span>MLflow</span><span>ONNX</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h4>HPC</h4>
+          <div class="stack-pills">
+            <span>Slurm</span><span>Apptainer</span><span>MPI</span>
+            <span>OpenMP</span><span>Prefect</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h4>Observability</h4>
+          <div class="stack-pills">
+            <span>Prometheus</span><span>Grafana</span><span>Loki</span>
+            <span>OpenTelemetry</span><span>Alertmanager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">Open to research collaborations, open-source contributions, and industry partnerships in AI infrastructure and HPC systems.</p>
+      <div class="contact-links">
+        <a href="mailto:mohsen.seyedkazemi@gmail.com" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <a href="https://linkedin.com/in/mskazemi" target="_blank" rel="noopener" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/mskazemi" target="_blank" rel="noopener" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?user=xP64pZsAAAAJ" target="_blank" rel="noopener" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+          Scholar
+        </a>
+        <a href="https://kubeintellect.com" target="_blank" rel="noopener" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          KubeIntellect
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Mohsen Seyedkazemi Ardebili · Research Fellow, University of Bologna</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
