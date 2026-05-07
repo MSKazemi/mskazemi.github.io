@@ -165,18 +165,44 @@
         <article class="card">
           <div class="card-header">
             <div class="card-links">
-              <a href="https://github.com/MSKazemi/ExaBench-QA" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://github.com/MSKazemi/aobench" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://mskazemi.github.io/aobench/latest/" target="_blank" rel="noopener">Docs ↗</a>
             </div>
           </div>
-          <h3>ExaBench-QA</h3>
-          <p>Benchmark and evaluation framework for LLM-based AI agents operating in HPC environments — deterministic environment snapshots and trace-based scoring.</p>
+          <h3>AOBench</h3>
+          <p>Agent Operations Benchmark — evaluates AI agents on HPC operational tasks with role-aware, permission-enforced, trace-based scoring against deterministic environment snapshots. No live cluster required.</p>
+          <div class="metrics">
+            <div class="metric"><span class="metric-val">80</span><span class="metric-label">Benchmark tasks</span></div>
+            <div class="metric"><span class="metric-val">26</span><span class="metric-label">Snapshot environments</span></div>
+          </div>
           <ul class="card-bullets">
-            <li>Deterministic HPC environment snapshots</li>
-            <li>Tool-constrained evaluation scenarios</li>
-            <li>Trace-based scoring framework for reproducibility</li>
+            <li>10 HPC task categories × 5 operator roles (SLURM, telemetry, RBAC, energy)</li>
+            <li>Trace-based scoring across 6 dimensions with 12 scorers</li>
+            <li>OpenAI, Anthropic, and MCP adapters — reproducible &amp; publishable results</li>
           </ul>
           <div class="tech-tags">
-            <span>Python</span><span>Jupyter</span><span>LLM Eval</span><span>HPC</span>
+            <span>Python</span><span>LLM Eval</span><span>HPC</span><span>FastAPI</span><span>MCP</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-links">
+            </div>
+          </div>
+          <h3>NovaFabric</h3>
+          <p>Local-first AI Asset Registry — YAML-specified agents with Pydantic validation, SQLite registry, and eval-gated promotion through the full agent lifecycle.</p>
+          <div class="metrics">
+            <div class="metric"><span class="metric-val">56/56</span><span class="metric-label">Tests passing</span></div>
+            <div class="metric"><span class="metric-val">90%</span><span class="metric-label">Coverage</span></div>
+          </div>
+          <ul class="card-bullets">
+            <li>CLI: register, list, inspect, promote, eval, diff, report, validate</li>
+            <li>Eval-gated promotion with full agent lifecycle management</li>
+            <li>OTel <code>@novafabric.agent</code> decorator for tracing</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>Pydantic</span><span>SQLite</span><span>CLI</span><span>OTel</span>
           </div>
         </article>
 
