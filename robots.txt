@@ -1,0 +1,21 @@
+# Allow all search engines and AI answer engines to index the site
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI crawlers (answer-engine optimization)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://mskazemi.github.io/sitemap.xml
