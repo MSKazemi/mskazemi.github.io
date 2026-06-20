@@ -164,13 +164,23 @@ a:hover { color: var(--mint); }
 
 .hero h1 {
   font-family: var(--display);
-  font-size: clamp(2.3rem, 5.2vw, 4.1rem);
-  font-weight: 600;
-  line-height: 1.04;
+  font-size: clamp(2.1rem, 4.6vw, 3.7rem);
+  font-weight: 700;
+  line-height: 1.03;
   letter-spacing: -0.03em;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .amber { color: var(--amber); }
+.hero-thesis {
+  font-family: var(--display);
+  font-size: clamp(1.25rem, 2.4vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  max-width: 22ch;
+  margin-bottom: 22px;
+}
 .lede { font-size: clamp(1rem, 1.5vw, 1.18rem); color: var(--muted); max-width: 52ch; margin-bottom: 34px; }
 
 .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
