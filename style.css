@@ -269,8 +269,8 @@ a:hover { color: var(--mint); }
   padding: 3px 9px; border-radius: 100px;
 }
 .card-badge.subtle { color: var(--muted); background: var(--panel-2); border-color: var(--line-2); }
-.card-links { margin-left: auto; display: flex; gap: 14px; font-family: var(--mono); font-size: .8rem; }
-.card-links a { color: var(--muted); }
+.card-links { margin-left: auto; display: flex; gap: 18px; font-family: var(--mono); font-size: .92rem; }
+.card-links a { color: #cdd6e1; font-weight: 500; }
 .card-links a:hover { color: var(--mint); }
 
 .card-desc { color: var(--muted); font-size: 1rem; line-height: 1.65; margin-bottom: 16px; }
