@@ -1,21 +1,59 @@
-# Allow all search engines and AI answer engines to index the site
+# robots.txt — mskazemi.github.io
+# Posture: be visible everywhere. This is a public academic/professional profile —
+# search-index, user-fetch, AND training crawlers are all welcome (broad presence
+# helps both search ranking and AI entity understanding).
+# robots.txt controls CRAWLING, not indexing.
+
+# === Default: allow everything ===
 User-agent: *
 Allow: /
 
-# Explicitly welcome AI crawlers (answer-engine optimization)
-User-agent: GPTBot
+# === Search-index crawlers (blocking these is what makes you invisible to an
+#     AI answer engine — always allow for visibility) ===
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
 Allow: /
 User-agent: OAI-SearchBot
 Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Claude-Web
+User-agent: Claude-SearchBot
 Allow: /
 User-agent: PerplexityBot
 Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: MistralAI-Index
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: Amazonbot
+Allow: /
+
+# === User-fetch crawlers (a human pasted a URL into the assistant) ===
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# === Training crawlers (kept ALLOWED on purpose — feeds model knowledge of this
+#     entity; leaving them allowed does not affect search/answer visibility) ===
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
 User-agent: Google-Extended
 Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# NOTE: Agentic browsers (ChatGPT Atlas, OpenAI Operator, Perplexity Comet,
+# Gemini-in-Chrome) present a Chrome UA and ignore robots.txt — they are handled
+# via semantic HTML, ARIA labels, and structured data, not here.
 
 Sitemap: https://mskazemi.github.io/sitemap.xml

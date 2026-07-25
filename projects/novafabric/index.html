@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <title>NovaFabric — Replayable AI Infrastructure · Mohsen Seyedkazemi Ardebili</title>
+  <meta name="description" content="NovaFabric is an open-source, self-hosted toolkit that turns any AI agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes. By Mohsen Seyedkazemi Ardebili." />
+  <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
+  <meta name="keywords" content="NovaFabric, replayable AI, AI evidence, reproducibility, lineage, audit, evidence capsule, AI governance, OpenTelemetry GenAI, Mohsen Seyedkazemi Ardebili" />
+  <link rel="canonical" href="https://mskazemi.github.io/projects/novafabric/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0A0E14" />
+
+  <meta property="og:title" content="NovaFabric — Replayable AI Infrastructure" />
+  <meta property="og:description" content="Capture, seal, replay, diff, and audit any AI-agent run as a portable, signed evidence capsule — self-hosted, offline, from a laptop to an HPC cluster." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mskazemi.github.io/projects/novafabric/" />
+  <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://mskazemi.github.io/assets/mohsen-portrait.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mskazemi.github.io/assets/mohsen-portrait.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0E14'/%3E%3Cpath d='M9 16a7 7 0 1 1 2.05 4.95' fill='none' stroke='%23F2A93B' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='16' r='2.4' fill='%233FD79A'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../project.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "NovaFabric",
+    "description": "An open-source, self-hosted toolkit that captures, replays, diffs, and cryptographically audits AI agent and model runs as portable evidence capsules — with zero application-code instrumentation.",
+    "codeRepository": "https://github.com/novafabric/novafabric",
+    "url": "https://novafabric.ai",
+    "programmingLanguage": "Python",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "author": {
+      "@type": "Person",
+      "name": "Mohsen Seyedkazemi Ardebili",
+      "url": "https://mskazemi.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo" aria-label="Home">
+        <svg class="logo-mark" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M9 16a7 7 0 1 1 2.05 4.95" fill="none" stroke="var(--amber)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="9" cy="16" r="2.6" fill="var(--mint)"/>
+        </svg>
+        <span>Mohsen Seyedkazemi</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="../../#systems">Systems</a>
+        <a href="../kubeintellect/">KubeIntellect</a>
+        <a href="../aobench/">AOBench</a>
+        <a href="../../#research">Research</a>
+        <a href="../../#contact" class="nav-cta">Get in touch</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme" aria-pressed="false">
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="proj-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="../../">home</a><span class="sep">/</span>
+        <a href="../../#ships">ships</a><span class="sep">/</span>
+        <span class="cur">novafabric</span>
+      </p>
+      <p class="proj-eyebrow"><span class="dot-mint" aria-hidden="true"></span>open source · Apache-2.0 · self-hosted</p>
+      <h1>NovaFabric</h1>
+      <p class="proj-tagline">Replayable AI infrastructure.</p>
+      <p class="proj-lede">
+        An open-source, self-hosted toolkit that turns any AI agent or model run into a
+        <strong>portable, signed, replayable evidence capsule</strong> — captured with no code changes and
+        owned entirely by you. Observability tells you <em>what happened</em>; NovaFabric answers the harder
+        question — <em>what would happen if I ran this again, today?</em>
+      </p>
+      <div class="proj-links">
+        <a href="https://novafabric.ai" target="_blank" rel="noopener" class="btn-primary">Live site ↗</a>
+        <a href="https://github.com/novafabric/novafabric" target="_blank" rel="noopener" class="btn-ghost">Code ↗</a>
+        <a href="https://pypi.org/project/novafabric/" target="_blank" rel="noopener" class="btn-ghost">PyPI ↗</a>
+      </div>
+      <ul class="status-strip" aria-label="Quick facts">
+        <li><span class="k">INSTALL</span> pip install novafabric</li>
+        <li><span class="k">RUNS</span> laptop → Docker → K8s → SLURM</li>
+        <li><span class="k">OFFLINE</span> no cloud · no account</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// the problem</p>
+      <h2 class="section-title">When an AI run breaks, every layer is suspect.</h2>
+      <div class="prose">
+        <p>
+          A modern AI system isn't a single model — it's a drifting graph of prompts, models, tools
+          (HTTP APIs, MCP servers, shell commands), memory/RAG context, datasets, environments, and
+          execution targets (laptop, container, K8s pod, SLURM job). Each layer drifts at its own rate,
+          and when something misbehaves you can't tell which layer moved.
+        </p>
+        <p>
+          The ecosystem has excellent telemetry for <em>what happened</em> — and almost nothing for
+          <em>what would happen if I ran this again, under the same conditions, today.</em>
+          Reproducibility isn't a nice-to-have: it's the precondition for debugging, regression
+          detection, governance, and trust.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE FIVE PRIMITIVES -->
+  <section class="proj-section panel-section">
+    <div class="container">
+      <p class="section-eyebrow">// what it does</p>
+      <h2 class="section-title">Capture → Seal → Replay → Diff → Audit.</h2>
+      <div class="arch-grid">
+        <div class="arch-item">
+          <h3>Asset Registry</h3>
+          <p>The identity layer — <code>name@version</code> for models, agents, prompts, tools, datasets, evals, and deployments.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Run Capsule</h3>
+          <p>A portable per-run snapshot — inputs, outputs, model calls, tool calls, a full environment lock, and the trace — written on success <em>and</em> failure. A folder you own, not a row in someone's cloud.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Replay Engine</h3>
+          <p>Reconstruct a past run in four honest modes — <code>exact</code>, <code>mocked</code>, <code>semantic</code>, and <code>forensic</code> — each making a specific, falsifiable promise.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Lineage Graph</h3>
+          <p>Causation — which assets and prior runs contributed to this run, and what depends on it.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Evidence Bundle</h3>
+          <p>A signed, audit-ready export — capsule + lineage + attestations + redaction proof — that a third party can verify <em>without NovaFabric installed</em>.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Zero-instrumentation capture</h3>
+          <p><code>nova capture python my_agent.py</code> — per-SDK hooks, wire-level hooks (httpx/requests/aiohttp/urllib3), and transparent HTTP/MCP proxies record any command. No application changes; all patches removed after the run.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPLAY MODES -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// the honest contract</p>
+      <h2 class="section-title">Four replay modes — each a falsifiable promise.</h2>
+      <div class="split">
+        <article class="card">
+          <h3>exact</h3>
+          <p>Deterministic re-execution against the same local model, container, data, and environment — bit-identical where deterministic.</p>
+          <h3 style="margin-top:16px">mocked</h3>
+          <p>Re-run the command with every model/tool call served from the capsule cache — no model called, no tool invoked, fully deterministic.</p>
+        </article>
+        <article class="card sol">
+          <h3>semantic</h3>
+          <p>Re-execute and compare <em>meaning</em> (via a judge model), not tokens — for remote closed-weight LLMs whose weights and routing change without notice.</p>
+          <h3 style="margin-top:16px">forensic</h3>
+          <p>Inspect the captured run without re-executing anything — read-only, no network, no side effects.</p>
+        </article>
+      </div>
+      <p class="note">
+        The taxonomy is deliberately honest: NovaFabric does <strong>not</strong> claim exact replay of
+        remote closed-weight models — that's what <code>semantic</code> and <code>mocked</code> are for.
+        Making the promise falsifiable is a feature.
+      </p>
+    </div>
+  </section>
+
+  <!-- TRUST + GOVERNANCE -->
+  <section class="proj-section panel-section">
+    <div class="container">
+      <p class="section-eyebrow">// trust &amp; governance</p>
+      <h2 class="section-title">Sealed so it can't be silently altered.</h2>
+      <div class="arch-grid">
+        <div class="arch-item">
+          <h3>NovaSeal — three independent proofs</h3>
+          <p>Every sealed capsule binds a DSSE signature (ECDSA P-256 / Ed25519), an RFC 3161 trusted timestamp (eIDAS-qualified path for the EU), and an append-only Merkle log with inclusion proofs.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Pluggable signing backends</h3>
+          <p>Local keys, AWS KMS, Azure Key Vault, GCP KMS, or keyless Sigstore (Fulcio + Rekor). <code>nova verify</code> re-checks signature, timestamp, and log integrity.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Policy &amp; maker-checker</h3>
+          <p>An OPA/Rego policy engine (allow / deny / require-human / require-batch) and dual-approval with cryptographic separation of duties — proposer ≠ approver, enforced by key fingerprint.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Compliance exporters</h3>
+          <p>WORM retention (S3 Object Lock, Azure immutable blob, GCS Bucket Lock) with legal holds, plus exporters for EU AI Act Annex IV, NIST AI RMF, GDPR RoPA, and CycloneDX AI-BOM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARDS / STACK -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// standards-based, not reinvented</p>
+      <h2 class="section-title">Adopts open standards; invents only two formats.</h2>
+      <p class="section-lead">Only the Run Capsule and Evidence Bundle are new on-disk formats — everything else adopts an existing open standard, so NovaFabric feeds your observability stack rather than replacing it.</p>
+      <div class="tags" style="max-width:860px">
+        <span>OpenTelemetry GenAI</span><span>OpenLineage</span><span>MCP</span><span>in-toto</span><span>SLSA</span>
+        <span>Sigstore</span><span>OPA / Rego</span><span>JSON Schema 2020-12</span><span>OCI</span>
+        <span>RFC 3161</span><span>RFC 8785 (JCS)</span><span>PROV-O</span><span>CloudEvents</span>
+        <span>C2PA</span><span>CycloneDX</span><span>NIST AI RMF</span><span>BagIt</span>
+      </div>
+      <p class="note" style="margin-top:22px">
+        <strong>Design slogan:</strong> local-first now, distributed-ready always, cluster-scale later —
+        a one-node run is the smallest case of a distributed run. Built in Python 3.12+ with a Go
+        collector tier; server mode, collector, object store, and dashboard are marked
+        <em>experimental</em>, and cross-cluster federation is design-intent, not shipped.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact">
+    <div class="container">
+      <p class="section-eyebrow">// more</p>
+      <h2 class="contact-h">Explore the rest of the lab.</h2>
+      <div class="contact-links">
+        <a href="../kubeintellect/" class="clink">KubeIntellect →</a>
+        <a href="../aobench/" class="clink">AOBench →</a>
+        <a href="../../#ships" class="clink">All ships →</a>
+        <a href="../../#contact" class="clink">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Mohsen Seyedkazemi Ardebili</span>
+      <span class="foot-meta"><a href="../../" class="back-link">← back to home</a></span>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

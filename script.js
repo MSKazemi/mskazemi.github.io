@@ -1,3 +1,17 @@
+// Theme toggle (light by default; choice persisted). Initial theme is applied
+// by a tiny inline script in <head> to avoid a flash of the wrong theme.
+const themeBtn = document.getElementById('themeToggle');
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    const root = document.documentElement;
+    const dark = root.getAttribute('data-theme') === 'dark';
+    if (dark) { root.removeAttribute('data-theme'); }
+    else { root.setAttribute('data-theme', 'dark'); }
+    try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+    themeBtn.setAttribute('aria-pressed', String(!dark));
+  });
+}
+
 // Nav: blur background once scrolled
 const nav = document.getElementById('nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
@@ -17,6 +31,29 @@ links.querySelectorAll('a').forEach(a =>
     toggle.setAttribute('aria-expanded', 'false');
   })
 );
+
+// Projects dropdown (click to toggle; also opens on hover/focus via CSS)
+const projDd = document.querySelector('.nav-dd');
+if (projDd) {
+  const projBtn = projDd.querySelector('.nav-dd-btn');
+  projBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = projDd.classList.toggle('open');
+    projBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (!projDd.contains(e.target)) {
+      projDd.classList.remove('open');
+      projBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      projDd.classList.remove('open');
+      projBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
 
 // Scroll-reveal (skipped when the user prefers reduced motion)
 const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -1,0 +1,116 @@
+/* =========================================================================
+   Project detail pages — layers on top of style.css (load style.css first).
+   Reuses the same tokens (--ink, --amber, --mint, --panel, --mono, …).
+   ========================================================================= */
+
+/* breadcrumb + back */
+.breadcrumb {
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .06em;
+  color: var(--muted-2); margin-bottom: 20px; display: flex; gap: 8px; flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--mint); }
+.breadcrumb .sep { color: var(--line-2); }
+.breadcrumb .cur { color: var(--amber); }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: .82rem; color: var(--muted);
+}
+.back-link:hover { color: var(--mint); }
+
+/* project hero */
+.proj-hero { padding: 128px 0 64px; position: relative; z-index: 1; }
+.proj-eyebrow {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .06em;
+  color: var(--muted); margin-bottom: 22px;
+  border: 1px solid var(--line); border-radius: 100px; padding: 6px 14px; background: var(--panel);
+}
+.proj-hero h1 {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.proj-tagline {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.15rem, 2.3vw, 1.7rem); line-height: 1.2; letter-spacing: -0.01em;
+  color: var(--text); max-width: 30ch; margin-bottom: 22px;
+}
+.proj-lede { font-size: clamp(1rem, 1.5vw, 1.14rem); color: var(--muted); max-width: 62ch; margin-bottom: 30px; }
+
+.proj-links { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+
+/* prose blocks inside sections */
+.prose { max-width: 68ch; }
+.prose p { color: var(--muted); margin-bottom: 16px; font-size: 1.04rem; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { color: var(--text); }
+.prose em { color: var(--text); font-style: normal; border-bottom: 1px solid var(--amber-dim); }
+.prose code { font-family: var(--mono); font-size: .85em; color: var(--amber); background: var(--panel-2); padding: 1px 6px; border-radius: 4px; }
+
+/* two-column problem / solution */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }
+.split .card h3 {
+  font-family: var(--mono); font-size: .74rem; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--amber); margin-bottom: 12px;
+}
+.split .card.sol h3 { color: var(--mint); }
+.split .card p { color: var(--muted); font-size: .98rem; }
+.split .card p + p { margin-top: 12px; }
+
+/* architecture grid */
+.arch-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.arch-item { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; box-shadow: var(--shadow-sm); }
+.arch-item h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.arch-item p { color: var(--muted); font-size: .95rem; }
+.arch-item code { font-family: var(--mono); font-size: .85em; color: var(--amber); }
+
+/* metrics readout row */
+.metrics-row {
+  display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px;
+}
+.metric {
+  flex: 1 1 160px; background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--r); padding: 20px 22px; box-shadow: var(--shadow-sm);
+}
+.metric .mv { font-family: var(--mono); font-size: 1.9rem; font-weight: 600; color: var(--mint); line-height: 1; }
+.metric .mv .mu { font-size: .95rem; color: var(--muted); margin-left: 2px; }
+.metric .ml { font-size: .84rem; color: var(--muted); margin-top: 8px; display: block; }
+
+/* download card (PDF) */
+.download-card {
+  display: flex; align-items: center; gap: 18px;
+  background: linear-gradient(135deg, var(--panel), var(--amber-dim));
+  border: 1px solid var(--line-2); border-radius: var(--r);
+  padding: 20px 22px; max-width: 640px; box-shadow: var(--shadow-sm);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+.download-card:hover { border-color: var(--amber); transform: translateY(-2px); box-shadow: var(--shadow); }
+.download-ico {
+  flex: none; width: 46px; height: 46px; border-radius: 10px;
+  display: grid; place-items: center;
+  background: var(--amber-dim); border: 1px solid var(--line-2); color: var(--amber);
+  font-family: var(--mono); font-size: .68rem; font-weight: 600;
+}
+.download-meta { flex: 1; }
+.download-meta .dt { font-family: var(--display); font-weight: 600; color: var(--text); font-size: 1.02rem; }
+.download-meta .ds { font-family: var(--mono); font-size: .76rem; color: var(--muted); margin-top: 3px; }
+.download-card .btn-primary { flex: none; }
+
+/* callout note (honesty / status) */
+.note {
+  border-left: 2px solid var(--line-2); padding: 4px 0 4px 18px;
+  color: var(--muted); font-size: .96rem; max-width: 66ch; margin-top: 8px;
+}
+.note strong { color: var(--text); }
+
+/* section spacing tweak for detail pages */
+.proj-section { padding: 76px 0; }
+
+@media (max-width: 940px) {
+  .split, .arch-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .download-card { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <title>AOBench — Agent Operations Benchmark for HPC · Mohsen Seyedkazemi Ardebili</title>
+  <meta name="description" content="AOBench is a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks. By Mohsen Seyedkazemi Ardebili." />
+  <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
+  <meta name="keywords" content="AOBench, Agent Operations Benchmark, LLM agents, HPC operations, RBAC, benchmark, MCP, SLURM, agent evaluation, Mohsen Seyedkazemi Ardebili" />
+  <link rel="canonical" href="https://mskazemi.github.io/projects/aobench/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0A0E14" />
+
+  <meta property="og:title" content="AOBench — Agent Operations Benchmark for HPC" />
+  <meta property="og:description" content="A trace-driven, role-aware, RBAC-enforced benchmark for LLM agents in HPC facilities. Verdict: no system evaluated is deployment-ready for autonomous operations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mskazemi.github.io/projects/aobench/" />
+  <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://mskazemi.github.io/assets/mohsen-portrait.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mskazemi.github.io/assets/mohsen-portrait.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0E14'/%3E%3Cpath d='M9 16a7 7 0 1 1 2.05 4.95' fill='none' stroke='%23F2A93B' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='16' r='2.4' fill='%233FD79A'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../project.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "AOBench",
+    "description": "Agent Operations Benchmark — a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operational tasks.",
+    "codeRepository": "https://github.com/MSKazemi/aobench",
+    "programmingLanguage": "Python",
+    "author": {
+      "@type": "Person",
+      "name": "Mohsen Seyedkazemi Ardebili",
+      "url": "https://mskazemi.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo" aria-label="Home">
+        <svg class="logo-mark" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M9 16a7 7 0 1 1 2.05 4.95" fill="none" stroke="var(--amber)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="9" cy="16" r="2.6" fill="var(--mint)"/>
+        </svg>
+        <span>Mohsen Seyedkazemi</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="../../#systems">Systems</a>
+        <a href="../kubeintellect/">KubeIntellect</a>
+        <a href="../novafabric/">NovaFabric</a>
+        <a href="../../#research">Research</a>
+        <a href="../../#contact" class="nav-cta">Get in touch</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme" aria-pressed="false">
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="proj-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="../../">home</a><span class="sep">/</span>
+        <a href="../../#systems">systems</a><span class="sep">/</span>
+        <span class="cur">aobench</span>
+      </p>
+      <p class="proj-eyebrow"><span class="dot-mint" aria-hidden="true"></span>benchmark · research in preparation</p>
+      <h1>AOBench</h1>
+      <p class="proj-tagline">Agent Operations Benchmark for HPC.</p>
+      <p class="proj-lede">
+        The first <strong>trace-driven, role-aware, RBAC-enforced</strong> benchmark for LLM agents in
+        HPC facilities. It asks a blunt question — <em>can an autonomous agent actually be trusted to
+        operate a supercomputer?</em> — and answers it against real operational traces, real operator
+        roles, and hard policy constraints.
+      </p>
+      <div class="proj-links">
+        <a href="https://github.com/MSKazemi/aobench" target="_blank" rel="noopener" class="btn-primary">Code ↗</a>
+        <a href="https://mskazemi.github.io/aobench/latest/" target="_blank" rel="noopener" class="btn-ghost">Docs ↗</a>
+      </div>
+      <ul class="status-strip" aria-label="Quick facts">
+        <li><span class="k">SCOPE</span> 80 tasks · 23 snapshots · 16 systems</li>
+        <li><span class="k">DESIGN</span> 5 roles × 10 categories × 3 tiers</li>
+        <li><span class="k">STACK</span> Python · MCP · SLURM</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// why it exists</p>
+      <h2 class="section-title">"Helpful in a chat" is not "safe on a cluster."</h2>
+      <div class="prose">
+        <p>
+          General LLM-agent benchmarks reward answering questions. Running an HPC facility is a different
+          job: the same action is correct for one operator role and a policy violation for another, and a
+          single unauthorised command can take down a shared national resource. Evaluating agents for that
+          world needs realistic traces, explicit roles, and a scorer that treats a policy breach as a
+          hard failure — not a rounding error on an accuracy score.
+        </p>
+        <p>
+          AOBench is built to measure <strong>operational trustworthiness</strong>, not conversational
+          fluency — so a facility can reason about whether an agent is anywhere near deployment-ready
+          before it ever touches production.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IT MEASURES -->
+  <section class="proj-section panel-section">
+    <div class="container">
+      <p class="section-eyebrow">// what it measures</p>
+      <h2 class="section-title">Trace-driven, role-aware, policy-scored.</h2>
+      <div class="arch-grid">
+        <div class="arch-item">
+          <h3>Realistic task matrix</h3>
+          <p>Five operator roles × ten task categories × three difficulty tiers, drawn from real HPC operational scenarios rather than synthetic puzzles.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Completion-under-Policy scorer</h3>
+          <p>A task only counts if it's completed <em>within the operator's authority</em> — any RBAC violation is a hard fail, no matter how "correct" the answer looks.</p>
+        </div>
+        <div class="arch-item">
+          <h3>CLEAR scorecard</h3>
+          <p>Every system is scored across five axes — <strong>C</strong>ost · <strong>L</strong>atency · <strong>E</strong>fficacy · <strong>A</strong>ssurance · <strong>R</strong>eliability — so trade-offs are visible, not hidden behind one number.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Snapshot environments</h3>
+          <p>Trace-backed snapshot bundles reconstruct real cluster state, letting many agents be evaluated against the same reproducible conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERDICT -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// the finding</p>
+      <h2 class="section-title">No system evaluated is deployment-ready.</h2>
+      <div class="metrics-row">
+        <div class="metric"><span class="mv">80</span><span class="ml">operational tasks</span></div>
+        <div class="metric"><span class="mv">23</span><span class="ml">snapshot environments</span></div>
+        <div class="metric"><span class="mv">16</span><span class="ml">agent systems evaluated</span></div>
+      </div>
+      <p class="note">
+        Across every system measured, none clears the bar for autonomous HPC operations — the failures are
+        concentrated exactly where they matter most: staying inside the operator's authority under pressure.
+        That negative result is the point: it maps the gap between today's agents and a facility that could
+        safely delegate to one.
+      </p>
+      <p class="note" style="margin-top:16px">
+        <strong>Status.</strong> AOBench is an active research project with an associated paper in
+        preparation. The task suite, environments, and evaluation harness are held behind a disciplined
+        reproducibility gate; public artifact URLs and a DOI will follow once that gate is lifted.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact">
+    <div class="container">
+      <p class="section-eyebrow">// more</p>
+      <h2 class="contact-h">Explore the rest of the lab.</h2>
+      <div class="contact-links">
+        <a href="../kubeintellect/" class="clink">KubeIntellect →</a>
+        <a href="../novafabric/" class="clink">NovaFabric →</a>
+        <a href="../../#research" class="clink">Research →</a>
+        <a href="../../#contact" class="clink">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Mohsen Seyedkazemi Ardebili</span>
+      <span class="foot-meta"><a href="../../" class="back-link">← back to home</a></span>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
