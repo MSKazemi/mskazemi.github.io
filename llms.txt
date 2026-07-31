@@ -33,6 +33,12 @@ LLM-driven autonomous operations.
 - [LinkedIn](https://www.linkedin.com/in/mskazemi/)
 - [GitHub](https://github.com/MSKazemi)
 
+## Freelance / hire
+Available for freelance AI-infrastructure engagements — Kubernetes reliability & AIOps, MLOps
+platforms (models to production), and production LLM agents (tool-use, human-in-the-loop safety,
+observability, audit). Fixed-price starter audits from €150; project work at a senior day rate.
+Remote, EU. Contact: mohsen.seyedkazemi@gmail.com · details at https://mskazemi.github.io/#packages
+
 # NOTE: llms.txt is a proposed convention (2024). No major AI engine has confirmed
 # consuming it for ranking or citation as of 2026; it is provided as a cheap,
 # forward-looking, human- and machine-readable index of this site.
