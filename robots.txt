@@ -56,4 +56,9 @@ Allow: /
 # Gemini-in-Chrome) present a Chrome UA and ignore robots.txt — they are handled
 # via semantic HTML, ARIA labels, and structured data, not here.
 
-Sitemap: https://mskazemi.github.io/sitemap.xml
+# mskazemi.github.io 301-redirects here, so the sitemaps are declared on the
+# canonical host. The yazses docs are a separate MkDocs site under /yazses/;
+# crawlers only read robots.txt at the domain root, so its sitemap must be
+# declared here or its ~82 URLs are never discovered by crawling.
+Sitemap: https://mskazemi.com/sitemap.xml
+Sitemap: https://mskazemi.com/yazses/sitemap.xml

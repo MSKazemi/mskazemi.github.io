@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mskazemi.github.io/</loc>
+    <loc>https://mskazemi.com/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mskazemi.github.io/projects/kubeintellect/</loc>
+    <loc>https://mskazemi.com/projects/kubeintellect/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mskazemi.github.io/projects/novafabric/</loc>
+    <loc>https://mskazemi.com/projects/novafabric/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mskazemi.github.io/projects/aobench/</loc>
+    <loc>https://mskazemi.com/projects/aobench/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
