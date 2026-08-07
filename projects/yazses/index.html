@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <title>YazSes — free offline voice dictation & speech to text for Linux, macOS, Windows</title>
+  <meta name="description" content="YazSes is free, open-source dictation software that lets you use your voice to dictate into any app. Speech to text runs entirely on your own machine with faster-whisper — no cloud, no account, no subscription. Linux (X11 & Wayland), macOS and Windows." />
+  <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
+  <meta name="keywords" content="voice dictation, voice to text, speech to text, dictation software, voice typing, offline dictation, local speech recognition, Linux dictation, Wayland voice typing, macOS dictation, Windows dictation, faster-whisper, Whisper, privacy, open source, YazSes, Mohsen Seyedkazemi Ardebili" />
+  <link rel="canonical" href="https://mskazemi.com/projects/yazses/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0A0E14" />
+
+  <meta property="og:title" content="YazSes — free offline voice dictation for Linux, macOS & Windows" />
+  <meta property="og:description" content="Hold a key, speak, release — your words are typed into any app. Speech to text runs on-device with faster-whisper: no cloud, no account, no subscription." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mskazemi.com/projects/yazses/" />
+  <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://mskazemi.com/assets/mohsen-portrait.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mskazemi.com/assets/mohsen-portrait.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0E14'/%3E%3Cpath d='M9 16a7 7 0 1 1 2.05 4.95' fill='none' stroke='%23F2A93B' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='16' r='2.4' fill='%233FD79A'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../project.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "YazSes",
+    "alternateName": "YazSes offline voice dictation",
+    "applicationCategory": "UtilitiesApplication",
+    "applicationSubCategory": "Speech recognition / dictation software",
+    "operatingSystem": "Linux, macOS, Windows",
+    "description": "Free, open-source, fully offline voice dictation. Hold a key, speak, release — speech is transcribed on-device with faster-whisper and typed into whatever application has focus. No cloud, no account, no API key, no subscription.",
+    "url": "https://mskazemi.com/projects/yazses/",
+    "softwareHelp": "https://mskazemi.com/yazses/",
+    "codeRepository": "https://github.com/MSKazemi/yazses",
+    "downloadUrl": "https://pypi.org/project/yazses/",
+    "programmingLanguage": "Python",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Hold-to-talk voice dictation into any focused application",
+      "Fully offline on-device speech to text (faster-whisper, CPU int8)",
+      "Works on Linux X11 and Wayland, macOS and Windows",
+      "Voice commands and macros as well as plain dictation",
+      "Transcribe existing audio and video recordings with speaker labels",
+      "Whole-meeting capture with speaker-attributed transcript and notes",
+      "Accessibility features for RSI, motor impairment and dysfluent speech"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Mohsen Seyedkazemi Ardebili",
+      "url": "https://mskazemi.com/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I use my voice to dictate text on my computer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install YazSes, then hold the configured hotkey, speak, and release. The audio is transcribed on your own machine and the resulting text is typed into whatever application currently has focus — an editor, a browser field, a terminal or a chat window. There is no separate dictation window to copy out of."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there voice dictation software for Linux?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Linux has no built-in dictation comparable to Windows Voice Access or macOS Dictation. YazSes fills that gap with hold-to-talk voice typing that works on both X11 and Wayland and types into any focused application."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does YazSes send my voice to the cloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Speech is transcribed on-device using faster-whisper running on your CPU. By default no audio and no text leaves the machine, and no account, API key or network connection is required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is YazSes free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. YazSes is free and open source under the Apache-2.0 licence, with no subscription and no per-minute transcription charge."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo" aria-label="Home">
+        <svg class="logo-mark" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M9 16a7 7 0 1 1 2.05 4.95" fill="none" stroke="var(--amber)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="9" cy="16" r="2.6" fill="var(--mint)"/>
+        </svg>
+        <span>Mohsen Seyedkazemi</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="../../#systems">Systems</a>
+        <a href="../kubeintellect/">KubeIntellect</a>
+        <a href="../aobench/">AOBench</a>
+        <a href="../../#research">Research</a>
+        <a href="../../#contact" class="nav-cta">Get in touch</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme" aria-pressed="false">
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="proj-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="../../">home</a><span class="sep">/</span>
+        <a href="../../#systems">systems</a><span class="sep">/</span>
+        <span class="cur">yazses</span>
+      </p>
+      <p class="proj-eyebrow"><span class="dot-mint" aria-hidden="true"></span>shipping · open source · Apache-2.0</p>
+      <h1>YazSes</h1>
+      <p class="proj-tagline">Offline voice dictation for Linux, macOS and Windows.</p>
+      <p class="proj-lede">
+        Free, open-source <strong>dictation software</strong> that lets you use your voice to dictate
+        anywhere on your computer. Hold a key, speak, release — the <strong>speech-to-text</strong>
+        runs on your own CPU and the words are typed straight into whatever app has focus.
+        <strong>No cloud. No account. No API key. No subscription.</strong>
+      </p>
+      <div class="proj-links">
+        <a href="https://mskazemi.com/yazses/" class="btn-primary">Documentation ↗</a>
+        <a href="https://github.com/MSKazemi/yazses" target="_blank" rel="noopener" class="btn-ghost">Code ↗</a>
+        <a href="https://pypi.org/project/yazses/" target="_blank" rel="noopener" class="btn-ghost">PyPI ↗</a>
+      </div>
+      <ul class="status-strip" aria-label="Quick facts">
+        <li><span class="k">PLATFORMS</span> Linux (X11 &amp; Wayland) · macOS · Windows</li>
+        <li><span class="k">ENGINE</span> faster-whisper · CPU int8 · on-device</li>
+        <li><span class="k">LICENCE</span> Apache-2.0 · free forever</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// why it exists</p>
+      <h2 class="section-title">Dictation you don't have to send to somebody else's computer.</h2>
+      <div class="prose">
+        <p>
+          Most good voice-to-text tools are a subscription and a network round-trip: your microphone
+          audio is uploaded, transcribed on a rented GPU, and billed per month or per minute. That is a
+          bad trade if your words are clinical notes, legal drafts, journalism, unpublished research, or
+          anything under an NDA — and it simply does not work on a machine with no reliable connection.
+        </p>
+        <p>
+          YazSes takes the opposite position. Transcription happens on the CPU you already own, with
+          nothing uploaded and nothing to sign up for. On Linux that also fills a genuine gap: there is
+          no built-in dictation comparable to Windows Voice Access or macOS Dictation, and almost
+          nothing that works properly under <strong>Wayland</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IT DOES -->
+  <section class="proj-section panel-section">
+    <div class="container">
+      <p class="section-eyebrow">// what it does</p>
+      <h2 class="section-title">Hold. Speak. Release. The text is just there.</h2>
+      <div class="arch-grid">
+        <div class="arch-item">
+          <h3>Types into any application</h3>
+          <p>There is no dictation box to copy out of. Release the key and the text is injected into the focused window — editor, browser, terminal or chat — on X11, Wayland, macOS and Windows.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Fully offline speech to text</h3>
+          <p>faster-whisper runs locally in int8 on the CPU. No GPU, no network, no account, no API key. Nothing leaves the machine by default.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Voice commands, not just dictation</h3>
+          <p>The same key that types your words also runs commands. A fast on-device regex grammar routes <em>"undo that"</em> or <em>"go to line 42"</em> to real key sequences instead of typing them.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Transcribe recordings and meetings</h3>
+          <p>Turn an existing audio or video file into text with optional speaker labels, or capture a whole meeting hands-free and get a speaker-attributed transcript — offline, with no per-minute fee.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Built for accessibility</h3>
+          <p>Calibrates to your voice rather than expecting broadcast-clear speech, with a dysfluency-friendly mode, mic-level tuning, and non-keyboard activation for hands-free use.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Learns from your corrections</h3>
+          <p>An opt-in, encrypted, on-device corpus lets the tuner propose accuracy fixes from your own edits. It is off by default and never leaves the machine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section class="proj-section panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// getting started</p>
+      <h2 class="section-title">One command, then hold a key and talk.</h2>
+      <div class="prose">
+        <p>
+          YazSes installs from PyPI on any operating system with Python 3.11 or newer, and ships
+          native packages for Debian/Ubuntu (APT), Snap, macOS and Windows.
+        </p>
+        <p>
+          <code>pipx install yazses</code>
+        </p>
+        <p>
+          The <a href="https://mskazemi.com/yazses/">documentation</a> covers installation per platform,
+          choosing a hotkey, tuning the microphone, voice commands, transcribing recordings, meeting
+          capture, and the privacy model in full.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="proj-section panel-section">
+    <div class="container">
+      <p class="section-eyebrow">// write-up</p>
+      <h2 class="section-title">Described in an open preprint.</h2>
+      <div class="prose">
+        <p>
+          The design and privacy model are written up as
+          <em>"YazSes: An Offline, Privacy-First, Cross-Platform Hold-to-Talk Voice-Dictation
+          System"</em>, available as an open-access preprint on
+          <a href="https://arxiv.org/abs/2607.28878" target="_blank" rel="noopener">arXiv:2607.28878</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact">
+    <div class="container">
+      <p class="section-eyebrow">// more</p>
+      <h2 class="contact-h">Explore the rest of the lab.</h2>
+      <div class="contact-links">
+        <a href="https://mskazemi.com/yazses/" class="clink">YazSes docs →</a>
+        <a href="../kubeintellect/" class="clink">KubeIntellect →</a>
+        <a href="../aobench/" class="clink">AOBench →</a>
+        <a href="../../#contact" class="clink">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Mohsen Seyedkazemi Ardebili</span>
+      <span class="foot-meta"><a href="../../" class="back-link">← back to home</a></span>
+    </div>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

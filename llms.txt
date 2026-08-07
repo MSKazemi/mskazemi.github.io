@@ -16,14 +16,15 @@ LLM-driven autonomous operations.
 
 ## Core pages
 
-- [Homepage](https://mskazemi.github.io/): profile, thesis, research areas, and technology stack
-- [Contact](https://mskazemi.github.io/#contact): collaboration, open-source, and industry partnerships
+- [Homepage](https://mskazemi.com/): profile, thesis, research areas, and technology stack
+- [Contact](https://mskazemi.com/#contact): collaboration, open-source, and industry partnerships
 
 ## Projects
 
-- [KubeIntellect](https://mskazemi.github.io/projects/kubeintellect/): a human-governed AI SRE for Kubernetes — an LLM-orchestrated operator that investigates the live cluster with real tools, explains what it found, and, with human approval, fixes it. Published in the Journal of Grid Computing (2026).
-- [NovaFabric](https://mskazemi.github.io/projects/novafabric/): an open-source, self-hosted toolkit that turns any AI-agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes.
-- [AOBench](https://mskazemi.github.io/projects/aobench/): a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks.
+- [YazSes](https://mskazemi.com/projects/yazses/): free, open-source, fully offline voice dictation (speech-to-text) for Linux, macOS and Windows — hold a key, speak, release, and your words are typed into whatever app has focus. Transcription runs on-device with faster-whisper, so no audio or text ever leaves the machine: no cloud, no account, no API key, no subscription. Also transcribes existing recordings and captures whole meetings with speaker labels. Documentation: https://mskazemi.com/yazses/
+- [KubeIntellect](https://mskazemi.com/projects/kubeintellect/): a human-governed AI SRE for Kubernetes — an LLM-orchestrated operator that investigates the live cluster with real tools, explains what it found, and, with human approval, fixes it. Published in the Journal of Grid Computing (2026).
+- [NovaFabric](https://mskazemi.com/projects/novafabric/): an open-source, self-hosted toolkit that turns any AI-agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes.
+- [AOBench](https://mskazemi.com/projects/aobench/): a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks.
 
 ## Profiles
 
@@ -37,7 +38,7 @@ LLM-driven autonomous operations.
 Available for freelance AI-infrastructure engagements — Kubernetes reliability & AIOps, MLOps
 platforms (models to production), and production LLM agents (tool-use, human-in-the-loop safety,
 observability, audit). Fixed-price starter audits from €150; project work at a senior day rate.
-Remote, EU. Contact: mohsen.seyedkazemi@gmail.com · details at https://mskazemi.github.io/#packages
+Remote, EU. Contact: mohsen.seyedkazemi@gmail.com · details at https://mskazemi.com/#packages
 
 # NOTE: llms.txt is a proposed convention (2024). No major AI engine has confirmed
 # consuming it for ranking or citation as of 2026; it is provided as a cheap,
