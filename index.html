@@ -260,7 +260,7 @@
               <ul class="ticks">
                 <li>Stateful LangGraph supervisor + PostgreSQL checkpoints</li>
                 <li>Human-in-the-loop approval on every mutating operation</li>
-                <li>Runtime tool synthesis with AST validation &amp; sandboxing</li>
+                <li>Runtime tool synthesis with AST validation and a Kubernetes API whitelist</li>
                 <li>Deployed on Azure AKS — OpenAI-compatible FastAPI backend</li>
               </ul>
               <div class="tags">
@@ -268,8 +268,8 @@
               </div>
             </div>
             <aside class="readout">
-              <div class="readout-row"><span class="rv">93<span class="ru">%</span></span><span class="rl">query resolution</span></div>
-              <div class="readout-row"><span class="rv">81.8<span class="ru">%</span></span><span class="rl">tool-synthesis success</span></div>
+              <div class="readout-row"><span class="rv">93<span class="ru">%</span></span><span class="rl">query resolution (186/200, paper eval)</span></div>
+              <div class="readout-row"><span class="rv">81.8<span class="ru">%</span></span><span class="rl">tool-synthesis success (63/77)</span></div>
               <div class="readout-row"><span class="rv">+25<span class="ru">pp</span></span><span class="rl">over tool-less GPT-4o</span></div>
               <pre class="term" aria-label="Example command-line usage of kube_q">$ kq "why is payments-api crashlooping?"
 <span class="t-dim">→ inspecting pods, events, logs…</span>
