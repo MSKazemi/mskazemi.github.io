@@ -1,0 +1,417 @@
+{
+  "_comment": "Publication list for the /publications/ page. Derived from db/profile/cv.json in the brain repo; citation counts from Google Scholar. Regenerate rather than hand-edit.",
+  "_verifiedOn": "2026-08-10",
+  "metrics": {
+    "citationsAll": 218,
+    "citationsSince2021": 193,
+    "hIndexAll": 8,
+    "hIndexSince2021": 7,
+    "i10All": 7,
+    "i10Since2021": 5,
+    "indexedWorks": 37,
+    "peerReviewedPublished": 17,
+    "underReviewOrInPreparation": 8,
+    "_note": "peerReviewedPublished = 6 journal + 11 conference entries with status Published/Accepted in cv.json. indexedWorks = distinct records on the Scholar profile, which also counts datasets, preprints and edited volumes."
+  },
+  "identity": {
+    "name": "Mohsen Seyedkazemi Ardebili",
+    "scholarId": "xP64pZsAAAAJ",
+    "orcid": "0000-0002-1166-6559",
+    "openalexId": "A5013086540",
+    "affiliation": "University of Bologna (DEI)",
+    "scholarUrl": "https://scholar.google.com/citations?user=xP64pZsAAAAJ"
+  },
+  "publications": {
+    "journals": {
+      "publishedOrAccepted": [
+        {
+          "key": "kubeintellect",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini"
+          ],
+          "title": "KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management",
+          "venue": "Journal of Grid Computing",
+          "year": 2026,
+          "status": "Published",
+          "volume": "24",
+          "issue": "3",
+          "pages": "17",
+          "publisher": "Springer",
+          "doi": "10.1007/s10723-026-09837-6",
+          "url": "https://doi.org/10.1007/s10723-026-09837-6",
+          "citations": 13
+        },
+        {
+          "key": "thermadnet",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini",
+            "Andrea Acquaviva",
+            "Luca Benini"
+          ],
+          "title": "Elevating Datacenter Resilience with ThermADNet: A Thermal Anomaly Detection System",
+          "venue": "Future Generation Computer Systems",
+          "year": 2026,
+          "pages": "108311",
+          "status": "Published",
+          "doi": "10.1016/j.future.2025.108311",
+          "url": "https://doi.org/10.1016/j.future.2025.108311",
+          "citations": 1
+        },
+        {
+          "key": "graafe",
+          "authors": [
+            "Martin Molan",
+            "Mohsen Seyedkazemi Ardebili",
+            "Junaid Ahmed Khan",
+            "Francesco Beneventi",
+            "Daniele Cesarini",
+            "Andrea Borghesi",
+            "Andrea Bartolini"
+          ],
+          "title": "GRAAFE: GRaph Anomaly Anticipation Framework for Exascale HPC Systems",
+          "venue": "Future Generation Computer Systems",
+          "year": 2024,
+          "status": "Published",
+          "doi": "10.1016/j.future.2024.06.032",
+          "url": "https://doi.org/10.1016/j.future.2024.06.032",
+          "citations": 23
+        },
+        {
+          "key": "hazardnet",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Acquaviva",
+            "Luca Benini",
+            "Andrea Bartolini"
+          ],
+          "title": "HazardNet: A Thermal Hazard Prediction Framework for Datacenters",
+          "venue": "Future Generation Computer Systems",
+          "year": 2024,
+          "status": "Published",
+          "doi": "10.1016/j.future.2024.01.031",
+          "url": "https://doi.org/10.1016/j.future.2024.01.031",
+          "citations": 5
+        },
+        {
+          "key": "m100exadata",
+          "authors": [
+            "Andrea Borghesi",
+            "Carmine Di Santi",
+            "Martin Molan",
+            "Mohsen Seyedkazemi Ardebili",
+            "Alessio Mauri",
+            "Massimiliano Guarrasi",
+            "Daniela Galetti",
+            "et al."
+          ],
+          "title": "M100 ExaData: A Data Collection Campaign on the CINECA's Marconi100 Tier-0 Supercomputer",
+          "venue": "Nature Scientific Data",
+          "volume": "10",
+          "issue": "1",
+          "pages": "288",
+          "year": 2023,
+          "status": "Published",
+          "doi": "10.1038/s41597-023-02174-3",
+          "url": "https://doi.org/10.1038/s41597-023-02174-3",
+          "citations": 64
+        },
+        {
+          "key": "pid2007",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Adel Akbarimajd",
+            "Ali Rahnamaei",
+            "Amirreza Baghbanpourasl"
+          ],
+          "title": "A Genetically Tuned Optimal PID Controller",
+          "venue": "WSEAS Transactions on Systems and Control",
+          "volume": "2",
+          "issue": "3",
+          "year": 2007,
+          "issn": "1991-8763",
+          "status": "Published",
+          "citations": 12
+        }
+      ],
+      "underReview": [
+        {
+          "key": "mlops",
+          "authors": [
+            "Fatemeh Bozorgi",
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini"
+          ],
+          "title": "An MLOps-Driven AIOps Framework for Anomaly Detection in Kubernetes",
+          "status": "Under review (revision submitted)"
+        },
+        {
+          "key": "jana",
+          "authors": [
+            "Martin Molan",
+            "Mohsen Seyedkazemi Ardebili",
+            "Junaid Ahmed Khan",
+            "Andrea Borghesi",
+            "Andrea Bartolini"
+          ],
+          "title": "JANA: Job-Aware Node Availability Framework",
+          "status": "Under review"
+        },
+        {
+          "key": "aobench",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini"
+          ],
+          "title": "AOBench: A Trace-Driven, Role-Aware Benchmark for LLM Agents in HPC Operations",
+          "status": "Under review"
+        }
+      ],
+      "inPreparation": [
+        {
+          "key": "greencomputing",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Fatemeh Bozorgi",
+            "Andrea Bartolini"
+          ],
+          "title": "Sustainable High-Performance Computing: Power Consumption Analysis and Carbon Emissions Forecasting",
+          "status": "In preparation"
+        },
+        {
+          "key": "iot",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Davide Brunelli",
+            "Tommaso Polonelli",
+            "Luca Benini",
+            "Andrea Bartolini"
+          ],
+          "title": "A Full-Stack IoT Framework for Room Temperature Modelling on Large-Scale HPC Machines",
+          "status": "In preparation"
+        }
+      ]
+    },
+    "conferences": {
+      "publishedOrAccepted": [
+        {
+          "key": "compsac2026",
+          "authors": [
+            "A. K. Sharma",
+            "F. Stein",
+            "M. Aydin",
+            "M. Bidollahkhani",
+            "S. P. Nanavati",
+            "M. Seyedkazemi Ardebili",
+            "G. Mamulashvili",
+            "M. Akbari",
+            "J. Decker",
+            "Z. Masih",
+            "J. M. Kunkel"
+          ],
+          "title": "DECICE: AI-Driven Scheduling and Digital Twin Integration for the Cloud-HPC-Edge Compute Continuum",
+          "venue": "Proc. of the RPE Special Session, IEEE COMPSAC 2026, Madrid, Spain",
+          "year": 2026,
+          "month": "Jul",
+          "status": "Accepted"
+        },
+        {
+          "key": "k8sdevops",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini"
+          ],
+          "title": "Lightweight Scalable DevOps for Cloud Robotics",
+          "venue": "Proc. of the 3rd Int. Workshop on Scalable Compute Continuum (WSCC 2025), co-located with Euro-Par 2025, Dresden, Germany",
+          "year": 2025,
+          "month": "Aug",
+          "status": "Published",
+          "citations": 0
+        },
+        {
+          "key": "decice",
+          "authors": [
+            "M. Bidollahkhani",
+            "A. K. Sharma",
+            "S. P. Nanavati",
+            "M. Seyedkazemi Ardebili",
+            "G. Mamulashvili",
+            "M. Aydin",
+            "F. Stein",
+            "M. Akbari",
+            "J. M. Kunkel"
+          ],
+          "title": "Design and Implementation of Integrated AI Scheduler for Dynamic Cloud Workloads Allocation in Kubernetes Environments",
+          "venue": "Proc. of the Future Technologies Conference (FTC 2025), Munich, Germany",
+          "year": 2025,
+          "month": "Nov",
+          "status": "Published",
+          "doi": "10.1007/978-3-032-07986-2_25",
+          "url": "https://doi.org/10.1007/978-3-032-07986-2_25",
+          "citations": 1
+        },
+        {
+          "key": "pm100",
+          "authors": [
+            "Francesco Antici",
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini",
+            "Zeynep Kiziltan"
+          ],
+          "title": "PM100: A Job Power Consumption Dataset of a Large-scale Production HPC System",
+          "venue": "Proc. of the SC'23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis",
+          "year": 2023,
+          "pages": "1812–1819",
+          "status": "Published",
+          "doi": "10.1145/3624062.3624263",
+          "url": "https://doi.org/10.1145/3624062.3624263",
+          "citations": 33
+        },
+        {
+          "key": "poster",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini",
+            "Luca Benini"
+          ],
+          "title": "Multi-level Anomaly Prediction in Tier-0 Datacenter: A Deep Learning Approach",
+          "venue": "Proc. of the 19th ACM International Conference on Computing Frontiers",
+          "year": 2022,
+          "status": "Published",
+          "doi": "10.1145/3528416.3530864",
+          "url": "https://doi.org/10.1145/3528416.3530864",
+          "citations": 3
+        },
+        {
+          "key": "rulebased",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini",
+            "Andrea Acquaviva",
+            "Luca Benini"
+          ],
+          "title": "Rule-based Thermal Anomaly Detection for Tier-0 HPC Systems",
+          "venue": "3rd ISC HPC International Workshop on Monitoring and Operational Data Analytics",
+          "year": 2022,
+          "month": "Jun",
+          "status": "Published",
+          "doi": "10.1007/978-3-031-23220-6_18",
+          "url": "https://doi.org/10.1007/978-3-031-23220-6_18",
+          "citations": 7
+        },
+        {
+          "key": "tcn",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Marcello Zanghieri",
+            "Alessio Burrello",
+            "Francesco Beneventi",
+            "Andrea Acquaviva",
+            "Luca Benini",
+            "Andrea Bartolini"
+          ],
+          "title": "Prediction of Thermal Hazards in a Real Datacenter Room Using Temporal Convolutional Networks",
+          "venue": "Design, Automation and Test in Europe Conference and Exhibition (DATE 2021), IEEE",
+          "year": 2021,
+          "pages": "1256–1259",
+          "status": "Published",
+          "doi": "10.23919/date51398.2021.9474116",
+          "url": "https://doi.org/10.23919/date51398.2021.9474116",
+          "citations": 9
+        },
+        {
+          "key": "datacentercharacterization",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Carlo Cavazzoni",
+            "Luca Benini",
+            "Andrea Bartolini"
+          ],
+          "title": "Thermal Characterization of a Tier-0 Datacenter Room in Normal and Thermal Emergency Conditions",
+          "venue": "High Performance Computing in Science and Engineering 2019, Ostrava, Czech Republic",
+          "year": 2019,
+          "status": "Published",
+          "doi": "10.1007/978-3-030-67077-1_1",
+          "url": "https://doi.org/10.1007/978-3-030-67077-1_1",
+          "citations": 10
+        },
+        {
+          "key": "floating2012",
+          "authors": [
+            "Amirreza Baghbanpourasl",
+            "Ghasem Najarbashi",
+            "Mohsen Seyedkazemi Ardebili"
+          ],
+          "title": "Floating Entanglement Witness Measure and Genetic Algorithm",
+          "venue": "International Iran Conference on Quantum Information, Sharif University of Technology, Tehran, Iran",
+          "year": 2012,
+          "month": "Sep",
+          "status": "Published"
+        },
+        {
+          "key": "pid2008",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili"
+          ],
+          "title": "Designing Optimal PID Controller with Genetic Algorithm in View of Controller Location in the Plant",
+          "venue": "7th International Conference on Signal Processing, Robotics and Automation, Cambridge, UK",
+          "year": 2008,
+          "issn": "1790-5117",
+          "isbn": "978-960-6766-44-2",
+          "status": "Published",
+          "citations": 11
+        },
+        {
+          "key": "statcom2007",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Farzad Sedaghati"
+          ],
+          "title": "Genetic Algorithm Application to Control of STATCOM for Damping of Subsynchronous Resonance",
+          "venue": "7th WSEAS International Conference on Power Systems (PE'07), Beijing, China",
+          "year": 2007,
+          "month": "Sep",
+          "status": "Published",
+          "citations": 3
+        }
+      ],
+      "underReview": [
+        {
+          "key": "pecs2026",
+          "authors": [
+            "Baibek Davletiyarov",
+            "Mohsen Seyedkazemi Ardebili",
+            "Andrea Bartolini"
+          ],
+          "title": "Thermal-Aware Power Modeling and Job Allocation for Carbon-Aware HPC",
+          "venue": "PECS 2026 — Workshop on Performance Engineering for Computing Systems, co-located with Euro-Par 2026",
+          "status": "Under review"
+        }
+      ],
+      "inPreparation": [
+        {
+          "key": "cloudedge",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Sebastiano Mengozzi",
+            "Andrea Bartolini"
+          ],
+          "title": "Cloud–Edge Robotics under Time Constraints: An Experimental Study with ROS 2 and Kubernetes",
+          "status": "In preparation"
+        },
+        {
+          "key": "energetiscope",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Fatemeh Bozorgi",
+            "Andrea Bartolini"
+          ],
+          "title": "EnergetiScope: Predicting Kubernetes Workload Energy from Resource and Manifest Features",
+          "status": "In preparation"
+        }
+      ]
+    },
+    "_citationsNote": "citations = Google Scholar counts read 2026-08-10, duplicate Scholar records for the same work merged. Full metrics in db/profile/scholar.json. Never put these numbers in job-application documents."
+  }
+}

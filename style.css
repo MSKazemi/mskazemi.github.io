@@ -331,7 +331,7 @@ a:hover { color: var(--amber-2); }
 
 .loop-stage { padding: 22px; display: grid; place-items: center;
   background: radial-gradient(ellipse 70% 70% at 50% 45%, var(--amber-dim), transparent 70%); }
-.loop-svg { width: 100%; max-width: 320px; height: auto; }
+.loop-svg { width: 100%; max-width: 344px; height: auto; }  /* matches the padded viewBox so the ring keeps its size */
 .loop-ring { fill: none; stroke: var(--line-2); stroke-width: 1.5; stroke-dasharray: 4 6; }
 .loop-node rect { fill: var(--panel); stroke: var(--line-2); stroke-width: 1.2; }
 .loop-node text {
@@ -546,4 +546,190 @@ footer { border-top: 1px solid var(--line); padding: 30px 0; position: relative;
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
   .loop-pulse { display: none; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* =========================================================================
+   RESEARCH IMPACT — stat tiles
+   The three SVG charts and the repository table that used to live here were
+   removed on 2026-08-10: they rendered small numbers at large size, which reads
+   as weakness however honest it is. Only figures strong on their own remain.
+   ========================================================================= */
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 28px 0 8px;
+}
+/* Eight tiles: pin to four columns on wide screens so it lands as a clean 4x2
+   block rather than auto-fitting to a ragged 5 + 3. */
+@media (min-width: 900px) {
+  .stat-row { grid-template-columns: repeat(4, 1fr); }
+}
+.stat {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 20px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: var(--shadow-sm);
+}
+.stat-v {
+  font-family: var(--display);
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.stat-k {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-top: 6px;
+}
+.stat-sub { font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+
+.sub-title {
+  font-family: var(--display);
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 40px 0 6px;
+  color: var(--text);
+}
+.chart-source {
+  font-size: 0.8rem;
+  color: var(--muted-2);
+  margin-top: 24px;
+  max-width: 78ch;
+  line-height: 1.6;
+}
+.chart-source a { color: var(--muted); }
+
+/* =========================================================================
+   PROJECT FLOW DIAGRAMS — small animated SVG schematics inside the cards
+   Same visual language as the hero control loop: rounded panel nodes, mono
+   uppercase labels, a mint token travelling the path, amber for a human gate.
+   All motion is CSS on inline SVG — no JS, no library, works with JS disabled.
+   NOTE: every viewBox below is padded past the outermost stroke. The hero's
+   original 0..320 box clipped its own side nodes; do not repeat that.
+   ========================================================================= */
+
+.flow-fig {
+  margin: 18px 0 4px;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px 10px;
+  overflow: hidden;
+}
+.flow { width: 100%; height: auto; display: block; }
+.flow-cap {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--muted-2);
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* nodes and wiring ------------------------------------------------------- */
+.fl-node rect { fill: var(--panel); stroke: var(--line-2); stroke-width: 1.2; }
+.fl-node text {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  fill: var(--text);
+  text-anchor: middle;
+}
+.fl-sub {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.03em;
+  fill: var(--muted-2);
+  text-anchor: middle;
+}
+.fl-wire { stroke: var(--line-2); stroke-width: 1.4; stroke-dasharray: 3 4; fill: none; }
+.fl-gate rect { stroke: var(--amber); fill: var(--amber-dim); }
+.fl-gate text { fill: var(--amber); }
+
+/* the travelling token --------------------------------------------------- */
+.fl-dot { fill: var(--mint); filter: drop-shadow(0 0 5px var(--mint)); }
+.fl-dot-bad { fill: var(--red); filter: drop-shadow(0 0 5px var(--red)); }
+
+/* each node lights up as the token reaches it ---------------------------- */
+.fl-hi {
+  fill: var(--amber);
+  opacity: 0;
+  animation: flLight 5s ease-in-out infinite;
+}
+@keyframes flLight {
+  0%, 12%   { opacity: 0; }
+  6%        { opacity: 0.16; }
+  100%      { opacity: 0; }
+}
+
+@keyframes flTravel   { 0% { transform: translateX(0); } 100% { transform: translateX(var(--fl-run)); } }
+@keyframes flWave     { 0%, 100% { transform: scaleY(0.25); } 50% { transform: scaleY(1); } }
+@keyframes flType     { 0%, 12% { opacity: 0; transform: scaleX(0.2); }
+                        30%, 88% { opacity: 1; transform: scaleX(1); }
+                        100% { opacity: 0; transform: scaleX(0.2); } }
+@keyframes flBlink    { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+@keyframes flReject   { 0%, 55% { opacity: 0; } 65%, 90% { opacity: 1; } 100% { opacity: 0; } }
+
+.fl-travel { animation: flTravel 5s linear infinite; }
+.fl-bar    { transform-box: fill-box; transform-origin: center; animation: flWave 1.1s ease-in-out infinite; }
+.fl-line   { transform-box: fill-box; transform-origin: left center; animation: flType 5s ease-in-out infinite; }
+.fl-pulse  { animation: flBlink 1.6s ease-in-out infinite; }
+.fl-x      { animation: flReject 5s ease-in-out infinite; }
+
+.fl-boundary { fill: none; stroke: var(--mint); stroke-width: 1.3; stroke-dasharray: 5 4; opacity: 0.85; }
+.fl-label {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.09em;
+  fill: var(--muted-2);
+}
+.fl-mint { fill: var(--mint); }
+.fl-muted { stroke: var(--muted-2); fill: none; stroke-width: 1.3; }
+.fl-red { stroke: var(--red); fill: none; stroke-width: 1.6; }
+
+/* Reduced motion: freeze everything in a state that still reads correctly —
+   nodes evenly lit, text lines present, tokens hidden rather than mid-flight. */
+@media (prefers-reduced-motion: reduce) {
+  .fl-hi { animation: none; opacity: 0.1; }
+  .fl-travel, .fl-dot, .fl-dot-bad { animation: none; display: none; }
+  .fl-bar { animation: none; transform: scaleY(0.7); }
+  .fl-line { animation: none; opacity: 1; transform: none; }
+  .fl-pulse { animation: none; opacity: 1; }
+  .fl-x { animation: none; opacity: 1; }
+}
+
+/* Two extra motion patterns: a token that pauses at the human-approval gate,
+   and a token that is turned back by the policy barrier. */
+@keyframes flTravelHold {
+  0%        { transform: translateX(0); }
+  38%       { transform: translateX(var(--fl-hold)); }
+  56%       { transform: translateX(var(--fl-hold)); }
+  100%      { transform: translateX(var(--fl-run)); }
+}
+@keyframes flBlocked {
+  0%        { transform: translateX(0); opacity: 0; }
+  6%        { opacity: 1; }
+  45%       { transform: translateX(var(--fl-run)); opacity: 1; }
+  56%       { transform: translateX(calc(var(--fl-run) - 12px)); opacity: 1; }
+  72%, 100% { transform: translateX(calc(var(--fl-run) - 12px)); opacity: 0; }
+}
+.fl-travel-hold { animation: flTravelHold 5.5s ease-in-out infinite; }
+.fl-blocked { animation: flBlocked 5s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fl-travel-hold, .fl-blocked { animation: none; display: none; }
 }

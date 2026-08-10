@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+  <title>Open HPC datasets — Marconi100 telemetry, job power, thermal hazards</title>
+  <meta name="description" content="Three open, CC-BY-4.0 datasets from CINECA's Marconi100 and Marconi A2 Tier-0 supercomputers: 24.8 GB of node telemetry for anomaly detection, 287 MB of per-job power consumption, and 1 GB of thermal-hazard sensor data from 3,312 nodes. Co-authored by Mohsen Seyedkazemi Ardebili. DOIs, scale, licence and citation for each." />
+  <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
+  <meta name="keywords" content="HPC dataset, supercomputer telemetry dataset, M100 ExaData, PM100, Marconi100 dataset, HPC anomaly detection dataset, job power consumption dataset, datacenter thermal dataset, open research data, CINECA" />
+  <link rel="canonical" href="https://mskazemi.com/datasets/" />
+  <link rel="alternate" type="text/markdown" href="https://mskazemi.com/datasets/index.md" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0A0E14" />
+
+  <meta property="og:title" content="Open HPC datasets — Marconi100 telemetry, job power, thermal hazards" />
+  <meta property="og:description" content="~26 GB of open Tier-0 supercomputer telemetry across three CC-BY-4.0 datasets, with DOIs, scale, coverage and citation for each." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mskazemi.com/datasets/" />
+  <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://mskazemi.com/assets/mohsen-portrait.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mskazemi.com/assets/mohsen-portrait.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0E14'/%3E%3Cpath d='M9 16a7 7 0 1 1 2.05 4.95' fill='none' stroke='%23F2A93B' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='16' r='2.4' fill='%233FD79A'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../project.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://mskazemi.com/datasets/#page",
+        "url": "https://mskazemi.com/datasets/",
+        "name": "Open HPC datasets — Marconi100 telemetry, job power, thermal hazards",
+        "description": "Three open CC-BY-4.0 datasets from CINECA Tier-0 supercomputers, totalling roughly 26 GB, co-authored by Mohsen Seyedkazemi Ardebili.",
+        "dateModified": "2026-08-10",
+        "about": { "@id": "https://mskazemi.com/#person" },
+        "isPartOf": { "@id": "https://mskazemi.com/#website" }
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://mskazemi.com/datasets/#m100",
+        "name": "M100 ExaData — time-aggregated Marconi100 telemetry for anomaly detection",
+        "description": "Operational telemetry collected by the ExaMon monitoring system from CINECA's Marconi100 Tier-0 supercomputer, covering March 2020 to September 2022. Includes per-node power, temperature, CPU frequency, workload and job-scheduler signals, released as a time-aggregated set for anomaly-detection research.",
+        "identifier": "https://doi.org/10.5281/zenodo.7541722",
+        "sameAs": "https://doi.org/10.5281/zenodo.7541722",
+        "url": "https://doi.org/10.5281/zenodo.7541722",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "datePublished": "2023-01-31",
+        "isAccessibleForFree": true,
+        "keywords": ["high-performance computing", "supercomputer telemetry", "anomaly detection", "predictive maintenance", "datacenter monitoring"],
+        "distribution": { "@type": "DataDownload", "encodingFormat": "text/csv", "contentSize": "24.78 GB", "contentUrl": "https://doi.org/10.5281/zenodo.7541722" },
+        "creator": [
+          { "@type": "Person", "name": "Andrea Borghesi" },
+          { "@type": "Person", "name": "Carmine Di Santi" },
+          { "@type": "Person", "name": "Martin Molan" },
+          { "@id": "https://mskazemi.com/#person" }
+        ],
+        "citation": "https://doi.org/10.1038/s41597-023-02174-3"
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://mskazemi.com/datasets/#pm100",
+        "name": "PM100 — per-job power consumption of a large-scale production HPC system",
+        "description": "Per-job power-consumption records from CINECA's Marconi100 production supercomputer, published to support research on power-aware scheduling, job power prediction and energy-efficient HPC operation.",
+        "identifier": "https://doi.org/10.5281/zenodo.10127767",
+        "sameAs": "https://doi.org/10.5281/zenodo.10127767",
+        "url": "https://doi.org/10.5281/zenodo.10127767",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "datePublished": "2023-11-24",
+        "isAccessibleForFree": true,
+        "keywords": ["job power consumption", "HPC scheduling", "energy efficiency", "power prediction", "supercomputer workload"],
+        "distribution": { "@type": "DataDownload", "contentSize": "287 MB", "contentUrl": "https://doi.org/10.5281/zenodo.10127767" },
+        "creator": [
+          { "@type": "Person", "name": "Francesco Antici" },
+          { "@id": "https://mskazemi.com/#person" },
+          { "@type": "Person", "name": "Andrea Bartolini" },
+          { "@type": "Person", "name": "Zeynep Kiziltan" }
+        ],
+        "citation": "https://doi.org/10.1145/3624062.3624263"
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://mskazemi.com/datasets/#hazardnet",
+        "name": "HazardNet dataset — thermal sensor and power telemetry from 3,312 HPC nodes",
+        "description": "Inlet and outlet temperature together with power-consumption readings from 3,312 compute nodes of CINECA's Marconi A2 Tier-0 supercomputer, covering 14 January to 31 December 2019, collected through the ExaMon monitoring infrastructure to support thermal-hazard prediction research.",
+        "identifier": "https://doi.org/10.5281/zenodo.10050368",
+        "sameAs": "https://doi.org/10.5281/zenodo.10050368",
+        "url": "https://doi.org/10.5281/zenodo.10050368",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "datePublished": "2023-10-27",
+        "isAccessibleForFree": true,
+        "temporalCoverage": "2019-01-14/2019-12-31",
+        "keywords": ["thermal anomaly", "datacenter cooling", "thermal hazard prediction", "sensor time series", "HPC facility"],
+        "distribution": { "@type": "DataDownload", "contentSize": "1.02 GB", "contentUrl": "https://doi.org/10.5281/zenodo.10050368" },
+        "creator": [
+          { "@id": "https://mskazemi.com/#person" },
+          { "@type": "Person", "name": "Andrea Acquaviva" },
+          { "@type": "Person", "name": "Luca Benini" },
+          { "@type": "Person", "name": "Andrea Bartolini" }
+        ],
+        "citation": "https://doi.org/10.1016/j.future.2024.01.031"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mskazemi.com/datasets/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What open datasets exist for HPC anomaly detection?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Three open CC-BY-4.0 datasets from CINECA's Tier-0 supercomputers cover most of this ground. M100 ExaData holds 24.8 GB of time-aggregated Marconi100 node telemetry from March 2020 to September 2022. The HazardNet dataset holds 1 GB of inlet/outlet temperature and power readings from 3,312 Marconi A2 nodes across 2019. PM100 holds 287 MB of per-job power-consumption records. All three are free to download from Zenodo and require only attribution." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is M100 ExaData?",
+            "acceptedAnswer": { "@type": "Answer", "text": "M100 ExaData is a data-collection campaign on CINECA's Marconi100 Tier-0 supercomputer, published in Nature Portfolio's Scientific Data in 2023. It captures operational telemetry from the ExaMon monitoring system — per-node power, temperature, CPU frequency, workload and job-scheduler signals — over roughly two and a half years of production operation, released openly so anomaly-detection and predictive-maintenance methods can be compared on the same real supercomputer data." }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these HPC datasets free to use commercially?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. All three datasets are released under Creative Commons Attribution 4.0 (CC-BY-4.0), which permits commercial use, redistribution and derivative works provided the dataset and its accompanying paper are credited. The AOBench benchmark that builds on this data is Apache-2.0." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cite these datasets?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cite both the Zenodo record and the paper that describes it. For M100 ExaData cite Zenodo 10.5281/zenodo.7541722 and Borghesi et al., Scientific Data 10:288 (2023), doi 10.1038/s41597-023-02174-3. For PM100 cite Zenodo 10.5281/zenodo.10127767 and Antici et al., SC'23 Workshops, doi 10.1145/3624062.3624263. For the HazardNet dataset cite Zenodo 10.5281/zenodo.10050368 and Seyedkazemi Ardebili et al., Future Generation Computer Systems 155:340-353 (2024), doi 10.1016/j.future.2024.01.031." }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mskazemi.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Datasets", "item": "https://mskazemi.com/datasets/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-logo" aria-label="Home">
+        <svg class="logo-mark" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M9 16a7 7 0 1 1 2.05 4.95" fill="none" stroke="var(--amber)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="9" cy="16" r="2.6" fill="var(--mint)"/>
+        </svg>
+        <span>Mohsen Seyedkazemi</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="../#impact">Impact</a>
+        <a href="../#systems">Systems</a>
+        <a href="../publications/">Publications</a>
+        <a href="../about/">About</a>
+        <a href="../datasets/">Datasets</a>
+        <a href="../hire/">Hire</a>
+        <a href="../#contact" class="nav-cta">Get in touch</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme" aria-pressed="false">
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="proj-hero">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="../">home</a><span class="sep">/</span>
+        <span class="cur">datasets</span>
+      </p>
+      <p class="proj-eyebrow"><span class="dot-mint" aria-hidden="true"></span>open data · CC BY 4.0</p>
+      <h1>Open datasets from a Tier-0 supercomputer</h1>
+      <p class="proj-tagline">Roughly 26&nbsp;GB of real telemetry, free to download and free to use.</p>
+      <p class="proj-lede">
+        Most research on datacenter anomaly detection and power modelling is done on synthetic traces,
+        because production supercomputer telemetry is almost never released. These three datasets are
+        the exception: operational data from <strong>CINECA's Marconi100 and Marconi&nbsp;A2</strong>
+        Tier-0 systems, published openly under CC&nbsp;BY&nbsp;4.0. I am a co-author on all three and
+        the first author of one.
+      </p>
+      <div class="proj-links">
+        <a href="#table" class="btn-primary">The three datasets</a>
+        <a href="../publications/" class="btn-ghost">The papers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-section">
+    <div class="container">
+
+      <div class="stat-row">
+        <div class="stat"><span class="stat-v">26<span style="font-size:.5em"> GB</span></span><span class="stat-k">of open telemetry</span><span class="stat-sub">across three Zenodo records</span></div>
+        <div class="stat"><span class="stat-v">3,312</span><span class="stat-k">monitored nodes</span><span class="stat-sub">in the thermal dataset alone</span></div>
+        <div class="stat"><span class="stat-v">2.5<span style="font-size:.5em"> yrs</span></span><span class="stat-k">of production data</span><span class="stat-sub">March 2020 to September 2022</span></div>
+        <div class="stat"><span class="stat-v">CC BY</span><span class="stat-k">4.0 licence</span><span class="stat-sub">commercial use permitted</span></div>
+      </div>
+
+      <h2 class="sub-title" id="table">What open datasets exist for HPC anomaly detection?</h2>
+      <p class="section-lead">
+        Three, and they cover different questions. <strong>M100 ExaData</strong> is the one to start with
+        for anomaly detection and predictive maintenance; <strong>PM100</strong> is the one for job power
+        prediction and power-aware scheduling; the <strong>HazardNet dataset</strong> is the one for
+        thermal-hazard and cooling research. All three are on Zenodo, all three are CC&nbsp;BY&nbsp;4.0,
+        and none requires an application or an account.
+      </p>
+
+      <div class="table-scroll">
+        <table class="oss-table">
+          <caption>Verified against the Zenodo API on 2026-08-10. Sizes are the total of the deposited files.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dataset</th><th scope="col">What it contains</th><th scope="col">Scale</th>
+              <th scope="col">Period</th><th scope="col">Licence</th><th scope="col">DOI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">M100 ExaData</th>
+              <td>Node power, temperature, CPU frequency, workload and job-scheduler telemetry from Marconi100, via the ExaMon monitoring system</td>
+              <td>24.78&nbsp;GB · 50 files</td>
+              <td>Mar 2020 – Sep 2022</td>
+              <td>CC BY 4.0</td>
+              <td><a href="https://doi.org/10.5281/zenodo.7541722" target="_blank" rel="noopener">10.5281/zenodo.7541722</a></td>
+            </tr>
+            <tr>
+              <th scope="row">PM100</th>
+              <td>Per-job power-consumption records from the same production system, for power-aware scheduling and job power prediction</td>
+              <td>287&nbsp;MB</td>
+              <td>Marconi100 production</td>
+              <td>CC BY 4.0</td>
+              <td><a href="https://doi.org/10.5281/zenodo.10127767" target="_blank" rel="noopener">10.5281/zenodo.10127767</a></td>
+            </tr>
+            <tr>
+              <th scope="row">HazardNet dataset</th>
+              <td>Inlet and outlet temperature plus power readings from 3,312 compute nodes of Marconi A2, for thermal-hazard prediction</td>
+              <td>1.02&nbsp;GB · 3 files</td>
+              <td>14 Jan – 31 Dec 2019</td>
+              <td>CC BY 4.0</td>
+              <td><a href="https://doi.org/10.5281/zenodo.10050368" target="_blank" rel="noopener">10.5281/zenodo.10050368</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="sub-title">What is M100 ExaData?</h2>
+      <p class="section-lead">
+        M100 ExaData is a data-collection campaign on CINECA's Marconi100 Tier-0 supercomputer,
+        described in <em>Nature Portfolio's Scientific Data</em> in 2023. It captures what the machine
+        was actually doing — per-node power draw, temperatures, CPU frequency, workload and
+        job-scheduler state — across roughly two and a half years of production operation, so that
+        anomaly-detection and predictive-maintenance methods can be compared on the same real data
+        instead of on simulations. It is the most-cited paper I have contributed to.
+      </p>
+      <p class="section-lead">
+        Paper: <a href="https://doi.org/10.1038/s41597-023-02174-3" target="_blank" rel="noopener">Borghesi et al., <em>Scientific Data</em> 10:288 (2023)</a>.
+      </p>
+
+      <h2 class="sub-title">What is PM100 for?</h2>
+      <p class="section-lead">
+        PM100 answers a narrower question: <em>how much power does a given job actually draw?</em> It
+        pairs job records with measured power consumption on a large production system, which is what
+        you need to train a model that predicts a job's power before it runs — the basis for
+        power-aware scheduling, energy budgeting and carbon-aware placement.
+      </p>
+      <p class="section-lead">
+        Paper: <a href="https://doi.org/10.1145/3624062.3624263" target="_blank" rel="noopener">Antici, Seyedkazemi&nbsp;Ardebili, Bartolini &amp; Kiziltan, SC'23 Workshops (2023)</a>.
+      </p>
+
+      <h2 class="sub-title">What is in the thermal-hazard dataset?</h2>
+      <p class="section-lead">
+        Inlet and outlet temperature and power readings from <strong>3,312 compute nodes</strong> of
+        Marconi&nbsp;A2, covering 14&nbsp;January to 31&nbsp;December 2019 — a full year of a Tier-0
+        machine's thermal behaviour, including the periods where cooling and heat generation fell out
+        of balance. It was released alongside HazardNet, a framework that predicts a forthcoming
+        thermal hazard from a rolling window of those sensors, on a six-hour horizon chosen with the
+        facility manager rather than by grid search.
+      </p>
+      <p class="section-lead">
+        Paper: <a href="https://doi.org/10.1016/j.future.2024.01.031" target="_blank" rel="noopener">Seyedkazemi&nbsp;Ardebili, Acquaviva, Benini &amp; Bartolini, <em>Future Generation Computer Systems</em> 155:340–353 (2024)</a>.
+      </p>
+
+      <h2 class="sub-title">Are these datasets free to use commercially?</h2>
+      <p class="section-lead">
+        Yes. All three are <strong>CC&nbsp;BY&nbsp;4.0</strong>, which permits commercial use,
+        redistribution and derivative works as long as the dataset and its paper are credited. There is
+        no application form, no data-use agreement and no account — the files are on Zenodo and
+        download directly. The <a href="../projects/aobench/">AOBench</a> benchmark built partly on this
+        data is Apache-2.0 and archived at
+        <a href="https://doi.org/10.5281/zenodo.21854863" target="_blank" rel="noopener">10.5281/zenodo.21854863</a>.
+      </p>
+
+      <h2 class="sub-title">How do I cite them?</h2>
+      <p class="section-lead">Cite the Zenodo record <em>and</em> the paper that describes it.</p>
+      <details class="p-bib" open>
+        <summary>BibTeX</summary>
+        <pre><code id="bibds">@dataset{borghesi2023m100,
+  author    = {Borghesi, Andrea and Di Santi, Carmine and Molan, Martin and
+               Seyedkazemi Ardebili, Mohsen and Mauri, Alessio and Guarrasi, Massimiliano
+               and Galetti, Daniela and Bartolini, Andrea},
+  title     = {M100 dataset: time-aggregated data for anomaly detection},
+  year      = {2023},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.7541722},
+}
+
+@article{borghesi2023exadata,
+  author  = {Borghesi, Andrea and Di Santi, Carmine and Molan, Martin and
+             Seyedkazemi Ardebili, Mohsen and others},
+  title   = {M100 ExaData: a data collection campaign on the CINECA's
+             Marconi100 Tier-0 supercomputer},
+  journal = {Scientific Data},
+  volume  = {10}, number = {1}, pages = {288}, year = {2023},
+  doi     = {10.1038/s41597-023-02174-3},
+}
+
+@inproceedings{antici2023pm100,
+  author    = {Antici, Francesco and Seyedkazemi Ardebili, Mohsen and
+               Bartolini, Andrea and Kiziltan, Zeynep},
+  title     = {PM100: A Job Power Consumption Dataset of a Large-scale
+               Production HPC System},
+  booktitle = {Proceedings of the SC'23 Workshops},
+  pages     = {1812--1819}, year = {2023},
+  doi       = {10.1145/3624062.3624263},
+}
+
+@article{ardebili2024hazardnet,
+  author  = {Seyedkazemi Ardebili, Mohsen and Acquaviva, Andrea and
+             Benini, Luca and Bartolini, Andrea},
+  title   = {HazardNet: A thermal hazard prediction framework for datacenters},
+  journal = {Future Generation Computer Systems},
+  volume  = {155}, pages = {340--353}, year = {2024},
+  doi     = {10.1016/j.future.2024.01.031},
+}</code></pre>
+        <button type="button" class="copy-bib" data-target="bibds">Copy</button>
+      </details>
+
+      <h2 class="sub-title">What has been built on this data?</h2>
+      <p class="section-lead">
+        Peer-reviewed work using these datasets includes
+        <a href="https://doi.org/10.1016/j.future.2024.06.032" target="_blank" rel="noopener">GRAAFE</a>,
+        a graph neural network that anticipates node anomalies and is served online through a Kubeflow
+        pipeline; <a href="https://doi.org/10.1016/j.future.2024.01.031" target="_blank" rel="noopener">HazardNet</a>,
+        the thermal-hazard predictor above;
+        <a href="https://doi.org/10.1016/j.future.2025.108311" target="_blank" rel="noopener">ThermADNet</a>,
+        a thermal anomaly detection system; and
+        <a href="../projects/aobench/">AOBench</a>, a benchmark for LLM agents operating HPC systems
+        whose environments are partly reconstructed from this telemetry.
+        The <a href="../publications/">full publication list</a> has DOIs and BibTeX for all of them.
+      </p>
+
+      <p class="chart-source">
+        Dataset sizes, licences and publication dates verified against the Zenodo API on 2026-08-10.
+        Paper identifiers resolved through Crossref. If you use these datasets and hit a problem with
+        them, <a href="../#contact">tell me</a> — I would rather fix the record than have it quietly
+        mis-cited.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <p class="section-eyebrow">// more</p>
+      <h2 class="contact-h">The work built on this data.</h2>
+      <div class="contact-links">
+        <a href="../publications/" class="clink">Publications →</a>
+        <a href="../projects/aobench/" class="clink">AOBench →</a>
+        <a href="../#impact" class="clink">Research impact →</a>
+        <a href="../#contact" class="clink">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Mohsen Seyedkazemi Ardebili</span>
+      <nav class="footer-nav" aria-label="Site pages">
+        <a href="../about/">About the author</a>
+        <a href="../hire/">Hire</a>
+        <a href="../">Home</a>
+      </nav>
+      <span class="foot-meta">By <a href="../about/" class="back-link">Mohsen Seyedkazemi Ardebili</a> &middot; Bologna, Italy</span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    document.querySelectorAll('.copy-bib').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var el = document.getElementById(btn.dataset.target);
+        if (!el) return;
+        navigator.clipboard.writeText(el.textContent).then(function () {
+          var was = btn.textContent;
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = was; }, 1600);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

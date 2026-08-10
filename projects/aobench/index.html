@@ -9,11 +9,12 @@
   <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
   <meta name="keywords" content="AOBench, Agent Operations Benchmark, LLM agents, HPC operations, RBAC, benchmark, MCP, SLURM, agent evaluation, Mohsen Seyedkazemi Ardebili" />
   <link rel="canonical" href="https://mskazemi.com/projects/aobench/" />
+  <link rel="alternate" type="text/markdown" href="https://mskazemi.com/projects/aobench/index.md" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0A0E14" />
 
   <meta property="og:title" content="AOBench — Agent Operations Benchmark for HPC" />
-  <meta property="og:description" content="A trace-driven, role-aware, RBAC-enforced benchmark for LLM agents in HPC facilities. Verdict: no system evaluated is deployment-ready for autonomous operations." />
+  <meta property="og:description" content="A trace-driven, role-aware, RBAC-enforced benchmark for LLM agents in HPC facilities: 88 tasks across 10 categories and 5 operator roles, 29 reproducible environments, 12 scorers rolled into a CLEAR scorecard." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mskazemi.com/projects/aobench/" />
   <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
@@ -91,7 +92,7 @@
       <h1>AOBench</h1>
       <p class="proj-tagline">Agent Operations Benchmark for HPC.</p>
       <p class="proj-lede">
-        The first <strong>trace-driven, role-aware, RBAC-enforced</strong> benchmark for LLM agents in
+        A <strong>trace-driven, role-aware, RBAC-enforced</strong> benchmark for LLM agents in
         HPC facilities. It asks a blunt question — <em>can an autonomous agent actually be trusted to
         operate a supercomputer?</em> — and answers it against real operational traces, real operator
         roles, and hard policy constraints.
@@ -101,8 +102,8 @@
         <a href="https://mskazemi.com/aobench/latest/" target="_blank" rel="noopener" class="btn-ghost">Docs ↗</a>
       </div>
       <ul class="status-strip" aria-label="Quick facts">
-        <li><span class="k">SCOPE</span> 80 tasks · 23 snapshots · 16 systems</li>
-        <li><span class="k">DESIGN</span> 5 roles × 10 categories × 3 tiers</li>
+        <li><span class="k">SCOPE</span> 88 tasks · 29 environments · 16 systems</li>
+        <li><span class="k">DESIGN</span> 5 roles × 10 categories · 12 scorers</li>
         <li><span class="k">STACK</span> Python · MCP · SLURM</li>
       </ul>
     </div>
@@ -138,7 +139,7 @@
       <div class="arch-grid">
         <div class="arch-item">
           <h3>Realistic task matrix</h3>
-          <p>Five operator roles × ten task categories × three difficulty tiers, drawn from real HPC operational scenarios rather than synthetic puzzles.</p>
+          <p>88 tasks across ten question categories and five operator roles, drawn from real HPC operational scenarios rather than synthetic puzzles.</p>
         </div>
         <div class="arch-item">
           <h3>Completion-under-Policy scorer</h3>
@@ -146,11 +147,11 @@
         </div>
         <div class="arch-item">
           <h3>CLEAR scorecard</h3>
-          <p>Every system is scored across five axes — <strong>C</strong>ost · <strong>L</strong>atency · <strong>E</strong>fficacy · <strong>A</strong>ssurance · <strong>R</strong>eliability — so trade-offs are visible, not hidden behind one number.</p>
+          <p>12 scorers over six evaluation dimensions, aggregated into five reported axes — <strong>C</strong>ost · <strong>L</strong>atency · <strong>E</strong>fficacy · <strong>A</strong>ssurance · <strong>R</strong>eliability — so trade-offs stay visible instead of collapsing into one number.</p>
         </div>
         <div class="arch-item">
           <h3>Snapshot environments</h3>
-          <p>Trace-backed snapshot bundles reconstruct real cluster state, letting many agents be evaluated against the same reproducible conditions.</p>
+          <p>29 deterministic environment bundles reconstruct real cluster state — 23 synthetic and 6 built from real Marconi100 ExaData telemetry — so every agent meets identical conditions.</p>
         </div>
       </div>
     </div>
@@ -159,23 +160,25 @@
   <!-- VERDICT -->
   <section class="proj-section panel-section alt">
     <div class="container">
-      <p class="section-eyebrow">// the finding</p>
-      <h2 class="section-title">No system evaluated is deployment-ready.</h2>
+      <p class="section-eyebrow">// the scale of it</p>
+      <h2 class="section-title">Built so the answer is reproducible.</h2>
       <div class="metrics-row">
-        <div class="metric"><span class="mv">80</span><span class="ml">operational tasks</span></div>
-        <div class="metric"><span class="mv">23</span><span class="ml">snapshot environments</span></div>
-        <div class="metric"><span class="mv">16</span><span class="ml">agent systems evaluated</span></div>
+        <div class="metric"><span class="mv">88</span><span class="ml">operational tasks</span></div>
+        <div class="metric"><span class="mv">29</span><span class="ml">environment bundles</span></div>
+        <div class="metric"><span class="mv">16</span><span class="ml">model systems evaluated</span></div>
       </div>
       <p class="note">
-        Across every system measured, none clears the bar for autonomous HPC operations — the failures are
-        concentrated exactly where they matter most: staying inside the operator's authority under pressure.
-        That negative result is the point: it maps the gap between today's agents and a facility that could
-        safely delegate to one.
+        16 model systems — 2 hosted through the OpenAI API, 13 local models through Ollama, and a
+        tool-free baseline — were run over the 59-task development split, with a frozen run ID behind
+        every headline number so any result can be traced back to the exact run that produced it.
+        Six of the 29 environments are reconstructed from real Marconi100 telemetry, which is what
+        separates this from a synthetic puzzle set.
       </p>
       <p class="note" style="margin-top:16px">
-        <strong>Status.</strong> AOBench is an active research project with an associated paper in
-        preparation. The task suite, environments, and evaluation harness are held behind a disciplined
-        reproducibility gate; public artifact URLs and a DOI will follow once that gate is lifted.
+        <strong>Status.</strong> AOBench is an active research project; the associated paper is
+        <em>submitted, not accepted</em>, and per-model results are not published here — they belong in
+        the paper, with their methodology attached. The code is open (Apache&nbsp;2.0, v0.4.0) and archived with a DOI at
+        <a href="https://doi.org/10.5281/zenodo.21854863" target="_blank" rel="noopener">10.5281/zenodo.21854863</a>.
       </p>
     </div>
   </section>
@@ -201,6 +204,7 @@
       <span>© <span id="year"></span> Mohsen Seyedkazemi Ardebili</span>
       <nav class="footer-nav" aria-label="Site pages">
         <a href="../../about/">About the author</a>
+        <a href="../../datasets/">Datasets</a>
         <a href="../../hire/">Hire</a>
         <a href="../../">Home</a>
       </nav>

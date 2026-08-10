@@ -1,0 +1,301 @@
+{
+  "identity": {
+    "name": "Mohsen Seyedkazemi Ardebili",
+    "scholarId": "xP64pZsAAAAJ",
+    "orcid": "0000-0002-1166-6559",
+    "openalexId": "A5013086540",
+    "affiliation": "University of Bologna (DEI)",
+    "scholarUrl": "https://scholar.google.com/citations?user=xP64pZsAAAAJ"
+  },
+  "metrics": {
+    "citationsAll": 218,
+    "citationsSince2021": 193,
+    "hIndexAll": 8,
+    "hIndexSince2021": 7,
+    "i10All": 7,
+    "i10Since2021": 5,
+    "indexedWorks": 37,
+    "peerReviewedPublished": 17,
+    "underReviewOrInPreparation": 8,
+    "_note": "peerReviewedPublished = 6 journal + 11 conference entries with status Published/Accepted in cv.json. indexedWorks = distinct records on the Scholar profile, which also counts datasets, preprints and edited volumes."
+  },
+  "citationsByYear": {
+    "2007": 1,
+    "2008": 5,
+    "2009": 4,
+    "2010": 2,
+    "2011": 0,
+    "2012": 3,
+    "2013": 3,
+    "2014": 1,
+    "2015": 1,
+    "2016": 0,
+    "2017": 0,
+    "2018": 2,
+    "2019": 2,
+    "2020": 1,
+    "2021": 2,
+    "2022": 9,
+    "2023": 15,
+    "2024": 24,
+    "2025": 76,
+    "2026": 65,
+    "_note": "2026 is a partial year — 65 citations accrued by 2026-08-10, i.e. in roughly seven months. Always label it partial in public copy; never annualize it into a claim."
+  },
+  "publicationsByYear": {
+    "_legend": [
+      "journal",
+      "conference",
+      "datasetOrPreprint"
+    ],
+    "2007": [
+      1,
+      1,
+      1
+    ],
+    "2008": [
+      0,
+      1,
+      0
+    ],
+    "2012": [
+      0,
+      1,
+      0
+    ],
+    "2019": [
+      0,
+      1,
+      0
+    ],
+    "2021": [
+      0,
+      1,
+      0
+    ],
+    "2022": [
+      0,
+      2,
+      1
+    ],
+    "2023": [
+      1,
+      1,
+      3
+    ],
+    "2024": [
+      2,
+      0,
+      1
+    ],
+    "2025": [
+      0,
+      2,
+      1
+    ],
+    "2026": [
+      2,
+      1,
+      1
+    ],
+    "_note": "Derived from db/profile/cv.json publications (status Published/Accepted) plus the dataset and preprint records on the Scholar profile."
+  },
+  "topCited": [
+    {
+      "title": "M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer",
+      "venue": "Scientific Data (Nature Portfolio)",
+      "year": 2023,
+      "citations": 64,
+      "doi": "10.1038/s41597-023-02174-3",
+      "role": "co-author"
+    },
+    {
+      "title": "PM100: A Job Power Consumption Dataset of a Large-Scale Production HPC System",
+      "venue": "SC'23 Workshops (ACM)",
+      "year": 2023,
+      "citations": 33,
+      "doi": "10.1145/3624062.3624263",
+      "role": "second author",
+      "_merged": "28 on the proceedings record + 5 on a duplicate Scholar record for the same work"
+    },
+    {
+      "title": "GRAAFE: GRaph Anomaly Anticipation Framework for Exascale HPC Systems",
+      "venue": "Future Generation Computer Systems",
+      "year": 2024,
+      "citations": 23,
+      "doi": "10.1016/j.future.2024.06.032",
+      "role": "second author"
+    },
+    {
+      "title": "M100 dataset (Zenodo release series)",
+      "venue": "Zenodo",
+      "year": 2023,
+      "citations": 14,
+      "role": "co-author",
+      "_merged": "two Scholar records for the same dataset series, 7 + 7"
+    },
+    {
+      "title": "KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management",
+      "venue": "Journal of Grid Computing (preprint arXiv:2509.02449)",
+      "year": 2026,
+      "citations": 13,
+      "doi": "10.1007/s10723-026-09837-6",
+      "role": "first author",
+      "_merged": "10 on the arXiv record + 2 on a duplicate + 1 on the journal record"
+    },
+    {
+      "title": "A Genetically Tuned Optimal PID Controller",
+      "venue": "WSEAS Transactions on Systems and Control",
+      "year": 2007,
+      "citations": 12,
+      "role": "first author",
+      "_merged": "10 + 2 across two Scholar records"
+    },
+    {
+      "title": "Designing Optimal PID Controller with Genetic Algorithm in View of Controller Location in the Plant",
+      "venue": "WSEAS Int. Conf. on Signal Processing",
+      "year": 2008,
+      "citations": 11,
+      "role": "first author"
+    },
+    {
+      "title": "Thermal Characterization of a Tier-0 Datacenter Room in Normal and Thermal Emergency Conditions",
+      "venue": "HPCSE (Lecture Notes in Computer Science)",
+      "year": 2019,
+      "citations": 10,
+      "doi": "10.1007/978-3-030-67077-1_1",
+      "role": "first author"
+    },
+    {
+      "title": "Prediction of Thermal Hazards in a Real Datacenter Room Using Temporal Convolutional Networks",
+      "venue": "DATE — Design, Automation & Test in Europe",
+      "year": 2021,
+      "citations": 9,
+      "doi": "10.23919/date51398.2021.9474116",
+      "role": "first author"
+    },
+    {
+      "title": "Rule-Based Thermal Anomaly Detection for Tier-0 HPC Systems",
+      "venue": "ISC High Performance Workshops (Lecture Notes in Computer Science)",
+      "year": 2022,
+      "citations": 7,
+      "doi": "10.1007/978-3-031-23220-6_18",
+      "role": "first author",
+      "_merged": "6 + 1 across two Scholar records"
+    },
+    {
+      "title": "HazardNet: A Thermal Hazard Prediction Framework for Datacenters",
+      "venue": "Future Generation Computer Systems",
+      "year": 2024,
+      "citations": 5,
+      "doi": "10.1016/j.future.2024.01.031",
+      "role": "first author"
+    },
+    {
+      "title": "Multi-level Anomaly Prediction in Tier-0 Datacenter: A Deep Learning Approach",
+      "venue": "ACM International Conference on Computing Frontiers",
+      "year": 2022,
+      "citations": 3,
+      "doi": "10.1145/3528416.3530864",
+      "role": "first author"
+    },
+    {
+      "title": "Elevating Datacenter Resilience with ThermADNet: A Thermal Anomaly Detection System",
+      "venue": "Future Generation Computer Systems",
+      "year": 2026,
+      "citations": 1,
+      "doi": "10.1016/j.future.2025.108311",
+      "role": "first author"
+    }
+  ],
+  "openSource": {
+    "_note": "Public GitHub repos. commits = default-branch commit count; contributors = GitHub's contributor count, which includes the owner. Star and fork counts are deliberately not published on any public surface.",
+    "repos": [
+      {
+        "name": "kubeintellect",
+        "url": "https://github.com/MSKazemi/kubeintellect",
+        "contributors": 5,
+        "commits": 120,
+        "license": "AGPL-3.0",
+        "language": "Python",
+        "pypi": "kubeintellect",
+        "version": "2.2.0",
+        "releases": 7
+      },
+      {
+        "name": "yazses",
+        "url": "https://github.com/MSKazemi/yazses",
+        "contributors": 10,
+        "commits": 401,
+        "license": "Apache-2.0",
+        "language": "Python",
+        "pypi": "yazses",
+        "version": "2.17.0",
+        "releases": 23
+      },
+      {
+        "name": "novafabric",
+        "url": "https://github.com/MSKazemi/novafabric",
+        "contributors": 2,
+        "commits": 176,
+        "license": "Apache-2.0",
+        "language": "Python",
+        "pypi": "novafabric",
+        "version": "0.101.0",
+        "releases": 36
+      },
+      {
+        "name": "aobench",
+        "url": "https://github.com/MSKazemi/aobench",
+        "contributors": 2,
+        "commits": 35,
+        "license": "Apache-2.0",
+        "language": "Python",
+        "pypi": null,
+        "version": "0.4.0",
+        "releases": null
+      },
+      {
+        "name": "ExaMLOps",
+        "url": "https://github.com/MSKazemi/ExaMLOps",
+        "contributors": 1,
+        "commits": 25,
+        "license": null,
+        "language": "Python",
+        "pypi": null,
+        "version": null,
+        "releases": null,
+        "_note": "Public showcase of consortium work. Evidence of expertise only — never a product to pitch, license, host or sell."
+      }
+    ],
+    "totals": {
+      "flagshipRepos": 5,
+      "pypiPackages": 4,
+      "pypiReleases": 74,
+      "externalContributors": 12,
+      "_note": "pypiReleases sums kubeintellect 7 + yazses 23 + novafabric 36 + kube-q 8. commits sums the default-branch commit counts of the five flagship repos. externalContributors = distinct GitHub logins across those repos minus the owner and minus dependabot, counted from the contributors API on 2026-08-10 (13 distinct non-owner logins, one of which is a bot).",
+      "commits": 757
+    }
+  },
+  "_verifiedOn": "2026-08-10",
+  "_sources": {
+    "citations": "Google Scholar profile xP64pZsAAAAJ, read in Chrome 2026-08-10 (the API is bot-blocked; the histogram was read out of the DOM)",
+    "openalex": "https://api.openalex.org/authors/A5013086540 — cross-check, reports 107 citations / h-index 5 (OpenAlex indexes fewer venues than Scholar; the gap is expected)",
+    "dois": "api.crossref.org, queried 2026-08-10",
+    "repos": "gh api repos/MSKazemi/<name>, 2026-08-10",
+    "packages": "pypi.org/pypi/<name>/json, 2026-08-10"
+  },
+  "euHorizon": {
+    "projects": 6,
+    "led": 2,
+    "names": [
+      "DECICE",
+      "SEANERGYS",
+      "Graph-Massivizer",
+      "EUROPEAN PILOT",
+      "REGALE",
+      "EPI SGA1"
+    ],
+    "_note": "DECICE and SEANERGYS are the two Mohsen leads (UNIBO contribution lead / WP3 task lead)."
+  }
+}

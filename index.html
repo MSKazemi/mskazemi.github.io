@@ -9,6 +9,7 @@
   <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
   <meta name="keywords" content="Mohsen Seyedkazemi Ardebili, AIOps, MLOps, HPC, Kubernetes, LLM agents, KubeIntellect, anomaly detection, University of Bologna, autonomous infrastructure" />
   <link rel="canonical" href="https://mskazemi.com/" />
+  <link rel="alternate" type="text/markdown" href="https://mskazemi.com/index.md" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0A0E14" />
 
@@ -41,36 +42,198 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "dateModified": "2026-07-23T00:00:00+00:00",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Mohsen Seyedkazemi Ardebili",
-      "givenName": "Mohsen",
-      "familyName": "Seyedkazemi Ardebili",
-      "jobTitle": "Postdoctoral Research Fellow",
-      "description": "Builds autonomous AI systems for datacenter-scale infrastructure: LLM-orchestrated Kubernetes agents, anomaly detection on Tier-0 HPC clusters, and end-to-end MLOps.",
-      "url": "https://mskazemi.com/",
-      "image": "https://mskazemi.com/assets/mohsen-portrait.jpg",
-      "email": "mailto:mohsen.seyedkazemi@gmail.com",
-      "worksFor": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Bologna",
-        "url": "https://www.unibo.it/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mskazemi.com/#website",
+        "url": "https://mskazemi.com/",
+        "name": "Mohsen Seyedkazemi Ardebili",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://mskazemi.com/#person" },
+        "about": { "@id": "https://mskazemi.com/#person" }
       },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Bologna"
+      {
+        "@type": "ProfilePage",
+        "@id": "https://mskazemi.com/#profilepage",
+        "url": "https://mskazemi.com/",
+        "dateModified": "2026-08-10",
+        "isPartOf": { "@id": "https://mskazemi.com/#website" },
+        "mainEntity": { "@id": "https://mskazemi.com/#person" }
       },
-      "knowsAbout": ["Artificial Intelligence", "High-Performance Computing", "Kubernetes", "MLOps", "AIOps", "LLM Agents", "Anomaly Detection", "Cloud-Native Infrastructure"],
-      "sameAs": [
-        "https://github.com/MSKazemi",
-        "https://www.linkedin.com/in/mskazemi/",
-        "https://scholar.google.com/citations?user=xP64pZsAAAAJ",
-        "https://orcid.org/0000-0002-1166-6559",
-        "https://www.unibo.it/sitoweb/mohsen.seyedkazemi/en"
-      ]
-    }
+      {
+        "@type": "Person",
+        "@id": "https://mskazemi.com/#person",
+        "name": "Mohsen Seyedkazemi Ardebili",
+        "alternateName": ["Mohsen Seyedkazemi", "M. Seyedkazemi Ardebili", "MSKazemi"],
+        "givenName": "Mohsen",
+        "familyName": "Seyedkazemi Ardebili",
+        "jobTitle": "Research Fellow",
+        "description": "AI-infrastructure engineer and Research Fellow at the University of Bologna. Builds autonomous systems that operate infrastructure behind a human approval gate: AI SRE and AIOps agents for Kubernetes, MLOps for production machine learning, and anomaly prediction on Tier-0 supercomputers.",
+        "disambiguatingDescription": "Researcher and freelance engineer in AI infrastructure, MLOps and high-performance computing, based in Bologna, Italy. Not to be confused with other researchers sharing the Seyedkazemi surname.",
+        "url": "https://mskazemi.com/",
+        "mainEntityOfPage": "https://mskazemi.com/about/",
+        "image": "https://mskazemi.com/assets/mohsen-portrait.jpg",
+        "email": "mailto:mohsen.seyedkazemi@gmail.com",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "0000-0002-1166-6559",
+          "url": "https://orcid.org/0000-0002-1166-6559"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bologna",
+          "addressRegion": "Emilia-Romagna",
+          "addressCountry": "IT"
+        },
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Bologna",
+          "url": "https://www.unibo.it/"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Bologna",
+          "url": "https://www.unibo.it/"
+        },
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Research Fellow, high-performance computing and AI infrastructure",
+            "occupationLocation": { "@type": "City", "name": "Bologna" }
+          },
+          {
+            "@type": "Occupation",
+            "name": "Freelance AI infrastructure, MLOps and Kubernetes engineer",
+            "occupationLocation": { "@type": "Place", "name": "Remote — European Union" },
+            "estimatedSalary": {
+              "@type": "MonetaryAmountDistribution",
+              "name": "day rate",
+              "currency": "EUR",
+              "duration": "P1D",
+              "median": 650
+            }
+          }
+        ],
+        "seeks": {
+          "@type": "Demand",
+          "name": "Freelance and contract engagements in AI infrastructure, MLOps, Kubernetes reliability and production LLM agents",
+          "areaServed": { "@type": "Place", "name": "European Union" }
+        },
+        "knowsLanguage": [
+          { "@type": "Language", "name": "Persian" },
+          { "@type": "Language", "name": "Azerbaijani" },
+          { "@type": "Language", "name": "Turkish" },
+          { "@type": "Language", "name": "English" },
+          { "@type": "Language", "name": "Italian" }
+        ],
+        "knowsAbout": [
+          "AI SRE", "AIOps", "Site Reliability Engineering", "Kubernetes",
+          "Kubernetes root cause analysis", "MLOps", "Machine learning in production",
+          "LLM agents", "Human-in-the-loop AI", "Observability", "OpenTelemetry",
+          "High-Performance Computing", "Slurm", "Anomaly detection",
+          "Cloud-native infrastructure", "AI governance and audit trails"
+        ],
+        "sameAs": [
+          "https://mskazemi.com/about/",
+          "https://github.com/MSKazemi",
+          "https://gitlab.com/mskazemi",
+          "https://www.linkedin.com/in/mskazemi/",
+          "https://scholar.google.com/citations?user=xP64pZsAAAAJ",
+          "https://orcid.org/0000-0002-1166-6559",
+          "https://dblp.org/pid/282/6179",
+          "https://openalex.org/A5013086540",
+          "https://www.semanticscholar.org/author/2046824417",
+          "https://www.wikidata.org/wiki/Q140935575",
+          "https://www.unibo.it/sitoweb/mohsen.seyedkazemi/en",
+          "https://pypi.org/user/MSKazemi/",
+          "https://mastodon.social/@mskazemi",
+          "https://x.com/mohsenardebili"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured data: the open-source portfolio, so answer engines can enumerate
+       the projects instead of inferring them from prose. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Open-source projects by Mohsen Seyedkazemi Ardebili",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "KubeIntellect",
+          "description": "A human-governed AI SRE for Kubernetes: an LLM-orchestrated operator that investigates a live cluster with real tools, explains what it found, and executes remediation behind a human-approval gate. Peer-reviewed in the Journal of Grid Computing (2026).",
+          "codeRepository": "https://github.com/MSKazemi/kubeintellect",
+          "programmingLanguage": "Python",
+          "license": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+          "url": "https://kubeintellect.com",
+          "author": { "@id": "https://mskazemi.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "NovaFabric",
+          "description": "An open-source, self-hosted evidence fabric for AI systems: capture, seal, replay, diff and audit any agent or model run as a portable, signed evidence capsule. No SaaS, no telemetry.",
+          "codeRepository": "https://github.com/MSKazemi/novafabric",
+          "programmingLanguage": "Python",
+          "license": "https://spdx.org/licenses/Apache-2.0.html",
+          "url": "https://novafabric.ai",
+          "author": { "@id": "https://mskazemi.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "YazSes",
+          "description": "Free, open-source, offline-by-default voice dictation and speech-to-text for Linux, macOS and Windows. Hold a key, speak, release, and on-device faster-whisper types it into any app. Also transcribes recordings and captures meetings with speaker labels.",
+          "codeRepository": "https://github.com/MSKazemi/yazses",
+          "programmingLanguage": "Python",
+          "license": "https://spdx.org/licenses/Apache-2.0.html",
+          "url": "https://mskazemi.com/yazses/",
+          "author": { "@id": "https://mskazemi.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "AOBench",
+          "description": "A role-aware, permission-enforced benchmark for LLM agents that operate HPC systems: 88 tasks across 10 question categories and 5 operator roles, 29 deterministic environment snapshots (6 built from real Marconi100 ExaData telemetry), and 12 scorers aggregated into a CLEAR scorecard.",
+          "codeRepository": "https://github.com/MSKazemi/aobench",
+          "programmingLanguage": "Python",
+          "license": "https://spdx.org/licenses/Apache-2.0.html",
+          "url": "https://mskazemi.com/aobench/",
+          "author": { "@id": "https://mskazemi.com/#person" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "ExaMLOps",
+          "description": "An end-to-end MLOps platform for HPC workload management, built for the EuroHPC SEANERGYS project: Prefect training pipelines, Slurm job orchestration, an MLflow model registry, Ray Serve multi-model serving, Prometheus/Grafana/Loki observability, and a React and FastAPI dashboard.",
+          "codeRepository": "https://github.com/MSKazemi/ExaMLOps",
+          "programmingLanguage": "Python",
+          "author": { "@id": "https://mskazemi.com/#person" }
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -93,6 +256,7 @@
       </button>
       <nav class="nav-links" id="navLinks" aria-label="Primary">
         <a href="#profile">Profile</a>
+        <a href="#impact">Impact</a>
         <a href="#systems">Systems</a>
         <a href="#ships">Ships</a>
         <div class="nav-dd">
@@ -103,10 +267,11 @@
           <div class="nav-dd-menu" id="projMenu" role="menu">
             <a role="menuitem" href="projects/kubeintellect/">KubeIntellect</a>
             <a role="menuitem" href="projects/novafabric/">NovaFabric</a>
+            <a role="menuitem" href="projects/yazses/">YazSes</a>
             <a role="menuitem" href="projects/aobench/">AOBench</a>
           </div>
         </div>
-        <a href="#research">Research</a>
+        <a href="publications/">Publications</a>
         <a href="#stack">Stack</a>
         <a href="#packages">Hire</a>
         <a href="#contact" class="nav-cta">Get in touch</a>
@@ -158,7 +323,10 @@
           <span class="panel-state">live</span>
         </figcaption>
         <div class="loop-stage">
-          <svg class="loop-svg" viewBox="0 0 320 320" role="img" aria-hidden="true">
+          <!-- viewBox is padded to -12/344: the HUMAN node reaches x=-8 and the REASON
+                 node reaches x=324, so a 0..320 box clipped both of them. Kept square and
+                 still centred on (160,160). -->
+            <svg class="loop-svg" viewBox="-12 -12 344 344" role="img" aria-hidden="true">
             <defs>
               <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
                 <path d="M0 0 L10 5 L0 10 z" fill="var(--muted)"/>
@@ -228,8 +396,36 @@
     </div>
   </section>
 
+  <!-- IMPACT:START — generated by tools/build_charts.py, do not edit by hand -->
+  <section id="impact" class="panel-section alt">
+    <div class="container">
+      <p class="section-eyebrow">// impact &nbsp;—&nbsp; verified 2026-08-10</p>
+      <h2 class="section-title">The work is cited, and the citations are accelerating.</h2>
+      <p class="section-lead">
+        More citations arrived in the twenty months from January&nbsp;2025 than in the preceding
+        eighteen years combined. Every figure below is read from a primary source — Google&nbsp;Scholar,
+        Crossref, the GitHub API, PyPI — and kept in
+        <a href="data/metrics.json">a single JSON file</a> that generates this block. Nothing here is
+        typed by hand.
+      </p>
+
+      <div class="stat-row"><div class="stat"><span class="stat-v">218</span><span class="stat-k">citations</span><span class="stat-sub">193 of them since 2021</span></div><div class="stat"><span class="stat-v">8</span><span class="stat-k">h-index</span><span class="stat-sub">i10-index 7</span></div><div class="stat"><span class="stat-v">17</span><span class="stat-k">peer-reviewed papers</span><span class="stat-sub">8 more under review or in preparation</span></div><div class="stat"><span class="stat-v">76</span><span class="stat-k">citations in 2025</span><span class="stat-sub">up from 24 in 2024; 65 more by Aug 2026</span></div><div class="stat"><span class="stat-v">6</span><span class="stat-k">EU Horizon projects</span><span class="stat-sub">2 of them led</span></div><div class="stat"><span class="stat-v">74</span><span class="stat-k">package releases</span><span class="stat-sub">across 4 packages on PyPI</span></div><div class="stat"><span class="stat-v">757</span><span class="stat-k">commits</span><span class="stat-sub">across the five flagship repositories</span></div><div class="stat"><span class="stat-v">12</span><span class="stat-k">outside contributors</span><span class="stat-sub">have landed changes in the repos</span></div></div>
+
+      <p class="chart-source">
+        Sources: <a href="https://scholar.google.com/citations?user=xP64pZsAAAAJ" target="_blank" rel="noopener">Google&nbsp;Scholar</a>,
+        <a href="https://orcid.org/0000-0002-1166-6559" target="_blank" rel="noopener">ORCID</a>,
+        <a href="https://openalex.org/A5013086540" target="_blank" rel="noopener">OpenAlex</a>,
+        Crossref, the GitHub API and PyPI — all read on 2026-08-10.
+        The full publication list, with DOIs and BibTeX, is on the
+        <a href="publications/">publications page</a>; the open datasets behind the research are on the
+        <a href="datasets/">datasets page</a>.
+      </p>
+    </div>
+  </section>
+  <!-- IMPACT:END -->
+
   <!-- SYSTEMS -->
-  <section id="systems" class="panel-section">
+  <section id="systems" class="panel-section alt">
     <div class="container">
       <p class="section-eyebrow">// systems &nbsp;—&nbsp; research-grade work, in the open</p>
       <h2 class="section-title">Things that act, with the receipts.</h2>
@@ -243,7 +439,7 @@
             <span class="card-badge">flagship</span>
             <span class="card-links">
               <a href="projects/kubeintellect/">details →</a>
-              <a href="https://github.com/kubeintellect/kubeintellect" target="_blank" rel="noopener">code ↗</a>
+              <a href="https://github.com/MSKazemi/kubeintellect" target="_blank" rel="noopener">code ↗</a>
               <a href="https://arxiv.org/abs/2509.02449" target="_blank" rel="noopener">paper ↗</a>
               <a href="https://kubeintellect.com" target="_blank" rel="noopener">live ↗</a>
             </span>
@@ -255,7 +451,7 @@
                 operations</strong> — root-cause analysis, diagnosis, and human-gated cluster actions
                 across the full API surface (read, write, exec, delete, RBAC, lifecycle). A stateful
                 LangGraph supervisor coordinates domain agents; a Code-Generator agent synthesises and
-                validates new tools at runtime. Accepted to the <em>Journal of Grid Computing</em>.
+                validates new tools at runtime. Published in the <em>Journal of Grid Computing</em> (2026, 24(3):17).
               </p>
               <ul class="ticks">
                 <li>Stateful LangGraph supervisor + PostgreSQL checkpoints</li>
@@ -292,18 +488,44 @@
             </span>
           </div>
           <p class="card-desc">
-            Agent Operations Benchmark — the first trace-driven, role-aware, RBAC-enforced benchmark
-            for LLM agents in HPC facilities. Verdict: no system evaluated is deployment-ready for
-            autonomous operations.
+            Agent Operations Benchmark — a trace-driven, role-aware, RBAC-enforced benchmark for LLM
+            agents that operate HPC systems. It asks the blunt question: <em>can an autonomous agent
+            be trusted to run a supercomputer?</em> — and scores the answer against real operator
+            roles and hard policy constraints.
           </p>
           <div class="mini-readout">
-            <span><b>80</b> tasks</span><span><b>23</b> snapshots</span><span><b>16</b> systems</span>
+            <span><b>88</b> tasks</span><span><b>29</b> environments</span><span><b>16</b> systems</span>
           </div>
           <ul class="ticks">
-            <li>5 operator roles × 10 task categories × 3 difficulty tiers</li>
-            <li>Completion-under-Policy scorer hard-fails on any RBAC violation</li>
-            <li>CLEAR scorecard: Cost · Latency · Efficacy · Assurance · Reliability</li>
+            <li>88 tasks across 10 question categories × 5 operator roles</li>
+            <li>29 deterministic environment bundles — 23 synthetic, 6 built from real Marconi100 telemetry</li>
+            <li>Permission-enforced: a policy violation hard-fails the task, whatever the answer said</li>
+            <li>12 scorers over 6 dimensions, rolled into a CLEAR scorecard (Cost · Latency · Efficacy · Assurance · Reliability)</li>
+            <li>16 model systems evaluated on the 59-task dev split, every headline number tied to a frozen run ID</li>
           </ul>
+                    <figure class="flow-fig">
+            <svg class="flow" viewBox="0 0 480 116" role="img"
+                 aria-label="Diagram: tasks are run against a policy barrier. Work completed inside the operator's authority reaches the CLEAR scorecard; anything that breaches the operator's permissions is turned back and hard-fails, however correct the answer looked.">
+              <text class="fl-sub" x="50" y="90">10 CAT &#215; 5 ROLES</text>
+
+              <path class="fl-wire" d="M96,59 H214"/>
+              <path d="M214,20 V98" stroke="var(--amber)" stroke-width="2.2" stroke-dasharray="5 4" fill="none" stroke-linecap="round"/>
+              <text class="fl-sub" x="214" y="12" style="fill:var(--amber)">POLICY</text>
+              <g class="fl-x">
+                <path d="M207,52 L221,66 M221,52 L207,66" stroke="var(--red)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <text class="fl-sub" x="214" y="112" style="fill:var(--red)">HARD FAIL</text>
+              </g>
+              <path class="fl-wire" d="M214,59 H330"/>
+
+              <text class="fl-sub" x="403" y="90">C &#183; L &#183; E &#183; A &#183; R</text>
+
+              <circle class="fl-dot fl-travel" cx="100" cy="59" r="4.5" style="--fl-run:222px;animation-delay:0s"/><circle class="fl-dot fl-travel" cx="100" cy="59" r="4.5" style="--fl-run:222px;animation-delay:1.7s"/><circle class="fl-dot fl-travel" cx="100" cy="59" r="4.5" style="--fl-run:222px;animation-delay:3.4s"/>
+              <circle class="fl-dot-bad fl-blocked" cx="100" cy="59" r="4.5" style="--fl-run:110px;animation-delay:0.9s"/>
+              <g class="fl-node"><rect x="4" y="42" width="92" height="34" rx="9"/><text x="50" y="63">88 TASKS</text></g>
+              <g class="fl-node"><rect x="330" y="42" width="146" height="34" rx="9"/><text x="403" y="63">CLEAR SCORECARD</text></g>
+            </svg>
+            <figcaption class="flow-cap">a policy breach hard-fails the task</figcaption>
+          </figure>
           <div class="tags"><span>Python</span><span>LLM Eval</span><span>MCP</span><span>SLURM</span></div>
         </article>
 
@@ -320,11 +542,13 @@
             running in production on CINECA's Tier-0 Marconi100, published in <em>FGCS</em>.
           </p>
           <div class="mini-readout">
-            <span><b>0.91</b> AUC</span><span><b>49</b> racks</span><span><b>~1000</b> nodes</span>
+            <span><b>FGCS</b> 2024</span><span><b>23</b> citations</span><span><b>Tier-0</b> deployment</span>
           </div>
           <ul class="ticks">
-            <li>Rack-level Graph Convolutional Networks over live telemetry</li>
-            <li>Integrates ExaMon (IPMI, Ganglia, Nagios) at &lt;0.2% CPU overhead</li>
+            <li>Models the machine as a graph and predicts, per node, the probability of an anomaly in a future window</li>
+            <li>Benchmarked by AUC against per-node DNN, gradient-boosting, random-forest and decision-tree baselines</li>
+            <li>Trained offline, then served online as a Kubeflow pipeline reading live ExaMon telemetry over MQTT</li>
+            <li>The paper reports negligible added overhead versus running the monitoring system alone</li>
           </ul>
           <div class="tags"><span>Python</span><span>GCN</span><span>Prometheus</span><span>HPC</span></div>
         </article>
@@ -342,11 +566,13 @@
             failures fast enough to act, with explanations operators trust.
           </p>
           <div class="mini-readout">
-            <span><b>&lt;100</b> ms infer</span><span><b>0.99</b> F1</span><span><b>&lt;0.2</b>% CPU</span>
+            <span><b>3,312</b> nodes</span><span><b>6&nbsp;h</b> horizon</span><span><b>FGCS</b> 2024</span>
           </div>
           <ul class="ticks">
-            <li>Temporal Convolutional Network + LSTM ensemble</li>
-            <li>LIME / SHAP explainability for operator adoption</li>
+            <li>A year of inlet/outlet temperature and power telemetry from 3,312 nodes of CINECA's Marconi&nbsp;A2</li>
+            <li>Temporal Convolutional Network, LSTM and SVM models over a rolling time window</li>
+            <li>Six-hour prediction horizon — chosen with the facility manager, not with a grid search</li>
+            <li>Training data published openly on Zenodo so the result can be reproduced</li>
           </ul>
           <div class="tags"><span>Python</span><span>PyTorch</span><span>TCN</span><span>LSTM</span></div>
         </article>
@@ -355,18 +581,43 @@
         <article class="card">
           <div class="card-bar">
             <span class="card-name">ExaMLOps</span>
-            <span class="card-badge subtle">SEANERGYS · lead</span>
+            <span class="card-badge subtle">SEANERGYS · architect &amp; lead dev</span>
+            <span class="card-links">
+              <a href="https://github.com/MSKazemi/ExaMLOps" target="_blank" rel="noopener">code ↗</a>
+            </span>
           </div>
           <p class="card-desc">
-            An end-to-end MLOps platform for HPC workload management — a model zoo with auto-discovery
-            training, multi-stage lifecycle, and multi-model serving, all behind an operator approval gate.
+            An end-to-end MLOps platform for HPC workload management, built for the EuroHPC
+            <strong>SEANERGYS</strong> project and now running in production at LuxProvide on the
+            MeluXina supercomputer. Architect, lead designer and main developer; WP3 task lead at
+            Bologna. It is <strong>model-agnostic and multi-tenant</strong> — any of the sixteen
+            consortium partners registers a model and the platform auto-discovers and operationalises
+            it (train → version → govern → serve → monitor) without ever owning the model code.
+            The whole loop, on a real supercomputer, behind an operator approval gate.
           </p>
           <ul class="ticks">
-            <li>Prefect training · MLflow lifecycle · Ray Serve + MinIO serving</li>
-            <li>Observability: Prometheus, Grafana, Loki, Tempo</li>
-            <li>REST control plane, web dashboard, <code>exa</code> CLI, NL agent</li>
+            <li>Auto-discovery training pipelines in Prefect: every registered model × dataset pair runs train → evaluate → log → promote</li>
+            <li>Slurm adapter for HPC job orchestration; a DataPlane bridge carries messages off the machine</li>
+            <li>MLflow registry with a multi-stage lifecycle and a YAML model registry with per-environment overlays</li>
+            <li>Ray Serve multi-model serving with batched inference; MinIO for artifacts</li>
+            <li>A sysadmin approval gate stands between a promoted model and the serving fleet — nothing goes live unattended</li>
+            <li>Prometheus, Grafana and Loki for metrics and logs; React&nbsp;19 + FastAPI dashboard; <code>exa</code> operator CLI</li>
           </ul>
-          <div class="tags"><span>Prefect</span><span>MLflow</span><span>Ray Serve</span><span>Kubernetes</span></div>
+                    <figure class="flow-fig">
+            <svg class="flow" viewBox="0 0 480 116" role="img"
+                 aria-label="Diagram: any consortium partner registers a model; the platform trains it, versions it through the MLflow registry stages, holds it at a sysadmin approval gate, and only then promotes it to the Ray Serve fleet.">
+              <g class="fl-node"><rect x="2" y="18" width="46" height="17" rx="5"/><text x="25" y="30" style="font-size:7px">MODEL</text></g><path class="fl-wire" d="M48,26.5 H60 V59"/><g class="fl-node"><rect x="2" y="50" width="46" height="17" rx="5"/><text x="25" y="62" style="font-size:7px">MODEL</text></g><path class="fl-wire" d="M48,58.5 H60 V59"/><g class="fl-node"><rect x="2" y="82" width="46" height="17" rx="5"/><text x="25" y="94" style="font-size:7px">MODEL</text></g><path class="fl-wire" d="M48,90.5 H60 V59"/>
+              <path class="fl-wire" d="M146,59 H166"/><path class="fl-wire" d="M262,59 H282"/><path class="fl-wire" d="M370,59 H390"/>
+              <circle class="fl-dot fl-travel-hold" cx="105" cy="59" r="4.5" style="--fl-hold:221px;--fl-run:328px"/>
+              <g class="fl-node"><rect x="64" y="42" width="82" height="34" rx="9"/><text x="105" y="63">TRAIN</text></g><text class="fl-sub" x="105" y="90">prefect</text>
+              <g class="fl-node"><rect x="166" y="42" width="96" height="34" rx="9"/><text x="214" y="63">REGISTRY</text></g><text class="fl-sub" x="214" y="90">mlflow stages</text>
+              <g class="fl-node fl-gate"><rect x="282" y="42" width="88" height="34" rx="9"/><text x="326" y="63">APPROVE</text></g><text class="fl-sub" x="326" y="90">sysadmin gate</text>
+              <g class="fl-node"><rect x="390" y="42" width="86" height="34" rx="9"/><text x="433" y="63">SERVE</text></g><text class="fl-sub" x="433" y="90">ray serve</text>
+              <circle class="fl-pulse" cx="326" cy="34" r="3" fill="var(--amber)"/>
+            </svg>
+            <figcaption class="flow-cap">any partner's model &mdash; one governed path</figcaption>
+          </figure>
+          <div class="tags"><span>Python</span><span>Prefect</span><span>MLflow</span><span>Ray Serve</span><span>Slurm</span><span>MinIO</span><span>FastAPI</span><span>React 19</span><span>Kubernetes</span></div>
         </article>
 
         <!-- kube_q -->
@@ -393,7 +644,7 @@
   </section>
 
   <!-- SHIPS / NovaFabric -->
-  <section id="ships" class="panel-section alt">
+  <section id="ships" class="panel-section">
     <div class="container">
       <p class="section-eyebrow">// ships &nbsp;—&nbsp; products under <a href="https://github.com/NovaFabric" target="_blank" rel="noopener">NovaFabric</a></p>
       <h2 class="section-title">Research is half of it. I also ship.</h2>
@@ -403,10 +654,10 @@
         <article class="card card-wide">
           <div class="card-bar">
             <a class="card-name card-name-link" href="projects/novafabric/">NovaFabric</a>
-            <span class="card-badge">replay fabric</span>
+            <span class="card-badge">replay fabric · v0.101.0</span>
             <span class="card-links">
               <a href="projects/novafabric/">details →</a>
-              <a href="https://github.com/novafabric/novafabric" target="_blank" rel="noopener">code ↗</a>
+              <a href="https://github.com/MSKazemi/novafabric" target="_blank" rel="noopener">code ↗</a>
               <a href="https://novafabric.ai" target="_blank" rel="noopener">live ↗</a>
             </span>
           </div>
@@ -421,14 +672,31 @@
             <li>Cryptographic seal: DSSE signature + RFC 3161 timestamp + append-only Merkle log</li>
             <li>Structured run-to-run diff as a CI regression gate; signed evidence bundles verify without it installed</li>
             <li>Runs offline from a laptop to an HPC cluster — no cloud, no account</li>
+            <li>36 releases on PyPI · 176 commits · Apache-2.0 — experimental, and labelled as such</li>
           </ul>
+                    <figure class="flow-fig">
+            <svg class="flow" viewBox="0 0 480 94" role="img"
+                 aria-label="Diagram: the NovaFabric pipeline. A run is captured with no code changes, sealed with a signature and timestamp, replayed in one of four modes, diffed as a CI regression gate, and audited from a bundle that verifies without NovaFabric installed.">
+            <path class="fl-wire" d="M84,45 H102"/>
+            <path class="fl-wire" d="M182,45 H200"/>
+            <path class="fl-wire" d="M280,45 H298"/>
+            <path class="fl-wire" d="M378,45 H396"/>
+            <circle class="fl-dot fl-travel" cx="44" cy="45" r="4.5" style="--fl-run:392px"/>
+            <g class="fl-node"><rect x="4" y="28" width="80" height="34" rx="9"/><rect class="fl-hi" x="4" y="28" width="80" height="34" rx="9" style="animation-delay:0.00s"/><text x="44" y="49">CAPTURE</text></g><text class="fl-sub" x="44" y="80">no code changes</text>
+            <g class="fl-node"><rect x="102" y="28" width="80" height="34" rx="9"/><rect class="fl-hi" x="102" y="28" width="80" height="34" rx="9" style="animation-delay:1.25s"/><text x="142" y="49">SEAL</text></g><text class="fl-sub" x="142" y="80">signed</text>
+            <g class="fl-node"><rect x="200" y="28" width="80" height="34" rx="9"/><rect class="fl-hi" x="200" y="28" width="80" height="34" rx="9" style="animation-delay:2.50s"/><text x="240" y="49">REPLAY</text></g><text class="fl-sub" x="240" y="80">4 modes</text>
+            <g class="fl-node"><rect x="298" y="28" width="80" height="34" rx="9"/><rect class="fl-hi" x="298" y="28" width="80" height="34" rx="9" style="animation-delay:3.75s"/><text x="338" y="49">DIFF</text></g><text class="fl-sub" x="338" y="80">CI gate</text>
+            <g class="fl-node"><rect x="396" y="28" width="80" height="34" rx="9"/><rect class="fl-hi" x="396" y="28" width="80" height="34" rx="9" style="animation-delay:5.00s"/><text x="436" y="49">AUDIT</text></g><text class="fl-sub" x="436" y="80">standalone</text>
+            </svg>
+            <figcaption class="flow-cap">one run in &rarr; a signed capsule that still verifies years later</figcaption>
+          </figure>
           <div class="tags"><span>Python</span><span>Go</span><span>OpenTelemetry GenAI</span><span>Sigstore</span><span>OPA/Rego</span><span>Apache-2.0</span></div>
         </article>
 
         <article class="card">
           <div class="card-bar">
             <span class="card-name">YazSes <span class="aka">formerly NovaVoice</span></span>
-            <span class="card-badge subtle">shipping · v2.12.0</span>
+            <span class="card-badge subtle">shipping · v2.17.0</span>
             <span class="card-links">
               <a href="projects/yazses/">overview →</a>
               <a href="https://mskazemi.com/yazses/" target="_blank" rel="noopener">docs ↗</a>
@@ -445,7 +713,29 @@
             <li>Also transcribes recordings and captures whole meetings with speaker labels</li>
             <li>Editor/terminal voice commands; Neovim LSP context; accessibility-first design</li>
             <li>Linux · macOS · Windows — APT, Snap, pipx/PyPI</li>
+            <li>23 releases on PyPI · 401 commits · 10 contributors</li>
           </ul>
+                    <figure class="flow-fig">
+            <svg class="flow" viewBox="0 0 480 112" role="img"
+                 aria-label="Diagram: you hold a key and speak; the audio is turned into a waveform and transcribed into text entirely on your own machine. Nothing is sent to the cloud and no account is involved.">
+              <text class="fl-label" x="14" y="14">THIS MACHINE</text>
+              <rect class="fl-boundary" x="4" y="20" width="352" height="76" rx="12"/>
+
+              <rect x="32" y="40" width="14" height="24" rx="7" fill="none" stroke="var(--text)" stroke-width="1.6"/>
+              <path class="fl-muted" d="M26,60 a13,13 0 0 0 26,0"/>
+              <path class="fl-muted" d="M39,73 v6 M31,79 h16"/>
+
+              <rect class="fl-bar" x="72" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.00s"/><rect class="fl-bar" x="83" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.09s"/><rect class="fl-bar" x="94" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.18s"/><rect class="fl-bar" x="105" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.27s"/><rect class="fl-bar" x="116" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.36s"/><rect class="fl-bar" x="127" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.45s"/><rect class="fl-bar" x="138" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.54s"/><rect class="fl-bar" x="149" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.63s"/><rect class="fl-bar" x="160" y="38" width="6" height="40" rx="3" fill="var(--mint)" style="animation-delay:0.72s"/>
+
+              <path class="fl-wire" d="M180,58 H198"/>
+              <rect class="fl-line" x="206" y="46" width="118" height="5" rx="2.5" fill="var(--muted-2)" style="animation-delay:0.2s"/><rect class="fl-line" x="206" y="56" width="136" height="5" rx="2.5" fill="var(--muted-2)" style="animation-delay:0.5s"/><rect class="fl-line" x="206" y="66" width="96" height="5" rx="2.5" fill="var(--muted-2)" style="animation-delay:0.8s"/>
+
+              <path class="fl-muted" d="M406,64 h34 a11,11 0 0 0 1,-21 a14,14 0 0 0 -26,-6 a10,10 0 0 0 -12,11 a9,9 0 0 0 3,16 z"/>
+              <path class="fl-red" d="M398,72 L456,32" stroke-linecap="round"/>
+              <text class="fl-sub" x="427" y="90">NO CLOUD</text>
+            </svg>
+            <figcaption class="flow-cap">hold &rarr; speak &rarr; release &mdash; the audio never leaves the machine</figcaption>
+          </figure>
           <div class="tags"><span>Python</span><span>faster-whisper</span><span>llama.cpp</span><span>Apache-2.0</span></div>
         </article>
 
@@ -475,13 +765,15 @@
   </section>
 
   <!-- RESEARCH -->
-  <section id="research" class="panel-section">
+  <section id="research" class="panel-section alt">
     <div class="container">
       <p class="section-eyebrow">// research</p>
       <div class="research-head">
         <h2 class="section-title">Peer-reviewed, in real venues.</h2>
         <div class="scholar-readout">
-          <div><span class="sv">23+</span><span class="sl">publications</span></div>
+          <div><span class="sv">17</span><span class="sl">peer-reviewed</span></div>
+          <div><span class="sv">218</span><span class="sl">citations</span></div>
+          <div><span class="sv">8</span><span class="sl">h-index</span></div>
           <a href="https://scholar.google.com/citations?user=xP64pZsAAAAJ" target="_blank" rel="noopener" class="btn-ghost sm">Google Scholar ↗</a>
           <a href="https://orcid.org/0000-0002-1166-6559" target="_blank" rel="noopener" class="btn-ghost sm">ORCID ↗</a>
         </div>
@@ -499,30 +791,33 @@
 
       <ol class="pub-list">
         <li class="pub">
-          <span class="pub-venue">Journal of Grid Computing · 2026 <em>accepted</em></span>
-          <a href="https://arxiv.org/abs/2509.02449" target="_blank" rel="noopener">KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management</a>
+          <span class="pub-venue">Journal of Grid Computing · 2026 · 13 citations</span>
+          <a href="https://doi.org/10.1007/s10723-026-09837-6" target="_blank" rel="noopener">KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management</a>
         </li>
         <li class="pub">
-          <span class="pub-venue">Nature Scientific Data · 2023</span>
-          <a href="https://www.nature.com/articles/s41597-023-02174-3" target="_blank" rel="noopener">M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer</a>
+          <span class="pub-venue">Scientific Data (Nature Portfolio) · 2023 · 64 citations</span>
+          <a href="https://doi.org/10.1038/s41597-023-02174-3" target="_blank" rel="noopener">M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer</a>
         </li>
         <li class="pub">
-          <span class="pub-venue">SC'23 Workshops · 2023</span>
-          <span class="pub-title">PM100: A Job Power Consumption Dataset of a Large-Scale Production HPC System</span>
+          <span class="pub-venue">SC'23 Workshops (ACM) · 2023 · 33 citations</span>
+          <a href="https://doi.org/10.1145/3624062.3624263" target="_blank" rel="noopener">PM100: A Job Power Consumption Dataset of a Large-Scale Production HPC System</a>
         </li>
         <li class="pub">
-          <span class="pub-venue">Future Generation Computer Systems · 2024</span>
-          <a href="https://github.com/MSKazemi/GRAAFE" target="_blank" rel="noopener">GRAAFE: Graph Anomaly Anticipation Framework for Exascale HPC Systems</a>
+          <span class="pub-venue">Future Generation Computer Systems · 2024 · 23 citations</span>
+          <a href="https://doi.org/10.1016/j.future.2024.06.032" target="_blank" rel="noopener">GRAAFE: GRaph Anomaly Anticipation Framework for Exascale HPC Systems</a>
         </li>
         <li class="pub">
-          <span class="pub-venue">Future Generation Computer Systems · 2024</span>
-          <span class="pub-title">HazardNet: Thermal Hazard Prediction Framework for Datacenters</span>
+          <span class="pub-venue">Future Generation Computer Systems · 2026 · first author</span>
+          <a href="https://doi.org/10.1016/j.future.2025.108311" target="_blank" rel="noopener">Elevating Datacenter Resilience with ThermADNet: A Thermal Anomaly Detection System</a>
         </li>
         <li class="pub">
-          <span class="pub-venue">ACM Computing Frontiers · 2022</span>
-          <span class="pub-title">Multi-level Anomaly Prediction in Tier-0 Datacenter</span>
+          <span class="pub-venue">DATE · 2021 · 9 citations</span>
+          <a href="https://doi.org/10.23919/date51398.2021.9474116" target="_blank" rel="noopener">Prediction of Thermal Hazards in a Real Datacenter Room Using Temporal Convolutional Networks</a>
         </li>
       </ol>
+      <p class="pub-more">
+        <a href="publications/" class="btn-ghost sm">All 17 publications, with DOIs and BibTeX &rarr;</a>
+      </p>
 
       <div class="service">
         <div class="svc">
@@ -542,7 +837,7 @@
   </section>
 
   <!-- STACK -->
-  <section id="stack" class="panel-section alt">
+  <section id="stack" class="panel-section">
     <div class="container">
       <p class="section-eyebrow">// stack</p>
       <h2 class="section-title">The toolchain behind the work.</h2>
@@ -593,7 +888,7 @@
   </section>
 
   <!-- PACKAGES / HIRE -->
-  <section id="packages" class="panel-section">
+  <section id="packages" class="panel-section alt">
     <div class="container">
       <p class="section-eyebrow">// hire me</p>
       <h2 class="section-title">Freelance engagements — infrastructure you can trust.</h2>
@@ -625,6 +920,8 @@
         </div>
       </div>
       <p class="contact-lead" style="margin-top:1.5rem">
+        Full details, how an engagement runs, and the questions people usually ask →
+        <a href="hire/"><strong>mskazemi.com/hire</strong></a>.
         Free 30-minute scoping call → <a href="mailto:mohsen.seyedkazemi@gmail.com?subject=Freelance%20enquiry">mohsen.seyedkazemi@gmail.com</a>.
       </p>
     </div>
@@ -673,9 +970,13 @@
   <footer>
     <div class="container footer-inner">
       <span>© <span id="year"></span> Mohsen Seyedkazemi Ardebili</span>
-      <nav class="footer-nav" aria-label="Project pages">
+      <nav class="footer-nav" aria-label="Site pages">
+        <a href="about/">About</a>
+        <a href="datasets/">Datasets</a>
+        <a href="hire/">Hire</a>
         <a href="projects/kubeintellect/">KubeIntellect</a>
         <a href="projects/novafabric/">NovaFabric</a>
+        <a href="projects/yazses/">YazSes</a>
         <a href="projects/aobench/">AOBench</a>
       </nav>
       <span class="foot-meta">Research Fellow · University of Bologna · Bologna, Italy</span>

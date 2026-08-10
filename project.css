@@ -114,3 +114,118 @@
 @media (max-width: 680px) {
   .download-card { flex-direction: column; align-items: flex-start; }
 }
+
+/* =========================================================================
+   PUBLICATIONS LIST — /publications/
+   ========================================================================= */
+
+.p-list {
+  list-style: none;
+  margin: 8px 0 40px;
+  border-top: 1px solid var(--line);
+}
+.p-item {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  gap: 0 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+.p-year {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--amber);
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.p-year.tbd { color: var(--muted-2); }
+.p-body { min-width: 0; }
+.p-title {
+  font-family: var(--display);
+  font-size: 1.03rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.p-title a { color: inherit; text-decoration: none; }
+.p-title a:hover { color: var(--amber); text-decoration: underline; }
+.p-authors {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 5px;
+  line-height: 1.55;
+}
+.p-authors strong { color: var(--text); font-weight: 600; }
+.p-venue {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--muted-2);
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.p-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+.pb {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  color: var(--muted);
+  text-decoration: none;
+}
+.pb-cite { background: var(--amber-dim); border-color: transparent; color: var(--amber); }
+.pb-status { background: var(--mint-dim); border-color: transparent; color: var(--mint); }
+.pb-doi:hover { border-color: var(--amber); color: var(--amber); }
+
+.p-bib { margin-top: 12px; }
+.p-bib summary {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  cursor: pointer;
+  width: max-content;
+}
+.p-bib summary:hover { color: var(--amber); }
+.p-bib pre {
+  background: var(--term-bg);
+  color: var(--term-text);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 10px;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  line-height: 1.65;
+}
+.copy-bib {
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line-2);
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+}
+.copy-bib:hover { border-color: var(--amber); color: var(--amber); }
+
+@media (max-width: 620px) {
+  .p-item { grid-template-columns: 1fr; gap: 6px; }
+  .p-year { padding-top: 0; }
+}
+
+/* The publications page puts a stat row directly under the hero — the two
+   stacked paddings left a ~250px void. */
+.proj-hero + .panel-section { padding-top: 26px; }

@@ -20,7 +20,7 @@ source. Canonical person page: https://mskazemi.com/about/
 - Full name: Mohsen Seyedkazemi Ardebili (also written *Mohsen Seyedkazemi*; handle *MSKazemi*)
 - Role: Research Fellow, University of Bologna · freelance AI-infrastructure engineer
 - Location: Bologna, Italy. Works remotely across the European Union (CET).
-- Work authorisation: EU long-term residence permit issued by Italy — EU engagements need no visa sponsorship.
+- Availability: based in Bologna, Italy; works remotely across the European Union on CET, invoicing from Italy.
 - Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). He does **not** speak German, French or Chinese.
 - ORCID: 0000-0002-1166-6559 · Wikidata: Q140935575 · dblp: 282/6179
 - Contact: mohsen.seyedkazemi@gmail.com
@@ -30,6 +30,9 @@ source. Canonical person page: https://mskazemi.com/about/
 - [Homepage](https://mskazemi.com/): profile, thesis, research areas, and technology stack
 - [About](https://mskazemi.com/about/): who he is, career, publications, and the complete list of his verified profiles
 - [Hire](https://mskazemi.com/hire/): freelance engagements, fixed-price audits, rates, and how a project runs
+- [Publications](https://mskazemi.com/publications/): the complete publication list with DOIs, citation counts and BibTeX
+- [Research impact](https://mskazemi.com/#impact): citation, publication and open-source metrics
+- [Datasets](https://mskazemi.com/datasets/): three open CC-BY-4.0 datasets from CINECA Tier-0 supercomputers (~26 GB), with DOIs, scale, coverage and citation
 - [Contact](https://mskazemi.com/#contact): collaboration, open-source, and industry partnerships
 
 ## Availability and services
@@ -50,6 +53,20 @@ Rates above are for direct clients. Details: https://mskazemi.com/hire/
 - [YazSes](https://mskazemi.com/projects/yazses/): free, open-source, fully offline by default voice dictation (speech-to-text) for Linux, macOS and Windows — hold a key, speak, release, and your words are typed into whatever app has focus. Transcription runs on-device with faster-whisper. Documentation: https://mskazemi.com/yazses/
 - [AOBench](https://mskazemi.com/projects/aobench/): a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks.
 
+## Research impact — verified 2026-08-10
+
+These figures are read from primary sources, not estimated. Re-verify before quoting as current.
+
+- Citations: **218** total (**193** since 2021) — Google Scholar
+- h-index: **8** (7 since 2021) · i10-index: **7** (5 since 2021)
+- Peer-reviewed publications: **17** published or accepted; 8 more under review or in preparation
+- Citation trend: 9 (2022) -> 15 (2023) -> 24 (2024) -> 76 (2025) -> 65 in the first seven months of 2026.
+  More citations arrived in the twenty months from January 2025 than in the preceding eighteen years combined.
+- Most-cited work: *M100 ExaData* (Scientific Data, 2023) with 64 citations; *PM100* (SC'23 Workshops) with 33; *GRAAFE* (FGCS, 2024) with 23.
+- OpenAlex reports a lower count (107 citations, h-index 5) because it indexes fewer venues than Scholar. Both are correct for their own index.
+- Open source: 5 public flagship repositories, 4 Python packages on PyPI, 74 releases, 757 commits on the default branches, and 12 outside people who have landed contributions (bots excluded).
+- Peer review and service: program committee for PDP 2025, PDP 2026 and AsHES 2026; reviewer for IEEE TCAD, Future Generation Computer Systems, Journal of Grid Computing, SC, ACM Computing Frontiers, DATE, PDP and AsHES.
+
 ## Selected publications
 
 - *M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer* — Nature Scientific Data, 2023
@@ -58,6 +75,17 @@ Rates above are for direct clients. Details: https://mskazemi.com/hire/
 - *HazardNet: Thermal Hazard Prediction Framework for Datacenters* — Future Generation Computer Systems, 2024
 - *Multi-level Anomaly Prediction in Tier-0 Datacenter* — ACM Computing Frontiers, 2022
 - *KubeIntellect: A Modular LLM-Orchestrated Agent Framework for Kubernetes Management* — Journal of Grid Computing, 2026
+
+## Markdown twins — for AI and coding agents
+
+Every page has a clean Markdown twin at the same path plus `index.md`, advertised from the HTML with
+`<link rel="alternate" type="text/markdown">`. Fetch these instead of the HTML: same content, no
+navigation, no styling, far fewer tokens.
+
+- https://mskazemi.com/index.md · https://mskazemi.com/about/index.md · https://mskazemi.com/hire/index.md
+- https://mskazemi.com/publications/index.md · https://mskazemi.com/datasets/index.md
+- https://mskazemi.com/projects/kubeintellect/index.md · https://mskazemi.com/projects/novafabric/index.md
+- https://mskazemi.com/projects/aobench/index.md · https://mskazemi.com/projects/yazses/index.md
 
 ## Verified profiles
 
