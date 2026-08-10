@@ -57,8 +57,12 @@ Allow: /
 # via semantic HTML, ARIA labels, and structured data, not here.
 
 # mskazemi.github.io 301-redirects here, so the sitemaps are declared on the
-# canonical host. The yazses docs are a separate MkDocs site under /yazses/;
-# crawlers only read robots.txt at the domain root, so its sitemap must be
-# declared here or its ~82 URLs are never discovered by crawling.
+# canonical host. The yazses docs are a separate MkDocs site under /yazses/, and
+# the AOBench docs are another under /aobench/; crawlers only read robots.txt at
+# the domain root, and the root sitemap below is a flat <urlset> rather than a
+# <sitemapindex>, so it cannot reference them either. Each sub-site's sitemap
+# must be declared here or its URLs are never discovered by crawling — ~82 for
+# yazses, 50 for aobench.
 Sitemap: https://mskazemi.com/sitemap.xml
 Sitemap: https://mskazemi.com/yazses/sitemap.xml
+Sitemap: https://mskazemi.com/aobench/sitemap.xml
