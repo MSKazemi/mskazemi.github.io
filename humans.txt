@@ -1,0 +1,36 @@
+/* TEAM */
+
+  Name:      Mohsen Seyedkazemi Ardebili
+  Role:      AI infrastructure engineer · Research Fellow, University of Bologna
+  Works on:  AI SRE and AIOps for Kubernetes, MLOps for production machine learning,
+             anomaly prediction on Tier-0 supercomputers, and LLM agents that act on
+             real systems behind a human approval gate.
+  From:      Bologna, Italy — remote across the EU
+  Site:      https://mskazemi.com/
+  About:     https://mskazemi.com/about/
+  Hire:      https://mskazemi.com/hire/
+  Contact:   mohsen.seyedkazemi [at] gmail.com
+  GitHub:    @MSKazemi
+  Mastodon:  @mskazemi@mastodon.social
+  ORCID:     0000-0002-1166-6559
+  Scholar:   https://scholar.google.com/citations?user=xP64pZsAAAAJ
+  Languages: Persian, Azerbaijani, Turkish (native) · English (professional) · Italian (A2)
+
+/* THANKS */
+
+  The open-source contributors who have sent patches to YazSes, KubeIntellect,
+  NovaFabric and AOBench — people I have never met who made the work better anyway.
+
+  CINECA, for the Tier-0 systems and the operational data that made the HPC research
+  possible. The EuroHPC-JU projects this work has run through: DECICE,
+  Graph-Massivizer, EUROPEAN PILOT, REGALE, EPI SGA1 and SEANERGYS.
+
+/* SITE */
+
+  Standards:  HTML5, CSS3, progressive enhancement, prefers-color-scheme
+  Components: None. No framework, no build step, no tracker, no cookie banner —
+              because there are no cookies and nothing is being tracked.
+  Software:   Written in a text editor and deployed as static files.
+  Language:   English
+  Doctype:    HTML5
+  Updated:    2026-08-10
