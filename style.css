@@ -270,7 +270,38 @@ a:hover { color: var(--amber-2); }
   letter-spacing: -0.035em;
   margin-bottom: 18px;
 }
+/* The surname sits on its own line visually. This used to be a <br/>, but text
+   extraction concatenates across <br/> with no separator, so the H1 read as
+   "Mohsen SeyedkazemiArdebili" to anything using textContent — crawlers, LLM
+   ingestion, screen readers. A block-level span breaks the line identically
+   while keeping a real space in the text. */
+.hero h1 .h1-wrap { display: block; }
 .amber { color: var(--amber); }
+
+/* FAQ — question-shaped headings, answer in the first sentence. The visible
+   copy is the point: answer engines lift the text, not the JSON-LD. */
+.faq-list {
+  display: grid;
+  gap: 26px;
+  margin-top: 34px;
+  max-width: 62rem;
+}
+.faq-item h3 {
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+.faq-item p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+@media (min-width: 860px) {
+  .faq-list { grid-template-columns: 1fr 1fr; gap: 30px 44px; }
+  .faq-item:first-child { grid-column: 1 / -1; }
+}
 .hero-thesis {
   font-family: var(--display);
   font-size: clamp(1.3rem, 2.5vw, 1.95rem);

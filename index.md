@@ -1,6 +1,6 @@
 # Mohsen Seyedkazemi Ardebili — Autonomous AI for Infrastructure
 
-> Mohsen Seyedkazemi Ardebili builds autonomous AI systems that act on infrastructure — LLM-orchestrated Kubernetes agents, anomaly detection on Tier-0 HPC clusters, and end-to-end MLOps. Research Fellow, University of Bologna.
+> I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Freelance across the EU.
 
 Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -42,7 +42,9 @@ Sources: [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ
 
 // systems — research-grade work, in the open
 
-## Things that act, with the receipts.
+## AI SRE and AIOps systems for Kubernetes and HPC.
+
+Things that act, with the receipts — each one runs against a real cluster, and each one stops for a human before it changes anything.
 
 A modular, LLM-orchestrated multi-agent framework for **end-to-end Kubernetes operations** — root-cause analysis, diagnosis, and human-gated cluster actions across the full API surface (read, write, exec, delete, RBAC, lifecycle). A stateful LangGraph supervisor coordinates domain agents; a Code-Generator agent synthesises and validates new tools at runtime. Published in the _Journal of Grid Computing_ (2026, 24(3):17).
 
@@ -155,9 +157,9 @@ A meta-framework for taking a vague idea to production without losing context, e
 
 - `v2p` CLI + FastAPI/HTMX governance portal
 
-// research
+// research — Google Scholar, read 2026-08-10
 
-## Peer-reviewed, in real venues.
+## Peer-reviewed research in HPC, MLOps and AI operations.
 
 - Journal of Grid Computing · 2026 · 13 citations [KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management](https://doi.org/10.1007/s10723-026-09837-6)
 
@@ -203,9 +205,9 @@ IEEE TCAD · FGCS · J. Grid Computing · SC · ACM CF · DATE · PDP · AsHES
 
 // hire me
 
-## Freelance engagements — infrastructure you can trust.
+## Hire a freelance AI infrastructure, MLOps and Kubernetes engineer.
 
-Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Remote, EU. I build systems your team can maintain after I'm gone — not black boxes.
+Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Remote across the EU, on CET. I build systems your team can maintain after I'm gone — not black boxes.
 
 ### Kubernetes reliability & AIOps
 
@@ -220,6 +222,30 @@ Get models out of the notebook: registry, serving, drift detection, governed ret
 Agents that act on real systems — tool-use, human-in-the-loop safety, tracing, and an audit trail you can defend.
 
 Full details, how an engagement runs, and the questions people usually ask → [**mskazemi.com/hire**](https://mskazemi.com/hire/). Free 30-minute scoping call → [mohsen.seyedkazemi@gmail.com](mailto:mohsen.seyedkazemi@gmail.com?subject=Freelance%20enquiry).
+
+// questions
+
+## Questions people ask.
+
+### Who is Mohsen Seyedkazemi Ardebili?
+
+Mohsen Seyedkazemi Ardebili is an AI infrastructure engineer and a Research Fellow at the University of Bologna. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects.
+
+### What is an AI SRE, and how is it different from a chatbot for Kubernetes?
+
+An AI SRE investigates and **acts** on a live cluster, where a chatbot only explains. It gathers its own evidence from real tools — kubectl, Prometheus, Loki — reasons about what is actually failing, and then executes the fix. The difference that matters in production is the approval gate: a human authorises the change, and the whole chain is left as an audit trail.
+
+### Is Mohsen available for freelance or contract work?
+
+Yes — remote across the EU, on CET. Engagements run in three areas: Kubernetes reliability and AIOps, MLOps and machine learning in production, and production LLM agents. Each one can start with a fixed-price audit, so you can see the work before committing to a project. Details are on the [hire page](https://mskazemi.com/hire/).
+
+### What kind of infrastructure problems does he work on?
+
+Kubernetes incident root-cause analysis, observability and hardening; model registries, serving, drift detection and governed retraining; and the safety layer around LLM agents — tool boundaries, scoped RBAC, human-in-the-loop gates, tracing and audit trails. The research half is anomaly detection and prediction on Tier-0 HPC clusters.
+
+### What is the background behind the research?
+
+Seven years as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW — an environment with no staging and no undo — followed by a PhD in high-performance computing at the University of Bologna. Operations first, research second, which is why the systems ask before they act.
 
 // contact
 

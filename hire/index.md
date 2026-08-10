@@ -1,6 +1,6 @@
 # Hire a Freelance AI SRE, MLOps &amp; Kubernetes Engineer (Remote, EU) — Mohsen Seyedkazemi Ardebili
 
-> Freelance AI infrastructure consultant available remotely across the EU: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents. Fixed-price audits from €150, project work at a senior day rate.
+> Freelance AI infrastructure consultant, remote across the EU: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
 
 Source: <https://mskazemi.com/hire/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

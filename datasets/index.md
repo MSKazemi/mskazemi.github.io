@@ -1,6 +1,6 @@
 # Open HPC datasets — Marconi100 telemetry, job power, thermal hazards
 
-> Three open, CC-BY-4.0 datasets from CINECA's Marconi100 and Marconi A2 Tier-0 supercomputers: 24.8 GB of node telemetry for anomaly detection, 287 MB of per-job power consumption, and 1 GB of thermal-hazard sensor data from 3,312 nodes. Co-authored by Mohsen Seyedkazemi Ardebili. DOIs, scale, licence and citation for each.
+> Three open CC-BY-4.0 datasets from CINECA's Tier-0 supercomputers: node telemetry for anomaly detection, per-job power, and thermal-hazard data.
 
 Source: <https://mskazemi.com/datasets/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

@@ -1,6 +1,6 @@
 # NovaFabric — Replayable AI Infrastructure · Mohsen Seyedkazemi Ardebili
 
-> NovaFabric is an open-source, self-hosted toolkit that turns any AI agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes. By Mohsen Seyedkazemi Ardebili.
+> NovaFabric turns any AI agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes. Open-source, self-hosted.
 
 Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

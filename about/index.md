@@ -1,6 +1,6 @@
 # About Mohsen Seyedkazemi Ardebili — AI Infrastructure &amp; MLOps Engineer, Bologna
 
-> Who is Mohsen Seyedkazemi Ardebili? A Research Fellow at the University of Bologna and AI-infrastructure engineer working on AI SRE, AIOps, MLOps and HPC — seven years running a 1,000 MW power plant's IT before a PhD in high-performance computing.
+> Mohsen Seyedkazemi Ardebili, Research Fellow at the University of Bologna: AI SRE, AIOps, MLOps and HPC, after seven years running a 1,000 MW plant's IT.
 
 Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

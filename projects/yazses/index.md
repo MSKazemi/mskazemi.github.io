@@ -1,6 +1,6 @@
 # YazSes — free offline voice dictation & speech to text for Linux, macOS, Windows
 
-> YazSes is free, open-source dictation software that lets you use your voice to dictate into any app. Speech to text runs entirely on your own machine with faster-whisper — no cloud, no account, no subscription. Linux (X11 & Wayland), macOS and Windows.
+> YazSes is free, open-source voice dictation for Linux, macOS and Windows. Speech-to-text runs on your own machine — no cloud, no account, no subscription.
 
 Source: <https://mskazemi.com/projects/yazses/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

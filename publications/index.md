@@ -1,6 +1,6 @@
 # Publications — Mohsen Seyedkazemi Ardebili
 
-> Complete publication list for Mohsen Seyedkazemi Ardebili: 17 peer-reviewed papers on HPC anomaly detection, LLM agents for Kubernetes, MLOps and datacenter telemetry, with 218 citations and an h-index of 8. Includes DOIs and BibTeX.
+> Peer-reviewed publications by Mohsen Seyedkazemi Ardebili on HPC anomaly detection, LLM agents for Kubernetes and MLOps — with DOIs and BibTeX.
 
 Source: <https://mskazemi.com/publications/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

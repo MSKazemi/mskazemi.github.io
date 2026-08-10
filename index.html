@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
   <title>Mohsen Seyedkazemi Ardebili — Autonomous AI for Infrastructure</title>
-  <meta name="description" content="Mohsen Seyedkazemi Ardebili builds autonomous AI systems that act on infrastructure — LLM-orchestrated Kubernetes agents, anomaly detection on Tier-0 HPC clusters, and end-to-end MLOps. Research Fellow, University of Bologna." />
+  <meta name="description" content="I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Freelance across the EU." />
   <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
   <meta name="keywords" content="Mohsen Seyedkazemi Ardebili, AIOps, MLOps, HPC, Kubernetes, LLM agents, KubeIntellect, anomaly detection, University of Bologna, autonomous infrastructure" />
   <link rel="canonical" href="https://mskazemi.com/" />
@@ -33,9 +33,9 @@
   <!-- Favicon: control-loop mark -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0E14'/%3E%3Cpath d='M9 16a7 7 0 1 1 2.05 4.95' fill='none' stroke='%23F2A93B' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='16' r='2.4' fill='%233FD79A'/%3E%3C/svg%3E" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/assets/fonts/space-grotesk-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/fonts/fonts.css" />
   <link rel="stylesheet" href="style.css" />
 
   <!-- Structured data: ProfilePage wrapping Person (SEO / AI answer engines) -->
@@ -56,7 +56,7 @@
         "@type": "ProfilePage",
         "@id": "https://mskazemi.com/#profilepage",
         "url": "https://mskazemi.com/",
-        "dateModified": "2026-08-10",
+        "dateModified": "2026-08-11",
         "isPartOf": { "@id": "https://mskazemi.com/#website" },
         "mainEntity": { "@id": "https://mskazemi.com/#person" }
       },
@@ -290,7 +290,7 @@
     <div class="container hero-grid">
       <div class="hero-copy">
         <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>Research Fellow · University of Bologna</p>
-        <h1>Mohsen Seyedkazemi<br/>Ardebili</h1>
+        <h1><span class="h1-wrap">Mohsen Seyedkazemi</span> <span class="h1-wrap">Ardebili</span></h1>
         <p class="hero-thesis">I build autonomous AI that <span class="amber">acts</span> on infrastructure<span class="amber">.</span></p>
         <p class="lede">
           Not a chatbot that explains your cluster — systems that observe it, reason about
@@ -428,7 +428,9 @@
   <section id="systems" class="panel-section alt">
     <div class="container">
       <p class="section-eyebrow">// systems &nbsp;—&nbsp; research-grade work, in the open</p>
-      <h2 class="section-title">Things that act, with the receipts.</h2>
+      <h2 class="section-title">AI SRE and AIOps systems for Kubernetes and HPC.</h2>
+      <p class="section-lead">Things that act, with the receipts — each one runs against a real cluster,
+        and each one stops for a human before it changes anything.</p>
 
       <div class="systems-grid">
 
@@ -767,9 +769,9 @@
   <!-- RESEARCH -->
   <section id="research" class="panel-section alt">
     <div class="container">
-      <p class="section-eyebrow">// research</p>
+      <p class="section-eyebrow">// research &nbsp;—&nbsp; Google Scholar, read 2026-08-10</p>
       <div class="research-head">
-        <h2 class="section-title">Peer-reviewed, in real venues.</h2>
+        <h2 class="section-title">Peer-reviewed research in HPC, MLOps and AI operations.</h2>
         <div class="scholar-readout">
           <div><span class="sv">17</span><span class="sl">peer-reviewed</span></div>
           <div><span class="sv">218</span><span class="sl">citations</span></div>
@@ -891,10 +893,11 @@
   <section id="packages" class="panel-section alt">
     <div class="container">
       <p class="section-eyebrow">// hire me</p>
-      <h2 class="section-title">Freelance engagements — infrastructure you can trust.</h2>
+      <h2 class="section-title">Hire a freelance AI infrastructure, MLOps and Kubernetes engineer.</h2>
       <p class="contact-lead">
         Fixed-price starter audits to begin low-risk, or project work at a senior day rate.
-        Remote, EU. I build systems your team can maintain after I'm gone — not black boxes.
+        Remote across the EU, on CET. I build systems your team can maintain after I'm gone —
+        not black boxes.
       </p>
       <div class="stack-grid">
         <div class="stack-col">
@@ -926,6 +929,122 @@
       </p>
     </div>
   </section>
+
+  <!-- FAQ — question-shaped headings with the answer in the first sentence.
+       Mirrored by FAQPage structured data below; keep the two in sync, and keep
+       every question here also present as visible text. -->
+  <section id="faq" class="panel-section">
+    <div class="container">
+      <p class="section-eyebrow">// questions</p>
+      <h2 class="section-title">Questions people ask.</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Who is Mohsen Seyedkazemi Ardebili?</h3>
+          <p>
+            Mohsen Seyedkazemi Ardebili is an AI infrastructure engineer and a Research Fellow at the
+            University of Bologna. He builds autonomous systems that operate infrastructure behind a
+            human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for
+            production machine learning, and anomaly prediction on Tier-0 supercomputers for
+            EuroHPC projects.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is an AI SRE, and how is it different from a chatbot for Kubernetes?</h3>
+          <p>
+            An AI SRE investigates and <strong>acts</strong> on a live cluster, where a chatbot only
+            explains. It gathers its own evidence from real tools — kubectl, Prometheus, Loki —
+            reasons about what is actually failing, and then executes the fix. The difference that
+            matters in production is the approval gate: a human authorises the change, and the whole
+            chain is left as an audit trail.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is Mohsen available for freelance or contract work?</h3>
+          <p>
+            Yes — remote across the EU, on CET. Engagements run in three areas: Kubernetes
+            reliability and AIOps, MLOps and machine learning in production, and production LLM
+            agents. Each one can start with a fixed-price audit, so you can see the work before
+            committing to a project. Details are on the <a href="hire/">hire page</a>.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What kind of infrastructure problems does he work on?</h3>
+          <p>
+            Kubernetes incident root-cause analysis, observability and hardening; model registries,
+            serving, drift detection and governed retraining; and the safety layer around LLM agents
+            — tool boundaries, scoped RBAC, human-in-the-loop gates, tracing and audit trails. The
+            research half is anomaly detection and prediction on Tier-0 HPC clusters.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the background behind the research?</h3>
+          <p>
+            Seven years as the IT and network administrator of a combined-cycle power plant of more
+            than 1,000 MW — an environment with no staging and no undo — followed by a PhD in
+            high-performance computing at the University of Bologna. Operations first, research
+            second, which is why the systems ask before they act.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://mskazemi.com/#faq",
+    "isPartOf": { "@id": "https://mskazemi.com/#website" },
+    "about": { "@id": "https://mskazemi.com/#person" },
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Mohsen Seyedkazemi Ardebili?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mohsen Seyedkazemi Ardebili is an AI infrastructure engineer and a Research Fellow at the University of Bologna. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an AI SRE, and how is it different from a chatbot for Kubernetes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AI SRE investigates and acts on a live cluster, where a chatbot only explains. It gathers its own evidence from real tools — kubectl, Prometheus, Loki — reasons about what is actually failing, and then executes the fix. The difference that matters in production is the approval gate: a human authorises the change, and the whole chain is left as an audit trail."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Mohsen available for freelance or contract work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — remote across the EU, on CET. Engagements run in three areas: Kubernetes reliability and AIOps, MLOps and machine learning in production, and production LLM agents. Each one can start with a fixed-price audit, so you can see the work before committing to a project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of infrastructure problems does he work on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kubernetes incident root-cause analysis, observability and hardening; model registries, serving, drift detection and governed retraining; and the safety layer around LLM agents — tool boundaries, scoped RBAC, human-in-the-loop gates, tracing and audit trails. The research half is anomaly detection and prediction on Tier-0 HPC clusters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the background behind the research?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seven years as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW — an environment with no staging and no undo — followed by a PhD in high-performance computing at the University of Bologna. Operations first, research second, which is why the systems ask before they act."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">

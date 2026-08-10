@@ -1,6 +1,6 @@
 # KubeIntellect — Human-Governed AI SRE for Kubernetes · Mohsen Seyedkazemi Ardebili
 
-> KubeIntellect is a human-governed AI SRE for Kubernetes: an LLM-orchestrated operator that investigates the live cluster with real tools, explains what it found, and — with your approval — fixes it. By Mohsen Seyedkazemi Ardebili.
+> KubeIntellect is a human-governed AI SRE for Kubernetes: it investigates the live cluster with real tools, finds the root cause, and fixes it once you approve.
 
 Source: <https://mskazemi.com/projects/kubeintellect/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
