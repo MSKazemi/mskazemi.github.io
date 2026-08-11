@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """Generate the Persian (/fa/) and Turkish (/tr/) landing pages.
 
+NOT CURRENTLY DEPLOYED. Mohsen's decision, 2026-08-11: the public profile stays
+English-only for now. These pages were built, reviewed and briefly live, then
+withdrawn. The generator is kept because the decision was "for now" — but note
+that re-running it only writes the pages; three things must go back with them:
+  1. reciprocal hreflang on index.html (en / fa / tr / x-default) — a one-way
+     declaration is silently ignored by Google;
+  2. footer links from the English homepage, so the versions are crawlable from
+     the site itself and not only via the sitemap;
+  3. /fa/ and /tr/ entries in sitemap.xml.
+And confirm the Persian spelling of the name with Mohsen first (see below).
+
 Why these two languages: Mohsen is a native speaker of Persian, Azerbaijani and
 Turkish, and the estate had zero non-English surface. Those markets carry a
 fraction of English's competition for the same terms, so a single strong page
