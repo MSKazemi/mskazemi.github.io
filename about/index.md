@@ -12,9 +12,9 @@ AI infrastructure engineer. I build systems that operate infrastructure, not sys
 
 I spent seven years as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and stayed on as a research fellow. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
 
-- BASED Bologna, Italy · remote across the EU
+- BASED Bologna, Italy · remote worldwide
 
-- BASED Bologna, Italy · remote across the EU (CET)
+- BASED Bologna, Italy (CET) · remote worldwide
 
 - LANGUAGES Persian · Azerbaijani · Turkish (native) · English (professional) · Italian (A2)
 
@@ -86,4 +86,4 @@ If you found a profile that claims to be me, this is the list it should be on. A
 
 ## Got infrastructure that needs to run itself?
 
-I take remote freelance and consulting engagements across the EU — starting small, on a fixed price, so neither of us has to guess.
+I take remote freelance and consulting engagements worldwide — starting small, on a fixed price, so neither of us has to guess.

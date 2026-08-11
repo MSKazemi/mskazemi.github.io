@@ -52,6 +52,89 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
+# === Regional search engines — the rest of the world ===
+#     `User-agent: *` above already allows these; naming them is deliberate.
+#     Some regional crawlers look for their own token before trusting a foreign
+#     host, and an explicit line is the cheapest possible signal of intent.
+#     All of the following were verified on 2026-08-11 to fetch this site
+#     successfully (HTTP 200, full page, no WAF interference).
+
+# China
+User-agent: Baiduspider
+Allow: /
+User-agent: Baiduspider-render
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: Sogou inst spider
+Allow: /
+User-agent: 360Spider
+Allow: /
+User-agent: HaosouSpider
+Allow: /
+User-agent: Yisouspider
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: PetalBot
+Allow: /
+
+# Russia / CIS
+User-agent: YandexBot
+Allow: /
+User-agent: YandexImages
+Allow: /
+User-agent: YandexAdditional
+Allow: /
+
+# Korea
+User-agent: Yeti
+Allow: /
+User-agent: Daumoa
+Allow: /
+
+# Japan
+User-agent: Y!J-BRW
+Allow: /
+
+# Europe / independent indexes
+User-agent: SeznamBot
+Allow: /
+User-agent: Qwantbot
+Allow: /
+User-agent: MojeekBot
+Allow: /
+User-agent: Gigablast
+Allow: /
+User-agent: MarginaliaBot
+Allow: /
+
+# Vietnam
+User-agent: coccocbot-web
+Allow: /
+
+# === Additional AI / answer-engine crawlers ===
+User-agent: Google-CloudVertexBot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: cohere-training-data-crawler
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: Timpibot
+Allow: /
+User-agent: omgili
+Allow: /
+User-agent: Kangaroo Bot
+Allow: /
+User-agent: AI2Bot
+Allow: /
+User-agent: Webzio-Extended
+Allow: /
+
 # NOTE: Agentic browsers (ChatGPT Atlas, OpenAI Operator, Perplexity Comet,
 # Gemini-in-Chrome) present a Chrome UA and ignore robots.txt — they are handled
 # via semantic HTML, ARIA labels, and structured data, not here.

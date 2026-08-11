@@ -1,6 +1,6 @@
 # Hire a Freelance AI SRE, MLOps &amp; Kubernetes Engineer (Remote, EU) — Mohsen Seyedkazemi Ardebili
 
-> Freelance AI infrastructure consultant, remote across the EU: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
+> Freelance AI infrastructure consultant working remotely worldwide: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
 
 Source: <https://mskazemi.com/hire/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -8,11 +8,11 @@ Source: <https://mskazemi.com/hire/> · Author: Mohsen Seyedkazemi Ardebili · T
 
 available · remote · EU
 
-Freelance AI SRE, MLOps and Kubernetes engineering — remote across the EU.
+Freelance AI SRE, MLOps and Kubernetes engineering — remote, worldwide.
 
 I help teams whose infrastructure has outgrown the people watching it: clusters that page at 3 a.m. for reasons nobody has time to chase, models that made it to production and then quietly stopped being right, and AI agents that are about to be given credentials nobody has thought hard enough about. Start with a **fixed-price audit** — you get a written answer either way, and neither of us has to guess whether we work well together.
 
-- BASED Bologna, Italy · remote across the EU (CET)
+- BASED Bologna, Italy (CET) · remote worldwide
 
 - MODE Remote · CET · English
 
@@ -70,9 +70,9 @@ Documentation, runbooks, and a walkthrough with the people who will own it. The 
 
 ## Answers before you have to email for them.
 
-### Can I hire a freelance MLOps engineer in the EU?
+### Can I hire a freelance MLOps engineer remotely?
 
-Yes — that is exactly this. I work remotely from Bologna, Italy, across the EU, and I hold an based in **Bologna, Italy** and invoice from Italy, so an EU engagement is a straightforward contract with no extra administration on your side.
+Yes — that is exactly this. I work remotely with clients worldwide from **Bologna, Italy**, and invoice from Italy, so the contract stays straightforward with no extra administration on your side. CET is my base working day, and I overlap with other time zones by arrangement.
 
 ### What does an AI SRE actually do?
 

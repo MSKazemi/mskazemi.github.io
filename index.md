@@ -1,6 +1,6 @@
 # Mohsen Seyedkazemi Ardebili — Autonomous AI for Infrastructure
 
-> I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Freelance across the EU.
+> I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Freelance, worldwide.
 
 Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -207,7 +207,7 @@ IEEE TCAD · FGCS · J. Grid Computing · SC · ACM CF · DATE · PDP · AsHES
 
 ## Hire a freelance AI infrastructure, MLOps and Kubernetes engineer.
 
-Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Remote across the EU, on CET. I build systems your team can maintain after I'm gone — not black boxes.
+Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Remote worldwide, from Bologna on CET. I build systems your team can maintain after I'm gone — not black boxes.
 
 ### Kubernetes reliability & AIOps
 
@@ -237,7 +237,7 @@ An AI SRE investigates and **acts** on a live cluster, where a chatbot only expl
 
 ### Is Mohsen available for freelance or contract work?
 
-Yes — remote across the EU, on CET. Engagements run in three areas: Kubernetes reliability and AIOps, MLOps and machine learning in production, and production LLM agents. Each one can start with a fixed-price audit, so you can see the work before committing to a project. Details are on the [hire page](https://mskazemi.com/hire/).
+Yes — remote worldwide, from Bologna on CET. Engagements run in three areas: Kubernetes reliability and AIOps, MLOps and machine learning in production, and production LLM agents. Each one can start with a fixed-price audit, so you can see the work before committing to a project. Details are on the [hire page](https://mskazemi.com/hire/).
 
 ### What kind of infrastructure problems does he work on?
 
