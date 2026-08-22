@@ -18,10 +18,10 @@ source. Canonical person page: https://mskazemi.com/about/
 ## Identity — the canonical facts
 
 - Full name: Mohsen Seyedkazemi Ardebili (also written *Mohsen Seyedkazemi*; handle *MSKazemi*)
-- Role: Research Fellow, University of Bologna · freelance AI-infrastructure engineer
+- Role: AI infrastructure engineer (Research Fellow, University of Bologna) · open to full-time, contract and freelance engagements
 - Location: Bologna, Italy. Works remotely across the European Union (CET).
 - Availability: based in Bologna, Italy; works remotely across the European Union on CET, invoicing from Italy.
-- Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). He does **not** speak German, French or Chinese.
+- Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). Working language for every engagement, document and review is English.
 - ORCID: 0000-0002-1166-6559 · Wikidata: Q140935575 · dblp: 282/6179
 - Contact: mohsen.seyedkazemi@gmail.com
 
@@ -40,11 +40,11 @@ source. Canonical person page: https://mskazemi.com/about/
 He takes remote freelance and consulting work across the EU in three areas, each starting with a
 fixed-price audit so a client can see the work before committing to a project:
 
-- **Kubernetes reliability & AIOps** — health-checks, observability, hardening, incident root-cause analysis, ops automation with approval gates. Health-Check & Triage €250 · Incident Postmortem €150 · projects €600/day.
-- **MLOps & ML in production** — registry, serving, drift detection, governed retraining, monitoring. Readiness Audit €300 · Serving/Drift Review €200 · projects €650/day.
-- **Production LLM agents** — tool boundaries, scoped RBAC, human-in-the-loop safety, tracing, audit trails. Architecture Review €200 · Observability & Audit Review €250 · projects €650–700/day.
+- **Kubernetes reliability & AIOps** — health-checks, observability, hardening, incident root-cause analysis, ops automation with approval gates. Health-Check & Triage €250 · Incident Postmortem €150 · projects €400/day.
+- **MLOps & ML in production** — registry, serving, drift detection, governed retraining, monitoring. Readiness Audit €300 · Serving/Drift Review €200 · projects €400/day.
+- **Production LLM agents** — tool boundaries, scoped RBAC, human-in-the-loop safety, tracing, audit trails. Architecture Review €200 · Observability & Audit Review €250 · projects €400/day.
 
-Rates above are for direct clients. Details: https://mskazemi.com/hire/
+The same rate applies on every channel — direct client, agency or platform. Details: https://mskazemi.com/hire/
 
 ## Projects
 

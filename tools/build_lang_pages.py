@@ -16,7 +16,7 @@ Why these two languages: Mohsen is a native speaker of Persian, Azerbaijani and
 Turkish, and the estate had zero non-English surface. Those markets carry a
 fraction of English's competition for the same terms, so a single strong page
 per language is the highest-value content move available — see BRAND.md §4 and
-strategy/visibility/2026-08-10-seo-audit-mskazemi-com.md.
+work/playbook/ADVERTISE.md.
 
 Structure mirrors the English pages deliberately: question-shaped headings with
 the answer in the first sentence, plus FAQPage data mirroring the visible copy.

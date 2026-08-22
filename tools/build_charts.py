@@ -14,7 +14,7 @@ Usage:
     python3 tools/build_charts.py            # inject into index.html
     python3 tools/build_charts.py --check    # fail if index.html is out of date
 
-Data source: data/metrics.json, which mirrors db/profile/scholar.json in the brain
+Data source: data/metrics.json, which mirrors work/cv/profile/scholar.json in the brain
 repo. Re-verify the numbers there before regenerating.
 """
 

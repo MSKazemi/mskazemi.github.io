@@ -1,5 +1,5 @@
 {
-  "_comment": "Publication list for the /publications/ page. Derived from db/profile/cv.json in the brain repo; citation counts from Google Scholar. Regenerate rather than hand-edit.",
+  "_comment": "Publication list for the /publications/ page. Derived from work/cv/profile/cv.json in the brain repo; citation counts from Google Scholar. Regenerate rather than hand-edit.",
   "_verifiedOn": "2026-08-10",
   "metrics": {
     "citationsAll": 218,
@@ -412,6 +412,6 @@
         }
       ]
     },
-    "_citationsNote": "citations = Google Scholar counts read 2026-08-10, duplicate Scholar records for the same work merged. Full metrics in db/profile/scholar.json. Never put these numbers in job-application documents."
+    "_citationsNote": "citations = Google Scholar counts read 2026-08-10, duplicate Scholar records for the same work merged. Full metrics in work/cv/profile/scholar.json. Never put these numbers in job-application documents."
   }
 }

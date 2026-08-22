@@ -98,7 +98,7 @@
       1,
       1
     ],
-    "_note": "Derived from db/profile/cv.json publications (status Published/Accepted) plus the dataset and preprint records on the Scholar profile."
+    "_note": "Derived from work/cv/profile/cv.json publications (status Published/Accepted) plus the dataset and preprint records on the Scholar profile."
   },
   "topCited": [
     {

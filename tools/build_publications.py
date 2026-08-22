@@ -3,7 +3,7 @@
 
 The whole page is derived — the citation counts, the DOI links, the BibTeX, and
 the schema.org ScholarlyArticle graph all come from one JSON file, so the page
-can never drift from the CV. Re-export that file from db/profile/cv.json in the
+can never drift from the CV. Re-export that file from work/cv/profile/cv.json in the
 brain repo, then re-run this.
 
 Usage:

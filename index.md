@@ -1,6 +1,6 @@
 # Mohsen Seyedkazemi Ardebili — Autonomous AI for Infrastructure
 
-> I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Freelance, worldwide.
+> I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Open to full-time, contract and freelance work, remote from Italy.
 
 Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 

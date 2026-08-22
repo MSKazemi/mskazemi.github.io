@@ -16,7 +16,7 @@ I help teams whose infrastructure has outgrown the people watching it: clusters 
 
 - MODE Remote · CET · English
 
-- START Fixed-price audit from €150 · projects €600–700/day
+- START Fixed-price audit from €150 · projects €400/day
 
 // why me
 
@@ -44,7 +44,7 @@ Getting models out of the notebook and keeping them honest: registry, serving, d
 
 Agents that act on real systems — tool boundaries, scoped RBAC, human-in-the-loop safety, tracing, and an audit trail you can put in front of a regulator or a customer's security team without flinching.
 
-Rates are for direct clients. Longer engagements and retainers are negotiable; agencies and platforms are quoted separately.
+€60/hour; €400/day for a full booked day — a discount for full-day commitment. The same rate applies on every channel, whether the work comes direct, through an agency or through a platform. Longer engagements and retainers are negotiable.
 
 // how it goes
 
@@ -88,7 +88,7 @@ Only under constraints you can state and test: a scoped identity with real RBAC 
 
 ### Which languages and time zones?
 
-CET, working in English. I also speak Persian, Azerbaijani and Turkish natively, and Italian at A2. I do _not_ speak German or French — German-language engagements are not a fit, and I would rather say that here than three emails in.
+CET, working in English — every engagement, document and review is delivered in English. I also speak Persian, Azerbaijani and Turkish natively, and Italian at A2. I work with teams across Europe and align working hours to yours.
 
 // contact
 
