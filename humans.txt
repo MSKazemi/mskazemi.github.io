@@ -1,7 +1,7 @@
 /* TEAM */
 
   Name:      Mohsen Seyedkazemi Ardebili
-  Role:      AI infrastructure engineer · Research Fellow, University of Bologna
+  Role:      AI Platform & Agentic AI Infrastructure Engineer · Research Fellow, University of Bologna
   Works on:  AI SRE and AIOps for Kubernetes, MLOps for production machine learning,
              anomaly prediction on Tier-0 supercomputers, and LLM agents that act on
              real systems behind a human approval gate.

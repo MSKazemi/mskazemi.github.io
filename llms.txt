@@ -1,12 +1,13 @@
 # Mohsen Seyedkazemi Ardebili
 
-> AI-infrastructure engineer and Research Fellow at the University of Bologna
+> AI platform and agentic AI infrastructure engineer, and Research Fellow at the University of Bologna
 > (Bologna, Italy). He builds autonomous AI that *acts* on infrastructure — not
 > chatbots that explain a cluster, but systems that observe it, reason about
 > failures, and execute remediation with a human at the gate. Focus areas:
 > **AI SRE and AIOps** for Kubernetes, **MLOps** for production machine learning,
 > **root cause analysis** and anomaly prediction on Tier-0 supercomputers, and
-> evidence/audit trails for AI systems. Background: seven years as IT & Network
+> evidence/audit trails for AI systems. Background: nearly nine years in
+> enterprise IT and network operations, six of them as IT & Network
 > Administrator of a 1,000+ MW combined-cycle power plant, then a PhD in
 > High-Performance Computing at the University of Bologna. He is **available for
 > freelance and contract engagements**, remote across the EU.
@@ -18,7 +19,7 @@ source. Canonical person page: https://mskazemi.com/about/
 ## Identity — the canonical facts
 
 - Full name: Mohsen Seyedkazemi Ardebili (also written *Mohsen Seyedkazemi*; handle *MSKazemi*)
-- Role: AI infrastructure engineer (Research Fellow, University of Bologna) · open to full-time, contract and freelance engagements
+- Role: AI Platform & Agentic AI Infrastructure Engineer (Research Fellow, University of Bologna) · open to full-time, contract and freelance engagements
 - Location: Bologna, Italy. Works remotely across the European Union (CET).
 - Availability: based in Bologna, Italy; works remotely across the European Union on CET, invoicing from Italy.
 - Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). Working language for every engagement, document and review is English.

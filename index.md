@@ -26,7 +26,7 @@ telemetry in → root-cause reasoning → gated action → back to telemetry
 
 ## From a power plant's networks to the control plane of a datacenter.
 
-I spent seven years as the **IT & Network Administrator** of a 1,000+ MW combined-cycle power plant — running the enterprise IT and network infrastructure across eleven operational zones, where downtime is not an abstraction. Then I did a PhD in High-Performance Computing at the University of Bologna.
+I spent nearly nine years in enterprise IT and network operations — six of them as the **IT & Network Administrator** of a 1,000+ MW combined-cycle power plant, running the network across eleven operational zones, where downtime is not an abstraction. Then I did a PhD in High-Performance Computing at the University of Bologna.
 
 That path gives me a lens most ML researchers don't have: I care about uptime, observability, and correctness _in production_ — not just benchmark numbers. Today I design autonomous control for infrastructure: systems that detect failures, reason about root cause, and propose or execute remediation behind human-approval gates.
 
@@ -229,7 +229,7 @@ Full details, how an engagement runs, and the questions people usually ask → [
 
 ### Who is Mohsen Seyedkazemi Ardebili?
 
-Mohsen Seyedkazemi Ardebili is an AI infrastructure engineer and a Research Fellow at the University of Bologna. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects.
+Mohsen Seyedkazemi Ardebili is an AI platform and agentic AI infrastructure engineer, and a Research Fellow at the University of Bologna. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects.
 
 ### What is an AI SRE, and how is it different from a chatbot for Kubernetes?
 
@@ -245,7 +245,7 @@ Kubernetes incident root-cause analysis, observability and hardening; model regi
 
 ### What is the background behind the research?
 
-Seven years as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW — an environment with no staging and no undo — followed by a PhD in high-performance computing at the University of Bologna. Operations first, research second, which is why the systems ask before they act.
+Nearly nine years in enterprise IT and network operations, six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW — an environment with no staging and no undo — followed by a PhD in high-performance computing at the University of Bologna. Operations first, research second, which is why the systems ask before they act.
 
 // contact
 

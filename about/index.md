@@ -1,6 +1,6 @@
 # About Mohsen Seyedkazemi Ardebili — AI Infrastructure &amp; MLOps Engineer, Bologna
 
-> Mohsen Seyedkazemi Ardebili, Research Fellow at the University of Bologna: AI SRE, AIOps, MLOps and HPC, after seven years running a 1,000 MW plant's IT.
+> Mohsen Seyedkazemi Ardebili — AI Platform & Agentic AI Infrastructure Engineer, Bologna. AI SRE, AIOps, MLOps and HPC, after nine years in enterprise IT.
 
 Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -8,9 +8,9 @@ Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · 
 
 Research Fellow · University of Bologna · Bologna, Italy
 
-AI infrastructure engineer. I build systems that operate infrastructure, not systems that talk about it.
+AI platform and agentic AI infrastructure engineer. I build systems that operate infrastructure, not systems that talk about it.
 
-I spent seven years as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and stayed on as a research fellow. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
+I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and stayed on as a research fellow. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
 
 - BASED Bologna, Italy · remote worldwide
 
