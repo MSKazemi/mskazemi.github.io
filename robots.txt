@@ -140,12 +140,27 @@ Allow: /
 # via semantic HTML, ARIA labels, and structured data, not here.
 
 # mskazemi.github.io 301-redirects here, so the sitemaps are declared on the
-# canonical host. The yazses docs are a separate MkDocs site under /yazses/, and
-# the AOBench docs are another under /aobench/; crawlers only read robots.txt at
-# the domain root, and the root sitemap below is a flat <urlset> rather than a
-# <sitemapindex>, so it cannot reference them either. Each sub-site's sitemap
-# must be declared here or its URLs are never discovered by crawling — ~82 for
-# yazses, 50 for aobench.
+# canonical host.
+#
+# THE RULE: every GitHub Pages project site published under mskazemi.com/<repo>/
+# carries its own sitemap, and that sitemap MUST be listed below. Crawlers read
+# robots.txt only at the domain root, and the root sitemap is a flat <urlset>
+# rather than a <sitemapindex>, so it cannot reference the sub-sites either —
+# an undeclared sitemap means those URLs are discoverable by crawling alone.
+# Publish a new project site, add its line here in the same change.
+#
+# This block used to name yazses and aobench specifically and was never extended;
+# by 2026-08-30 four of the six published sitemaps (kubeintellect 36 URLs, kube_q
+# 17, opportunity-engine 2, m100-silicon-binning 6 — 61 URLs) were declared
+# nowhere and had never been submitted to Bing. Hence the rule above rather than
+# a list of today's sites. Check with:
+#   gh repo list MSKazemi --limit 100 --json name --jq '.[].name' \
+#     | while read r; do curl -s -o /dev/null -w "%{http_code} $r\n" \
+#         "https://mskazemi.com/$r/sitemap.xml"; done | grep ^200
 Sitemap: https://mskazemi.com/sitemap.xml
 Sitemap: https://mskazemi.com/yazses/sitemap.xml
 Sitemap: https://mskazemi.com/aobench/sitemap.xml
+Sitemap: https://mskazemi.com/kubeintellect/sitemap.xml
+Sitemap: https://mskazemi.com/kube_q/sitemap.xml
+Sitemap: https://mskazemi.com/opportunity-engine/sitemap.xml
+Sitemap: https://mskazemi.com/m100-silicon-binning/sitemap.xml
