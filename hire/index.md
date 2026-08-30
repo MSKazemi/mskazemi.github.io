@@ -22,7 +22,7 @@ I help teams whose infrastructure has outgrown the people watching it: clusters 
 
 ## I ran infrastructure before I researched it.
 
-Seven years as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where there is no staging environment and a bad change is measured in megawatts. Then a PhD in high-performance computing at the University of Bologna, and since then research and platform engineering on EuroHPC-funded projects — currently as architect and lead developer of the MLOps platform for **SEANERGYS**.
+Nearly nine years in enterprise IT and network operations, six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where there is no staging environment and a bad change is measured in megawatts. Then a PhD in high-performance computing at the University of Bologna, and since then research and platform engineering on EuroHPC-funded projects — currently as architect and lead developer of the MLOps platform for **SEANERGYS**.
 
 That combination is the actual offer. Plenty of people can build you an agent; fewer have been the person on call when an automated system did the wrong thing at scale. My work is consistently about the same thing — letting a machine take over more of the operator's judgement, while keeping a human at the gate and an audit trail behind it. It is also why [KubeIntellect](https://mskazemi.com/projects/kubeintellect/) pauses for approval before it touches anything it cannot undo, and why [NovaFabric](https://mskazemi.com/projects/novafabric/) exists at all.
 
