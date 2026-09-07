@@ -1,12 +1,12 @@
 # Mohsen Seyedkazemi Ardebili — Autonomous AI for Infrastructure
 
-> I build autonomous AI that acts on infrastructure: AI SRE agents for Kubernetes, MLOps, and anomaly detection on Tier-0 HPC. Open to full-time, contract and freelance work, remote from Italy.
+> AI platform and MLOps engineer building agentic AI systems on Kubernetes: AI SRE, MLOps, anomaly detection on Tier-0 HPC. Open to work, remote from Italy.
 
 Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
 ---
 
-Research Fellow · University of Bologna
+AI Platform & MLOps Engineer · Agentic AI Systems on Kubernetes
 
 I build autonomous AI that acts on infrastructure.
 
@@ -229,7 +229,7 @@ Full details, how an engagement runs, and the questions people usually ask → [
 
 ### Who is Mohsen Seyedkazemi Ardebili?
 
-Mohsen Seyedkazemi Ardebili is an AI platform and agentic AI infrastructure engineer, and a Research Fellow at the University of Bologna. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects.
+Mohsen Seyedkazemi Ardebili is an AI platform and MLOps engineer who builds agentic AI systems on Kubernetes. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects.
 
 ### What is an AI SRE, and how is it different from a chatbot for Kubernetes?
 
