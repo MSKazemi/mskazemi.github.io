@@ -14,7 +14,7 @@ Not a chatbot that explains your cluster — systems that observe it, reason abo
 
 - LOC Bologna, IT
 
-- EXP 7 yrs critical infra → PhD HPC
+- EXP 6 yrs 1,000 MW plant → PhD HPC
 
 - OSS KubeIntellect · AOBench · YazSes
 
