@@ -270,6 +270,7 @@
             <a role="menuitem" href="projects/novafabric/">NovaFabric</a>
             <a role="menuitem" href="projects/yazses/">YazSes</a>
             <a role="menuitem" href="projects/aobench/">AOBench</a>
+            <a role="menuitem" href="/idkmesh/">IDKMesh</a>
           </div>
         </div>
         <a href="publications/">Publications</a>
@@ -313,6 +314,7 @@
           <a href="projects/kubeintellect/">KubeIntellect</a>
           <a href="projects/novafabric/">NovaFabric</a>
           <a href="projects/aobench/">AOBench</a>
+          <a href="/idkmesh/">IDKMesh</a>
         </p>
       </div>
 
@@ -530,6 +532,36 @@
             <figcaption class="flow-cap">a policy breach hard-fails the task</figcaption>
           </figure>
           <div class="tags"><span>Python</span><span>LLM Eval</span><span>MCP</span><span>SLURM</span></div>
+        </article>
+
+        <article class="card">
+          <div class="card-bar">
+            <a class="card-name card-name-link" href="/idkmesh/">IDKMesh</a>
+            <span class="card-badge">research preview</span>
+            <span class="card-links">
+              <a href="/idkmesh/">details &rarr;</a>
+              <a href="https://github.com/MSKazemi/idkmesh" target="_blank" rel="noopener">code &#8599;</a>
+              <a href="/idkmesh/start.html" target="_blank" rel="noopener">start &#8599;</a>
+            </span>
+          </div>
+          <p class="card-desc">
+            Verified swarm engineering &mdash; an open research laboratory asking whether humans and AI
+            agents can turn uncertain goals into trustworthy software by separating <em>generation</em>
+            from <em>acceptance</em>. Its first installable tool, <code>idkmesh gate-audit</code>, measures
+            what a review panel is actually worth: effective independent votes rather than head-count,
+            error-correlation structure, and the breach rate of seeded known-bad candidates.
+          </p>
+          <div class="mini-readout">
+            <span><b>1.00</b> effective votes of 25</span><span><b>1.66&times;</b> heuristic overstates</span><span><b>3.7&times;</b> error cut</span>
+          </div>
+          <ul class="ticks">
+            <li>E017 measured 25 independently seeded test oracles &mdash; programs, over a 72-candidate corpus with ground truth from executing hidden tests &mdash; at an effective panel size of 1.00</li>
+            <li>The standard <code>N/(1+(N&minus;1)&rho;)</code> heuristic predicted 1.66, so it overstates exactly where it is relied on</li>
+            <li>Changing the aggregation rule cut error 3.7&times;; growing the panel bought nothing</li>
+            <li>E016 is retained as a <strong>negative result</strong>: 20 live LLM verifiers did not verify, so no AI review panel has been measured here</li>
+            <li>Negative results and failed experiments are kept, not hidden &mdash; evidence must survive independent scrutiny</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>LLM Eval</span><span>Verification</span><span>GitHub Actions</span></div>
         </article>
 
         <!-- GRAAFE -->
@@ -1099,6 +1131,7 @@
         <a href="projects/novafabric/">NovaFabric</a>
         <a href="projects/yazses/">YazSes</a>
         <a href="projects/aobench/">AOBench</a>
+        <a href="/idkmesh/">IDKMesh</a>
       </nav>
       <span class="foot-meta">AI Platform &amp; MLOps Engineer · Bologna, Italy</span>
     </div>
