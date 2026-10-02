@@ -125,9 +125,9 @@ The operator's companion for KubeIntellect — a CLI and Python SDK (`kq`) expos
 
 Privacy-first, local-first tools — built to be installed and used, not just cited.
 
-**NovaFabric** is an open-source, self-hosted execution-capsule system for AI and HPC workloads. It captures an agent, model run, script, or HPC job as **portable, signed execution evidence** for replay, structural diff, lineage and audit — with no application-code changes.
+**NovaFabric** is open-source, self-hosted replay and evidence infrastructure. It captures commands and AI/HPC runs as **portable Run Capsules** for replay, structural diff, lineage, cryptographic provenance, assurance and audit — with no application-code changes.
 
-- Zero-instrumentation capture · four honest replay modes (exact / mocked / semantic / forensic)
+- Zero-code-change capture · four explicit replay modes (exact / mocked / semantic / forensic)
 
 - Cryptographic seal: DSSE signature + RFC 3161 timestamp + append-only Merkle log
 
