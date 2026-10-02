@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
-  <title>NovaFabric — Replayable Execution &amp; Evidence Infrastructure · Mohsen Seyedkazemi Ardebili</title>
-  <meta name="description" content="NovaFabric is open-source, self-hosted replayable-execution and evidence infrastructure for reproducibility, replay, lineage, provenance, assurance and audit." />
+  <title>NovaFabric — Replay &amp; Evidence Infrastructure for AI Agents · Mohsen Seyedkazemi Ardebili</title>
+  <meta name="description" content="NovaFabric is open-source, self-hosted replay and evidence infrastructure for AI agents and agentic systems: capture, replay, behavioral diff, lineage, provenance, assurance and audit." />
   <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
   <meta name="keywords" content="NovaFabric, replayable AI, AI evidence, reproducibility, lineage, audit, evidence capsule, AI governance, OpenTelemetry GenAI, Mohsen Seyedkazemi Ardebili" />
   <link rel="canonical" href="https://mskazemi.com/projects/novafabric/" />
@@ -13,7 +13,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0A0E14" />
 
-  <meta property="og:title" content="NovaFabric — Replayable Execution &amp; Evidence Infrastructure" />
+  <meta property="og:title" content="NovaFabric — Replay &amp; Evidence Infrastructure for AI Agents" />
   <meta property="og:description" content="Capture AI and HPC workloads as portable, signed evidence capsules for replay, structural diff, lineage and audit — self-hosted and offline-first." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mskazemi.com/projects/novafabric/" />
@@ -36,7 +36,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareSourceCode",
     "name": "NovaFabric",
-    "description": "Open-source, self-hosted replayable-execution and evidence infrastructure that captures commands and AI/HPC runs as portable Run Capsules for replay, structural diff, lineage, cryptographic provenance, assurance, and audit.",
+    "description": "Open-source, self-hosted replay and evidence infrastructure for AI agents and agentic systems, capturing agent executions as portable Run Capsules for replay, behavioral and structural diff, lineage, cryptographic provenance, assurance, and audit.",
     "codeRepository": "https://github.com/MSKazemi/novafabric",
     "url": "https://novafabric.ai",
     "programmingLanguage": "Python",
@@ -94,10 +94,11 @@
       <h1>NovaFabric</h1>
       <p class="proj-tagline">Replayable execution and evidence infrastructure.</p>
       <p class="proj-lede">
-        Open-source, self-hosted replay and evidence infrastructure that captures a command, AI agent,
-        model run, script, or HPC job as a <strong>portable Run Capsule</strong> with no application-code
-        changes, then adds replay, structural diff, lineage, cryptographic provenance, assurance and audit
-        around that execution. Observability tells you <em>what happened</em>; NovaFabric focuses on whether
+        Open-source, self-hosted replay and evidence infrastructure for <strong>AI agents and agentic
+        systems</strong>. It captures agent executions as <strong>portable Run Capsules</strong> with no
+        application-code changes, then adds replay, behavioral/structural diff, lineage, cryptographic
+        provenance, assurance and audit. The same capture layer can wrap general commands and supports
+        local, Docker, Kubernetes and SLURM/HPC environments. Observability tells you <em>what happened</em>; NovaFabric focuses on whether
         a past execution can be <em>replayed, compared, and proven</em>.
       </p>
       <div class="proj-links">

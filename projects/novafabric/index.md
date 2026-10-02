@@ -1,6 +1,6 @@
-# NovaFabric — Replayable Execution & Evidence Infrastructure · Mohsen Seyedkazemi Ardebili
+# NovaFabric — Replay & Evidence Infrastructure for AI Agents · Mohsen Seyedkazemi Ardebili
 
-> NovaFabric is open-source, self-hosted replayable-execution and evidence infrastructure. It captures commands and AI/HPC runs as portable Run Capsules for replay, structural diff, lineage, cryptographic provenance, assurance, and audit.
+> NovaFabric is open-source, self-hosted replay and evidence infrastructure for AI agents and agentic systems. It captures agent executions as portable Run Capsules for replay, behavioral/structural diff, lineage, cryptographic provenance, assurance, and audit.
 
 Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -10,7 +10,7 @@ open source · Apache-2.0 · self-hosted
 
 Replayable execution and evidence infrastructure.
 
-Open-source, self-hosted replay and evidence infrastructure that captures a command, AI agent, model run, script, or HPC job as a **portable Run Capsule** — with no application-code changes — then adds replay, structural diff, lineage, cryptographic provenance, assurance, and audit around that execution. Observability tells you _what happened_; NovaFabric focuses on whether a past execution can be _replayed, compared, and proven_.
+Open-source, self-hosted replay and evidence infrastructure for **AI agents and agentic systems**. It captures agent executions as **portable Run Capsules** — with no application-code changes — then adds replay, behavioral/structural diff, lineage, cryptographic provenance, assurance, and audit. The same capture layer can wrap general commands and supports local, Docker, Kubernetes and SLURM/HPC environments. Observability tells you _what happened_; NovaFabric focuses on whether a past execution can be _replayed, compared, and proven_.
 
 - INSTALL pip install novafabric
 
