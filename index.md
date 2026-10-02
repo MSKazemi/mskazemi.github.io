@@ -125,7 +125,7 @@ The operator's companion for KubeIntellect — a CLI and Python SDK (`kq`) expos
 
 Privacy-first, local-first tools — built to be installed and used, not just cited.
 
-**NovaFabric** is open-source, self-hosted replay and evidence infrastructure. It captures commands and AI/HPC runs as **portable Run Capsules** for replay, structural diff, lineage, cryptographic provenance, assurance and audit — with no application-code changes.
+**NovaFabric** is open-source, self-hosted replay and evidence infrastructure for **AI agents and agentic systems**. It captures agent executions as **portable Run Capsules** for replay, behavioral/structural diff, lineage, cryptographic provenance, assurance and audit — with no application-code changes. It also supports local, Docker, Kubernetes and SLURM/HPC execution environments.
 
 - Zero-code-change capture · four explicit replay modes (exact / mocked / semantic / forensic)
 
@@ -229,7 +229,7 @@ Full details, how an engagement runs, and the questions people usually ask → [
 
 ### Who is Mohsen Seyedkazemi Ardebili?
 
-Mohsen Seyedkazemi Ardebili is an AI Platform & Agentic Systems Engineer and independent consultant. He builds AI platform, MLOps and agentic systems across Kubernetes, OpenShift and HPC, including KubeIntellect for human-governed Kubernetes operations and NovaFabric for replayable, verifiable AI/HPC execution evidence.
+Mohsen Seyedkazemi Ardebili is an AI Platform & Agentic Systems Engineer and independent consultant. He builds AI platform, MLOps and agentic systems across Kubernetes, OpenShift and HPC, including KubeIntellect for human-governed Kubernetes operations and NovaFabric for replayable, verifiable execution evidence for AI agents.
 
 ### What is an AI SRE, and how is it different from a chatbot for Kubernetes?
 
