@@ -690,7 +690,7 @@
         <article class="card card-wide">
           <div class="card-bar">
             <a class="card-name card-name-link" href="projects/novafabric/">NovaFabric</a>
-            <span class="card-badge">replay fabric · v0.101.0</span>
+            <span class="card-badge">execution capsules · beta</span>
             <span class="card-links">
               <a href="projects/novafabric/">details →</a>
               <a href="https://github.com/MSKazemi/novafabric" target="_blank" rel="noopener">code ↗</a>
@@ -698,21 +698,21 @@
             </span>
           </div>
           <p class="card-desc">
-            The reproducibility and trust layer for AI systems — an open-source, self-hosted toolkit that
-            turns any agent or model run into a <strong>portable, signed, replayable evidence capsule</strong>,
-            captured with no code changes. Observability tells you what happened; NovaFabric tells you
-            <em>what would happen if you ran it again, today.</em>
+            <strong>NovaFabric</strong> is an open-source, self-hosted execution-capsule system for AI and
+            HPC workloads. It captures an agent, model run, script, or HPC job as <strong>portable, signed
+            execution evidence</strong> for replay, structural diff, lineage and audit — with no
+            application-code changes.
           </p>
           <ul class="ticks">
             <li>Zero-instrumentation capture · four honest replay modes (exact / mocked / semantic / forensic)</li>
             <li>Cryptographic seal: DSSE signature + RFC 3161 timestamp + append-only Merkle log</li>
             <li>Structured run-to-run diff as a CI regression gate; signed evidence bundles verify without it installed</li>
             <li>Runs offline from a laptop to an HPC cluster — no cloud, no account</li>
-            <li>36 releases on PyPI · 176 commits · Apache-2.0 — experimental, and labelled as such</li>
+            <li>Apache-2.0 · beta / pre-v1 · core local workflows are self-hosted and offline-first</li>
           </ul>
                     <figure class="flow-fig">
             <svg class="flow" viewBox="0 0 480 94" role="img"
-                 aria-label="Diagram: the NovaFabric pipeline. A run is captured with no code changes, sealed with a signature and timestamp, replayed in one of four modes, diffed as a CI regression gate, and audited from a bundle that verifies without NovaFabric installed.">
+                 aria-label="Diagram: the NovaFabric pipeline. A run is captured without application-code changes, sealed with a signature and timestamp, replayed under explicit replay semantics, diffed structurally, and audited from portable evidence.">
             <path class="fl-wire" d="M84,45 H102"/>
             <path class="fl-wire" d="M182,45 H200"/>
             <path class="fl-wire" d="M280,45 H298"/>
