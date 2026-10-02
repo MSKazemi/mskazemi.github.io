@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
-  <title>NovaFabric — Replayable AI Infrastructure · Mohsen Seyedkazemi Ardebili</title>
-  <meta name="description" content="NovaFabric turns any AI agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes. Open-source, self-hosted." />
+  <title>NovaFabric — Execution Capsules for AI &amp; HPC · Mohsen Seyedkazemi Ardebili</title>
+  <meta name="description" content="NovaFabric is an open-source, self-hosted execution-capsule system for AI and HPC workloads: capture, seal, replay, diff, lineage and audit." />
   <meta name="author" content="Mohsen Seyedkazemi Ardebili" />
   <meta name="keywords" content="NovaFabric, replayable AI, AI evidence, reproducibility, lineage, audit, evidence capsule, AI governance, OpenTelemetry GenAI, Mohsen Seyedkazemi Ardebili" />
   <link rel="canonical" href="https://mskazemi.com/projects/novafabric/" />
@@ -13,8 +13,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0A0E14" />
 
-  <meta property="og:title" content="NovaFabric — Replayable AI Infrastructure" />
-  <meta property="og:description" content="Capture, seal, replay, diff, and audit any AI-agent run as a portable, signed evidence capsule — self-hosted, offline, from a laptop to an HPC cluster." />
+  <meta property="og:title" content="NovaFabric — Execution Capsules for AI &amp; HPC" />
+  <meta property="og:description" content="Capture AI and HPC workloads as portable, signed evidence capsules for replay, structural diff, lineage and audit — self-hosted and offline-first." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mskazemi.com/projects/novafabric/" />
   <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
@@ -36,8 +36,8 @@
     "@context": "https://schema.org",
     "@type": "SoftwareSourceCode",
     "name": "NovaFabric",
-    "description": "An open-source, self-hosted toolkit that captures, replays, diffs, and cryptographically audits AI agent and model runs as portable evidence capsules — with zero application-code instrumentation.",
-    "codeRepository": "https://github.com/novafabric/novafabric",
+    "description": "An open-source, self-hosted execution-capsule system for AI and HPC workloads that captures runs as portable evidence for replay, structural diff, lineage, and cryptographic verification.",
+    "codeRepository": "https://github.com/MSKazemi/novafabric",
     "url": "https://novafabric.ai",
     "programmingLanguage": "Python",
     "license": "https://www.apache.org/licenses/LICENSE-2.0",
@@ -92,16 +92,16 @@
       </p>
       <p class="proj-eyebrow"><span class="dot-mint" aria-hidden="true"></span>open source · Apache-2.0 · self-hosted</p>
       <h1>NovaFabric</h1>
-      <p class="proj-tagline">Replayable AI infrastructure.</p>
+      <p class="proj-tagline">Execution capsules for AI and HPC.</p>
       <p class="proj-lede">
-        An open-source, self-hosted toolkit that turns any AI agent or model run into a
-        <strong>portable, signed, replayable evidence capsule</strong> — captured with no code changes and
-        owned entirely by you. Observability tells you <em>what happened</em>; NovaFabric answers the harder
-        question — <em>what would happen if I ran this again, today?</em>
+        An open-source, self-hosted execution-capsule system that turns an AI agent, model run, script,
+        or HPC job into a <strong>portable, signed, replayable evidence capsule</strong> — captured with no
+        application-code changes and owned entirely by you. Observability tells you <em>what happened</em>;
+        NovaFabric focuses on whether a past execution can be <em>replayed, compared, and proven</em>.
       </p>
       <div class="proj-links">
         <a href="https://novafabric.ai" target="_blank" rel="noopener" class="btn-primary">Live site ↗</a>
-        <a href="https://github.com/novafabric/novafabric" target="_blank" rel="noopener" class="btn-ghost">Code ↗</a>
+        <a href="https://github.com/MSKazemi/novafabric" target="_blank" rel="noopener" class="btn-ghost">Code ↗</a>
         <a href="https://pypi.org/project/novafabric/" target="_blank" rel="noopener" class="btn-ghost">PyPI ↗</a>
       </div>
       <ul class="status-strip" aria-label="Quick facts">
@@ -172,7 +172,7 @@
   <section class="proj-section panel-section alt">
     <div class="container">
       <p class="section-eyebrow">// the honest contract</p>
-      <h2 class="section-title">Four replay modes — each a falsifiable promise.</h2>
+      <h2 class="section-title">Replay modes with explicit, falsifiable semantics.</h2>
       <div class="split">
         <article class="card">
           <h3>exact</h3>
@@ -188,9 +188,9 @@
         </article>
       </div>
       <p class="note">
-        The taxonomy is deliberately honest: NovaFabric does <strong>not</strong> claim exact replay of
-        remote closed-weight models — that's what <code>semantic</code> and <code>mocked</code> are for.
-        Making the promise falsifiable is a feature.
+        The taxonomy is deliberately honest: NovaFabric does <strong>not</strong> claim deterministic exact
+        replay of remote closed-weight models. Replay modes make the promise explicit rather than pretending
+        a changing provider is deterministic.
       </p>
     </div>
   </section>
