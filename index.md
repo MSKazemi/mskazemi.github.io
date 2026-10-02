@@ -135,7 +135,7 @@ Privacy-first, local-first tools — built to be installed and used, not just ci
 
 - Runs offline from a laptop to an HPC cluster — no cloud, no account
 
-- 36 releases on PyPI · 176 commits · Apache-2.0 — experimental, and labelled as such
+- Apache-2.0 · beta / pre-v1 · core local workflows are self-hosted and offline-first
 
 Hold a key, speak, release — fully **on-device** voice dictation that types into any app and runs voice commands. No cloud, no subscription, no data leaving your machine. Shipped and maintained across multiple releases.
 
