@@ -1,6 +1,6 @@
-# NovaFabric — Replayable AI Infrastructure · Mohsen Seyedkazemi Ardebili
+# NovaFabric — Execution Capsules for AI & HPC · Mohsen Seyedkazemi Ardebili
 
-> NovaFabric turns any AI agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes. Open-source, self-hosted.
+> NovaFabric is an open-source, self-hosted execution-capsule system for AI and HPC workloads. It turns a command, agent, model run, or HPC job into portable evidence that can be replayed, diffed, and cryptographically verified.
 
 Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -8,9 +8,9 @@ Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazem
 
 open source · Apache-2.0 · self-hosted
 
-Replayable AI infrastructure.
+Execution capsules for AI and HPC.
 
-An open-source, self-hosted toolkit that turns any AI agent or model run into a **portable, signed, replayable evidence capsule** — captured with no code changes and owned entirely by you. Observability tells you _what happened_; NovaFabric answers the harder question — _what would happen if I ran this again, today?_
+An open-source, self-hosted execution-capsule system that turns an AI agent, model run, script, or HPC job into a **portable, signed, replayable evidence capsule** — captured with no application-code changes and owned entirely by you. Observability tells you _what happened_; NovaFabric focuses on whether a past execution can be _replayed, compared, and proven_.
 
 - INSTALL pip install novafabric
 
@@ -56,7 +56,7 @@ A signed, audit-ready export — capsule + lineage + attestations + redaction pr
 
 // the honest contract
 
-## Four replay modes — each a falsifiable promise.
+## Replay modes with explicit, falsifiable semantics.
 
 ### exact
 
@@ -74,7 +74,7 @@ Re-execute and compare _meaning_ (via a judge model), not tokens — for remote 
 
 Inspect the captured run without re-executing anything — read-only, no network, no side effects.
 
-The taxonomy is deliberately honest: NovaFabric does **not** claim exact replay of remote closed-weight models — that's what `semantic` and `mocked` are for. Making the promise falsifiable is a feature.
+The taxonomy is deliberately honest: NovaFabric does **not** claim deterministic exact replay of remote closed-weight models. Replay modes make the promise explicit rather than pretending a changing provider is deterministic.
 
 // trust & governance
 
@@ -102,7 +102,7 @@ WORM retention (S3 Object Lock, Azure immutable blob, GCS Bucket Lock) with lega
 
 Only the Run Capsule and Evidence Bundle are new on-disk formats — everything else adopts an existing open standard, so NovaFabric feeds your observability stack rather than replacing it.
 
-**Design slogan:** local-first now, distributed-ready always, cluster-scale later — a one-node run is the smallest case of a distributed run. Built in Python 3.12+ with a Go collector tier; server mode, collector, object store, and dashboard are marked _experimental_, and cross-cluster federation is design-intent, not shipped.
+**Design slogan:** local-first now, distributed-ready always, cluster-scale later — a one-node run is the smallest case of a distributed run. Built in Python 3.12+ with a Go collector tier. NovaFabric is **beta / pre-v1**: local capture, replay, diff and evidence workflows are the strongest path, while server and cluster-scale components remain less mature and on-disk formats are not frozen until v1.0.
 
 // more
 
