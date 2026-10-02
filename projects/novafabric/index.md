@@ -1,6 +1,6 @@
-# NovaFabric — Execution Capsules for AI & HPC · Mohsen Seyedkazemi Ardebili
+# NovaFabric — Replayable Execution & Evidence Infrastructure · Mohsen Seyedkazemi Ardebili
 
-> NovaFabric is an open-source, self-hosted execution-capsule system for AI and HPC workloads. It turns a command, agent, model run, or HPC job into portable evidence that can be replayed, diffed, and cryptographically verified.
+> NovaFabric is open-source, self-hosted replayable-execution and evidence infrastructure. It captures commands and AI/HPC runs as portable Run Capsules for replay, structural diff, lineage, cryptographic provenance, assurance, and audit.
 
 Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -8,9 +8,9 @@ Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazem
 
 open source · Apache-2.0 · self-hosted
 
-Execution capsules for AI and HPC.
+Replayable execution and evidence infrastructure.
 
-An open-source, self-hosted execution-capsule system that turns an AI agent, model run, script, or HPC job into a **portable, signed, replayable evidence capsule** — captured with no application-code changes and owned entirely by you. Observability tells you _what happened_; NovaFabric focuses on whether a past execution can be _replayed, compared, and proven_.
+Open-source, self-hosted replay and evidence infrastructure that captures a command, AI agent, model run, script, or HPC job as a **portable Run Capsule** — with no application-code changes — then adds replay, structural diff, lineage, cryptographic provenance, assurance, and audit around that execution. Observability tells you _what happened_; NovaFabric focuses on whether a past execution can be _replayed, compared, and proven_.
 
 - INSTALL pip install novafabric
 
@@ -50,7 +50,7 @@ Causation — which assets and prior runs contributed to this run, and what depe
 
 A signed, audit-ready export — capsule + lineage + attestations + redaction proof — that a third party can verify _without NovaFabric installed_.
 
-### Zero-instrumentation capture
+### Zero-code-change capture
 
 `nova capture python my_agent.py` — per-SDK hooks, wire-level hooks (httpx/requests/aiohttp/urllib3), and transparent HTTP/MCP proxies record any command. No application changes; all patches removed after the run.
 
