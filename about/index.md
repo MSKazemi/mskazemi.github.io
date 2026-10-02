@@ -38,7 +38,7 @@ Agents that investigate a live cluster with real tools — logs, metrics, the AP
 
 ### Evidence and audit for AI systems
 
-Capturing AI and HPC executions as portable evidence capsules that can be sealed, replayed, structurally diffed and verified later — so a past execution can be examined rather than merely trusted. Built as [NovaFabric](https://mskazemi.com/projects/novafabric/).
+Capturing AI-agent and agentic-system executions as portable Run Capsules that can be sealed, replayed, behaviorally/structurally diffed and verified later — so a past execution can be examined rather than merely trusted. Built as [NovaFabric](https://mskazemi.com/projects/novafabric/).
 
 ### Measuring agents on real operations work
 
