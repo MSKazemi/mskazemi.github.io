@@ -50,7 +50,7 @@ The same rate applies on every channel — direct client, agency or platform. De
 ## Projects
 
 - [KubeIntellect](https://mskazemi.com/projects/kubeintellect/): a human-governed AI SRE for Kubernetes — an LLM-orchestrated operator that investigates the live cluster with real tools, explains what it found, and, with human approval, fixes it. Published in the Journal of Grid Computing (2026). Code: https://github.com/MSKazemi/kubeintellect
-- [NovaFabric](https://mskazemi.com/projects/novafabric/): an open-source, self-hosted execution-capsule system for AI and HPC workloads; it captures runs into portable evidence for replay, structural diff, lineage and cryptographic verification. Code: https://github.com/MSKazemi/novafabric
+- [NovaFabric](https://mskazemi.com/projects/novafabric/): open-source, self-hosted replayable-execution and evidence infrastructure; it captures commands and AI/HPC runs as portable Run Capsules for replay, structural diff, lineage, cryptographic provenance, assurance and audit. Code: https://github.com/MSKazemi/novafabric
 - [YazSes](https://mskazemi.com/projects/yazses/): free, open-source, fully offline by default voice dictation (speech-to-text) for Linux, macOS and Windows — hold a key, speak, release, and your words are typed into whatever app has focus. Transcription runs on-device with faster-whisper. Documentation: https://mskazemi.com/yazses/
 - [AOBench](https://mskazemi.com/projects/aobench/): a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks.
 
