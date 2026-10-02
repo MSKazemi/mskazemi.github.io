@@ -698,13 +698,13 @@
             </span>
           </div>
           <p class="card-desc">
-            <strong>NovaFabric</strong> is an open-source, self-hosted execution-capsule system for AI and
-            HPC workloads. It captures an agent, model run, script, or HPC job as <strong>portable, signed
-            execution evidence</strong> for replay, structural diff, lineage and audit — with no
+            <strong>NovaFabric</strong> is open-source, self-hosted replay and evidence infrastructure. It
+            captures commands and AI/HPC runs as <strong>portable Run Capsules</strong> for replay,
+            structural diff, lineage, cryptographic provenance, assurance and audit — with no
             application-code changes.
           </p>
           <ul class="ticks">
-            <li>Zero-instrumentation capture · four honest replay modes (exact / mocked / semantic / forensic)</li>
+            <li>Zero-code-change capture · four explicit replay modes (exact / mocked / semantic / forensic)</li>
             <li>Cryptographic seal: DSSE signature + RFC 3161 timestamp + append-only Merkle log</li>
             <li>Structured run-to-run diff as a CI regression gate; signed evidence bundles verify without it installed</li>
             <li>Runs offline from a laptop to an HPC cluster — no cloud, no account</li>
