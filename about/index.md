@@ -1,16 +1,16 @@
-# About Mohsen Seyedkazemi Ardebili — AI Platform, Agentic AI & MLOps Engineer, Bologna
+# About Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer
 
-> Mohsen Seyedkazemi Ardebili — AI Platform & MLOps Engineer, Bologna. Agentic AI on Kubernetes, AI SRE, AIOps and HPC, after nine years in enterprise IT.
+> Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer · Independent Consultant, based in Bologna.
 
 Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
 ---
 
-AI Platform & MLOps Engineer · Agentic AI Systems on Kubernetes · Bologna, Italy
+AI Platform & Agentic Systems Engineer · Independent Consultant · Bologna, Italy
 
-AI platform and MLOps engineer. I build systems that operate infrastructure, not systems that talk about it.
+AI Platform & Agentic Systems Engineer. I build systems that operate infrastructure and preserve evidence of what autonomous systems actually did.
 
-I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and stayed on as a research fellow. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
+I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and later served there as a research fellow through September 2026. Today I work across **AI platforms**, **agentic systems**, **MLOps**, Kubernetes/OpenShift and HPC as an independent consultant.
 
 - BASED Bologna, Italy · remote worldwide
 
@@ -38,7 +38,7 @@ Agents that investigate a live cluster with real tools — logs, metrics, the AP
 
 ### Evidence and audit for AI systems
 
-Capturing what an AI run actually did, sealing it, and replaying it later — so a decision can be re-examined rather than merely trusted. Built as [NovaFabric](https://mskazemi.com/projects/novafabric/).
+Capturing AI and HPC executions as portable evidence capsules that can be sealed, replayed, structurally diffed and verified later — so a past execution can be examined rather than merely trusted. Built as [NovaFabric](https://mskazemi.com/projects/novafabric/).
 
 ### Measuring agents on real operations work
 
