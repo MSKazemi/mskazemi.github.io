@@ -6,11 +6,11 @@ Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · 
 
 ---
 
-AI Platform & MLOps Engineer · Agentic AI Systems on Kubernetes · Bologna, Italy
+AI Platform & Agentic Systems Engineer · Independent Consultant · Bologna, Italy
 
 AI platform and MLOps engineer. I build systems that operate infrastructure, not systems that talk about it.
 
-I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and stayed on as a research fellow. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
+I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and stayed on as a research fellow until September 2026. Today, as an independent consultant, I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
 
 - BASED Bologna, Italy · remote worldwide
 

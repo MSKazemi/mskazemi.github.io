@@ -6,7 +6,7 @@ Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This i
 
 ---
 
-AI Platform & MLOps Engineer · Agentic AI Systems on Kubernetes
+AI Platform & Agentic Systems Engineer · Independent Consultant
 
 I build autonomous AI that acts on infrastructure.
 
@@ -30,7 +30,7 @@ I spent nearly nine years in enterprise IT and network operations — six of the
 
 That path gives me a lens most ML researchers don't have: I care about uptime, observability, and correctness _in production_ — not just benchmark numbers. Today I design autonomous control for infrastructure: systems that detect failures, reason about root cause, and propose or execute remediation behind human-approval gates.
 
-I'm a Postdoctoral Research Fellow at DEI, University of Bologna, working across EU Horizon projects (I led the UNIBO contribution to DECICE; I now lead SEANERGYS work on ExaMLOps). And I ship — open-source tools and products that real people run.
+I'm an independent consultant. From August 2022 to September 2026 I was a Postdoctoral Research Fellow at DEI, University of Bologna, working across EU Horizon projects (I led the UNIBO contribution to DECICE and the SEANERGYS work on ExaMLOps). And I ship — open-source tools and products that real people run.
 
 // impact — verified 2026-08-10
 
@@ -99,7 +99,7 @@ Thermal-hazard prediction for datacenters — multi-modal deep learning forecast
 
 - Training data published openly on Zenodo so the result can be reproduced
 
-An end-to-end MLOps platform for HPC workload management, built for the EuroHPC **SEANERGYS** project and now running in production at LuxProvide on the MeluXina supercomputer. Architect, lead designer and main developer; WP3 task lead at Bologna. It is **model-agnostic and multi-tenant** — any of the sixteen consortium partners registers a model and the platform auto-discovers and operationalises it (train → version → govern → serve → monitor) without ever owning the model code. The whole loop, on a real supercomputer, behind an operator approval gate.
+An end-to-end MLOps platform for HPC workload management, built for the EuroHPC **SEANERGYS** project and now running in production on European HPC infrastructure. Architect, lead designer and main developer; WP3 task lead at Bologna. It is **model-agnostic and multi-tenant** — any of the sixteen consortium partners registers a model and the platform auto-discovers and operationalises it (train → version → govern → serve → monitor) without ever owning the model code. The whole loop, on a real supercomputer, behind an operator approval gate.
 
 - Auto-discovery training pipelines in Prefect: every registered model × dataset pair runs train → evaluate → log → promote
 

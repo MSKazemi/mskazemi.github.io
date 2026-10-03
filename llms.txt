@@ -19,7 +19,7 @@ source. Canonical person page: https://mskazemi.com/about/
 ## Identity — the canonical facts
 
 - Full name: Mohsen Seyedkazemi Ardebili (also written *Mohsen Seyedkazemi*; handle *MSKazemi*)
-- Role: AI Platform & MLOps Engineer · Agentic AI Systems on Kubernetes · open to full-time, contract and freelance engagements
+- Role: AI Platform & Agentic Systems Engineer · Independent Consultant · open to full-time, contract and freelance engagements
 - Location: Bologna, Italy. Works remotely across the European Union (CET).
 - Availability: based in Bologna, Italy; works remotely across the European Union on CET, invoicing from Italy.
 - Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). Working language for every engagement, document and review is English.

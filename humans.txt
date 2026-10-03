@@ -1,7 +1,7 @@
 /* TEAM */
 
   Name:      Mohsen Seyedkazemi Ardebili
-  Role:      AI Platform & MLOps Engineer · Agentic AI Systems on Kubernetes
+  Role:      AI Platform & Agentic Systems Engineer · Independent Consultant
   Works on:  AI SRE and AIOps for Kubernetes, MLOps for production machine learning,
              anomaly prediction on Tier-0 supercomputers, and LLM agents that act on
              real systems behind a human approval gate.

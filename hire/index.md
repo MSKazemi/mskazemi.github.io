@@ -1,6 +1,6 @@
 # Hire a Freelance AI SRE, MLOps &amp; Kubernetes Engineer (Remote, EU) — Mohsen Seyedkazemi Ardebili
 
-> Freelance AI infrastructure consultant working remotely worldwide: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
+> AI Platform & Agentic Systems Engineer · Independent Consultant — freelance AI infrastructure consultant working remotely worldwide: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
 
 Source: <https://mskazemi.com/hire/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
