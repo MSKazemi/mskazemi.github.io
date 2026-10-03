@@ -1,6 +1,6 @@
 # Mohsen Seyedkazemi Ardebili
 
-> AI platform and MLOps engineer who builds agentic AI systems on Kubernetes
+> AI Platform & Agentic Systems Engineer · Independent Consultant
 > (Bologna, Italy). He builds autonomous AI that *acts* on infrastructure — not
 > chatbots that explain a cluster, but systems that observe it, reason about
 > failures, and execute remediation with a human at the gate. Focus areas:
@@ -19,7 +19,7 @@ source. Canonical person page: https://mskazemi.com/about/
 ## Identity — the canonical facts
 
 - Full name: Mohsen Seyedkazemi Ardebili (also written *Mohsen Seyedkazemi*; handle *MSKazemi*)
-- Role: AI Platform & Agentic Systems Engineer · Independent Consultant · open to full-time, contract and freelance engagements
+- Role: AI Platform & Agentic Systems Engineer · Independent Consultant · open to contract, consulting and relevant full-time engagements
 - Location: Bologna, Italy. Works remotely across the European Union (CET).
 - Availability: based in Bologna, Italy; works remotely across the European Union on CET, invoicing from Italy.
 - Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). Working language for every engagement, document and review is English.
@@ -50,7 +50,7 @@ The same rate applies on every channel — direct client, agency or platform. De
 ## Projects
 
 - [KubeIntellect](https://mskazemi.com/projects/kubeintellect/): a human-governed AI SRE for Kubernetes — an LLM-orchestrated operator that investigates the live cluster with real tools, explains what it found, and, with human approval, fixes it. Published in the Journal of Grid Computing (2026). Code: https://github.com/MSKazemi/kubeintellect
-- [NovaFabric](https://mskazemi.com/projects/novafabric/): an open-source, self-hosted toolkit that turns any AI-agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes.
+- [NovaFabric](https://mskazemi.com/projects/novafabric/): open-source, self-hosted replay and evidence infrastructure for AI agents and agentic systems; it captures agent executions as portable Run Capsules for replay, behavioral/structural diff, lineage, cryptographic provenance, assurance and audit. Supports local, Docker, Kubernetes and SLURM/HPC environments. Code: https://github.com/MSKazemi/novafabric
 - [YazSes](https://mskazemi.com/projects/yazses/): free, open-source, fully offline by default voice dictation (speech-to-text) for Linux, macOS and Windows — hold a key, speak, release, and your words are typed into whatever app has focus. Transcription runs on-device with faster-whisper. Documentation: https://mskazemi.com/yazses/
 - [AOBench](https://mskazemi.com/projects/aobench/): a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks.
 

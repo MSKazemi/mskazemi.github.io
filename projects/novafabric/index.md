@@ -1,6 +1,6 @@
-# NovaFabric — Replayable AI Infrastructure · Mohsen Seyedkazemi Ardebili
+# NovaFabric — Replay & Evidence Infrastructure for AI Agents · Mohsen Seyedkazemi Ardebili
 
-> NovaFabric turns any AI agent or model run into a portable, signed, replayable evidence capsule — captured with no code changes. Open-source, self-hosted.
+> NovaFabric is open-source, self-hosted replay and evidence infrastructure for AI agents and agentic systems. It captures agent executions as portable Run Capsules for replay, behavioral/structural diff, lineage, cryptographic provenance, assurance, and audit.
 
 Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -8,9 +8,9 @@ Source: <https://mskazemi.com/projects/novafabric/> · Author: Mohsen Seyedkazem
 
 open source · Apache-2.0 · self-hosted
 
-Replayable AI infrastructure.
+Replayable execution and evidence infrastructure.
 
-An open-source, self-hosted toolkit that turns any AI agent or model run into a **portable, signed, replayable evidence capsule** — captured with no code changes and owned entirely by you. Observability tells you _what happened_; NovaFabric answers the harder question — _what would happen if I ran this again, today?_
+Open-source, self-hosted replay and evidence infrastructure for **AI agents and agentic systems**. It captures agent executions as **portable Run Capsules** — with no application-code changes — then adds replay, behavioral/structural diff, lineage, cryptographic provenance, assurance, and audit. The same capture layer can wrap general commands and supports local, Docker, Kubernetes and SLURM/HPC environments. Observability tells you _what happened_; NovaFabric focuses on whether a past execution can be _replayed, compared, and proven_.
 
 - INSTALL pip install novafabric
 
@@ -50,13 +50,13 @@ Causation — which assets and prior runs contributed to this run, and what depe
 
 A signed, audit-ready export — capsule + lineage + attestations + redaction proof — that a third party can verify _without NovaFabric installed_.
 
-### Zero-instrumentation capture
+### Zero-code-change capture
 
 `nova capture python my_agent.py` — per-SDK hooks, wire-level hooks (httpx/requests/aiohttp/urllib3), and transparent HTTP/MCP proxies record any command. No application changes; all patches removed after the run.
 
 // the honest contract
 
-## Four replay modes — each a falsifiable promise.
+## Replay modes with explicit, falsifiable semantics.
 
 ### exact
 
@@ -74,7 +74,7 @@ Re-execute and compare _meaning_ (via a judge model), not tokens — for remote 
 
 Inspect the captured run without re-executing anything — read-only, no network, no side effects.
 
-The taxonomy is deliberately honest: NovaFabric does **not** claim exact replay of remote closed-weight models — that's what `semantic` and `mocked` are for. Making the promise falsifiable is a feature.
+The taxonomy is deliberately honest: NovaFabric does **not** claim deterministic exact replay of remote closed-weight models. Replay modes make the promise explicit rather than pretending a changing provider is deterministic.
 
 // trust & governance
 
@@ -102,7 +102,7 @@ WORM retention (S3 Object Lock, Azure immutable blob, GCS Bucket Lock) with lega
 
 Only the Run Capsule and Evidence Bundle are new on-disk formats — everything else adopts an existing open standard, so NovaFabric feeds your observability stack rather than replacing it.
 
-**Design slogan:** local-first now, distributed-ready always, cluster-scale later — a one-node run is the smallest case of a distributed run. Built in Python 3.12+ with a Go collector tier; server mode, collector, object store, and dashboard are marked _experimental_, and cross-cluster federation is design-intent, not shipped.
+**Design slogan:** local-first now, distributed-ready always, cluster-scale later — a one-node run is the smallest case of a distributed run. Built in Python 3.12+ with a Go collector tier. NovaFabric is **beta / pre-v1**: local capture, replay, diff and evidence workflows are the strongest path, while server and cluster-scale components remain less mature and on-disk formats are not frozen until v1.0.
 
 // more
 

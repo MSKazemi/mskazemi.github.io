@@ -1,6 +1,6 @@
-# Mohsen Seyedkazemi Ardebili — Autonomous AI for Infrastructure
+# Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer
 
-> AI platform and MLOps engineer building agentic AI systems on Kubernetes: AI SRE, MLOps, anomaly detection on Tier-0 HPC. Open to work, remote from Italy.
+> AI Platform & Agentic Systems Engineer · Independent Consultant. Building agentic AI, MLOps and reproducible execution systems across Kubernetes, OpenShift and HPC.
 
 Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -30,7 +30,7 @@ I spent nearly nine years in enterprise IT and network operations — six of the
 
 That path gives me a lens most ML researchers don't have: I care about uptime, observability, and correctness _in production_ — not just benchmark numbers. Today I design autonomous control for infrastructure: systems that detect failures, reason about root cause, and propose or execute remediation behind human-approval gates.
 
-I'm an independent consultant. From August 2022 to September 2026 I was a Postdoctoral Research Fellow at DEI, University of Bologna, working across EU Horizon projects (I led the UNIBO contribution to DECICE and the SEANERGYS work on ExaMLOps). And I ship — open-source tools and products that real people run.
+I was a Postdoctoral Research Fellow at DEI, University of Bologna from August 2022 to September 2026, working across EU Horizon and EuroHPC projects including DECICE and SEANERGYS. I now work as an independent consultant on AI platform and MLOps systems, alongside open-source systems I build and maintain.
 
 // impact — verified 2026-08-10
 
@@ -119,15 +119,15 @@ The operator's companion for KubeIntellect — a CLI and Python SDK (`kq`) expos
 
 - Streaming Rich TUI · pipeline-friendly output
 
-// ships — products under [NovaFabric](https://github.com/NovaFabric)
+// ships — open-source systems
 
 ## Research is half of it. I also ship.
 
 Privacy-first, local-first tools — built to be installed and used, not just cited.
 
-The reproducibility and trust layer for AI systems — an open-source, self-hosted toolkit that turns any agent or model run into a **portable, signed, replayable evidence capsule**, captured with no code changes. Observability tells you what happened; NovaFabric tells you _what would happen if you ran it again, today._
+**NovaFabric** is open-source, self-hosted replay and evidence infrastructure for **AI agents and agentic systems**. It captures agent executions as **portable Run Capsules** for replay, behavioral/structural diff, lineage, cryptographic provenance, assurance and audit — with no application-code changes. It also supports local, Docker, Kubernetes and SLURM/HPC execution environments.
 
-- Zero-instrumentation capture · four honest replay modes (exact / mocked / semantic / forensic)
+- Zero-code-change capture · four explicit replay modes (exact / mocked / semantic / forensic)
 
 - Cryptographic seal: DSSE signature + RFC 3161 timestamp + append-only Merkle log
 
@@ -135,7 +135,7 @@ The reproducibility and trust layer for AI systems — an open-source, self-host
 
 - Runs offline from a laptop to an HPC cluster — no cloud, no account
 
-- 36 releases on PyPI · 176 commits · Apache-2.0 — experimental, and labelled as such
+- Apache-2.0 · beta / pre-v1 · core local workflows are self-hosted and offline-first
 
 Hold a key, speak, release — fully **on-device** voice dictation that types into any app and runs voice commands. No cloud, no subscription, no data leaving your machine. Shipped and maintained across multiple releases.
 
@@ -229,7 +229,7 @@ Full details, how an engagement runs, and the questions people usually ask → [
 
 ### Who is Mohsen Seyedkazemi Ardebili?
 
-Mohsen Seyedkazemi Ardebili is an AI platform and MLOps engineer who builds agentic AI systems on Kubernetes. He builds autonomous systems that operate infrastructure behind a human approval gate — AI SRE and AIOps agents for Kubernetes, MLOps platforms for production machine learning, and anomaly prediction on Tier-0 supercomputers for EuroHPC projects.
+Mohsen Seyedkazemi Ardebili is an AI Platform & Agentic Systems Engineer and independent consultant. He builds AI platform, MLOps and agentic systems across Kubernetes, OpenShift and HPC, including KubeIntellect for human-governed Kubernetes operations and NovaFabric for replayable, verifiable execution evidence for AI agents.
 
 ### What is an AI SRE, and how is it different from a chatbot for Kubernetes?
 
