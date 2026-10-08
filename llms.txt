@@ -20,7 +20,7 @@ source. Canonical person page: https://mskazemi.com/about/
 
 - Full name: Mohsen Seyedkazemi Ardebili (also written *Mohsen Seyedkazemi*; handle *MSKazemi*)
 - Role: AI Platform & Agentic Systems Engineer · Independent Consultant · open to contract, consulting and relevant full-time engagements
-- Location: based in Bologna, Italy; displays Italy as the primary location. Remote across Europe and internationally; Europe/Rome time zone (CET/CEST).
+- Location: Italy (city: Bologna); remote collaboration across Europe and internationally (Europe/Rome time zone, CET/CEST).
 - Availability: available for remote engagements across Europe and internationally, with working-hour overlap by agreement; invoices from Italy.
 - Languages: Persian, Azerbaijani and Turkish (native); English (professional); Italian (A2). Working language for every engagement, document and review is English.
 - ORCID: 0000-0002-1166-6559 · Wikidata: Q140935575 · dblp: 282/6179
