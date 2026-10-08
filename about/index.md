@@ -1,20 +1,20 @@
 # About Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer
 
-> Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer · Independent Consultant, based in Bologna.
+> Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer · Independent Consultant, based in Italy and collaborating remotely across Europe and internationally.
 
 Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
 ---
 
-AI Platform & Agentic Systems Engineer · Independent Consultant · Bologna, Italy
+AI Platform & Agentic Systems Engineer · Independent Consultant · Italy · remote internationally
 
 AI Platform & Agentic Systems Engineer. I build systems that operate infrastructure and preserve evidence of what autonomous systems actually did.
 
 I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and later served there as a research fellow through September 2026. Today I work across **AI platforms**, **agentic systems**, **MLOps**, Kubernetes/OpenShift and HPC as an independent consultant.
 
-- BASED Bologna, Italy · remote worldwide
+- BASED Italy · remote across Europe & internationally
 
-- BASED Bologna, Italy (CET) · remote worldwide
+- TIME ZONE Europe/Rome (CET/CEST) · flexible overlap
 
 - LANGUAGES Persian · Azerbaijani · Turkish (native) · English (professional) · Italian (A2)
 
@@ -25,6 +25,8 @@ I spent nearly nine years in enterprise IT and network operations — six of the
 Most people arrive at AI infrastructure from machine learning and discover operations later. I arrived the other way round. My first career was keeping an industrial plant's networks, servers and control systems alive — a place with no staging environment, where the cost of a bad change is not a rolled-back deploy but a unit off the grid. That background is why I am sceptical of autonomy without a gate, and why the systems I build ask a human before they do anything they cannot undo.
 
 The research half came second. My doctorate at the University of Bologna was on the design, analysis and management of high-performance computing systems, working with the operational telemetry of CINECA's Tier-0 supercomputers. That work has continued through a run of EU-funded projects — DECICE, Graph-Massivizer, EUROPEAN PILOT, REGALE, EPI SGA1 and, currently, the EuroHPC-JU project **SEANERGYS**, where I am the architect and lead developer of the MLOps platform and a work-package task lead.
+
+I am based in Bologna, Italy and collaborate remotely with teams across Europe and internationally.
 
 What connects the two is a single question I keep coming back to: _how much of an operator's judgement can a machine take over, and how do you prove afterwards that it was right to?_ Every project below is one attempt at an answer.
 
