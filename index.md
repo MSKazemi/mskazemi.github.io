@@ -46,13 +46,13 @@ Sources: [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ
 
 Things that act, with the receipts — KubeIntellect works on a live Kubernetes cluster and stops for a human before it changes anything; AOBench measures whether an agent stays inside its permissions, against reproducible HPC snapshots.
 
-A modular, LLM-orchestrated multi-agent framework for **end-to-end Kubernetes operations** — root-cause analysis, diagnosis, and human-gated cluster actions across the full API surface (read, write, exec, delete, RBAC, lifecycle). A stateful LangGraph supervisor coordinates domain agents; a Code-Generator agent synthesises and validates new tools at runtime. Published in the _Journal of Grid Computing_ (2026, 24(3):17).
+A modular, LLM-orchestrated multi-agent framework for **end-to-end Kubernetes operations** — root-cause analysis, diagnosis, and human-gated cluster actions across the full API surface (read, write, exec, delete, RBAC, lifecycle). A stateful LangGraph supervisor coordinates domain agents; in the published architecture a Code-Generator agent synthesised and validated new tools at runtime. Published in the _Journal of Grid Computing_ (2026, 24(3):17).
 
 - Stateful LangGraph supervisor + PostgreSQL checkpoints
 
 - Human-in-the-loop approval on every mutating operation
 
-- Runtime tool synthesis with AST validation and a Kubernetes API whitelist
+- Runtime tool synthesis with AST validation and a Kubernetes API whitelist _(paper architecture)_
 
 - Deployed on Azure AKS — OpenAI-compatible FastAPI backend
 

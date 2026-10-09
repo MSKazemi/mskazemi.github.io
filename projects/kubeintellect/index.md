@@ -70,9 +70,9 @@ Destructive operations pause mid-execution for explicit approve/deny. Cascading-
 
 A tamper-evident, deterministically replayable audit log; mutations arm rollback points and produce grounded, source-cited incident postmortems.
 
-### Dynamic tool synthesis
+### Dynamic tool synthesis _(paper architecture)_
 
-Generates new Python tools at runtime, validates them with AST safety checks, tests them, and can graduate a proven tool into the codebase via an automated pull request — no redeploy. Generated tools execute in-process behind AST validation; they are not sandboxed.
+In the architecture described in the paper, KubeIntellect generated new Python tools at runtime, validated them with AST safety checks and tested them, and could graduate a proven tool into the codebase via an automated pull request. Those generated tools executed in-process behind AST validation and were not sandboxed. The capability was evaluated in the paper and dropped when the system was simplified for production; the shipping implementation works from a fixed, audited tool set.
 
 ### MAPE-K perception loop
 

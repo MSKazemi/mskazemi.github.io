@@ -192,8 +192,8 @@
           <p>A tamper-evident, deterministically replayable audit log; mutations arm rollback points and produce grounded, source-cited incident postmortems.</p>
         </div>
         <div class="arch-item">
-          <h3>Dynamic tool synthesis</h3>
-          <p>Generates new Python tools at runtime, validates them with AST safety checks, tests them, and can graduate a proven tool into the codebase via an automated pull request — no redeploy. Generated tools execute in-process behind AST validation; they are not sandboxed.</p>
+          <h3>Dynamic tool synthesis <em>(paper architecture)</em></h3>
+          <p>In the architecture described in the paper, KubeIntellect generated new Python tools at runtime, validated them with AST safety checks and tested them, and could graduate a proven tool into the codebase via an automated pull request. Those generated tools executed in-process behind AST validation and were not sandboxed. The capability was evaluated in the paper and dropped when the system was simplified for production; the shipping implementation works from a fixed, audited tool set.</p>
         </div>
         <div class="arch-item">
           <h3>MAPE-K perception loop</h3>
@@ -210,7 +210,7 @@
       <h2 class="section-title">Measured, with the receipts.</h2>
       <div class="metrics-row">
         <div class="metric"><span class="mv">93<span class="mu">%</span></span><span class="ml">query resolution (186/200) — paper evaluation</span></div>
-        <div class="metric"><span class="mv">81.8<span class="mu">%</span></span><span class="ml">runtime tool-synthesis success (63/77)</span></div>
+        <div class="metric"><span class="mv">81.8<span class="mu">%</span></span><span class="ml">runtime tool-synthesis success (63/77) — paper evaluation</span></div>
         <div class="metric"><span class="mv">+25<span class="mu">pp</span></span><span class="ml">over a tool-less GPT-4o baseline</span></div>
         <div class="metric"><span class="mv">0</span><span class="ml">LLM tokens to detect a known failure</span></div>
       </div>
