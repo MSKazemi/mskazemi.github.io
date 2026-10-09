@@ -1,13 +1,24 @@
-# mskazemi.github.io
+# Personal website — mskazemi.com
 
-Personal homepage of Mohsen Seyedkazemi Ardebili — the **canonical** public homepage,
-served via **GitHub Pages** at <https://mskazemi.github.io>.
+The public personal website of **Mohsen Seyedkazemi Ardebili**, AI Platform & Agentic Systems
+Engineer · Independent Consultant. **Canonical URL:** https://mskazemi.com/
 
-Plain static site (HTML/CSS/JS, no build step). The GitHub Actions workflow
-`.github/workflows/deploy-pages.yml` deploys the repository contents to Pages on every
-push to `main` (and can be run manually via *workflow_dispatch*).
+This repository is the source of the site. It is static HTML/CSS/JavaScript with no build step,
+deployed to GitHub Pages by `.github/workflows/deploy-pages.yml` on every push to `main`.
+`mskazemi.github.io` redirects to the custom domain, and every canonical tag, Open Graph URL,
+`sitemap.xml`, `robots.txt` and `llms.txt` points at `https://mskazemi.com/`.
 
-Source of truth for the content lives in the lab at `work/cv/homepage/`. A GitLab Pages copy
-(`mskazemi.gitlab.io`) may be kept as a mirror, but GitHub is canonical: all canonical
-tags, Open Graph URLs, `sitemap.xml`, `robots.txt`, and `llms.txt` point at
-`https://mskazemi.github.io/`.
+## Content conventions
+
+- Each HTML page has a same-path `index.md` Markdown alternative; change both together, and keep
+  `llms.txt` / `humans.txt` in step when availability or location copy changes.
+- Location: **Italy** in headlines, quick facts and social previews (remote across Europe and
+  internationally); the city, **Bologna, Italy**, in detailed biography text and `Person` address data.
+- Time zone: **Europe/Rome (CET/CEST)**.
+- Project claims link to their primary evidence (repository, documentation, paper or DOI).
+- Update a page's `sitemap.xml` `lastmod` only when its content changes.
+
+## Review before merging
+
+Check the homepage, About and Hire pages at desktop and mobile widths, and confirm that copy, social
+descriptions, Markdown alternatives and JSON-LD agree. Merging into `main` deploys publicly.

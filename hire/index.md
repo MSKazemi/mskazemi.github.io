@@ -1,4 +1,4 @@
-# Hire a Freelance AI SRE, MLOps &amp; Kubernetes Engineer (Remote, EU) — Mohsen Seyedkazemi Ardebili
+# Hire a Freelance AI SRE, MLOps & Kubernetes Engineer (Remote, EU) — Mohsen Seyedkazemi Ardebili
 
 > AI Platform & Agentic Systems Engineer · Independent Consultant — freelance AI infrastructure consultant working remotely worldwide: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
 
@@ -6,15 +6,15 @@ Source: <https://mskazemi.com/hire/> · Author: Mohsen Seyedkazemi Ardebili · T
 
 ---
 
-available · remote · EU
+available · remote · Europe & international
 
 Freelance AI SRE, MLOps and Kubernetes engineering — remote, worldwide.
 
 I help teams whose infrastructure has outgrown the people watching it: clusters that page at 3 a.m. for reasons nobody has time to chase, models that made it to production and then quietly stopped being right, and AI agents that are about to be given credentials nobody has thought hard enough about. Start with a **fixed-price audit** — you get a written answer either way, and neither of us has to guess whether we work well together.
 
-- BASED Bologna, Italy (CET) · remote worldwide
+- BASED Italy · remote across Europe & internationally
 
-- MODE Remote · CET · English
+- MODE Remote · Europe/Rome · English
 
 - START Fixed-price audit from €150 · projects €400/day
 
@@ -72,7 +72,7 @@ Documentation, runbooks, and a walkthrough with the people who will own it. The 
 
 ### Can I hire a freelance MLOps engineer remotely?
 
-Yes — that is exactly this. I work remotely with clients worldwide from **Bologna, Italy**, and invoice from Italy, so the contract stays straightforward with no extra administration on your side. CET is my base working day, and I overlap with other time zones by arrangement.
+Yes — that is exactly this. I am based in Italy and work remotely with clients across Europe and internationally. I invoice from Italy, work on the Europe/Rome time zone, and arrange overlap with teams in other time zones.
 
 ### What does an AI SRE actually do?
 
@@ -88,7 +88,7 @@ Only under constraints you can state and test: a scoped identity with real RBAC 
 
 ### Which languages and time zones?
 
-CET, working in English — every engagement, document and review is delivered in English. I also speak Persian, Azerbaijani and Turkish natively, and Italian at A2. I work with teams across Europe and align working hours to yours.
+Europe/Rome (CET/CEST), working in English — every engagement, document and review is delivered in English. I also speak Persian, Azerbaijani and Turkish natively, and Italian at A2. I work with teams across Europe and align working hours to yours.
 
 // contact
 

@@ -12,7 +12,7 @@ I build autonomous AI that acts on infrastructure.
 
 Not a chatbot that explains your cluster — systems that observe it, reason about failures, and execute remediation, with a human at the gate. LLM agents for Kubernetes & HPC, anomaly detection on Tier-0 supercomputers, and the MLOps to run it in production.
 
-- LOC Bologna, IT
+- BASED Italy · remote across Europe & internationally
 
 - EXP 6 yrs 1,000 MW plant → PhD HPC
 
@@ -207,7 +207,7 @@ IEEE TCAD · FGCS · J. Grid Computing · SC · ACM CF · DATE · PDP · AsHES
 
 ## Hire a freelance AI infrastructure, MLOps and Kubernetes engineer.
 
-Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Remote worldwide, from Bologna on CET. I build systems your team can maintain after I'm gone — not black boxes.
+Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Based in Italy, I work remotely across Europe and internationally (Europe/Rome time zone). I build systems your team can maintain after I'm gone — not black boxes.
 
 ### Kubernetes reliability & AIOps
 
@@ -235,9 +235,9 @@ Mohsen Seyedkazemi Ardebili is an AI Platform & Agentic Systems Engineer and ind
 
 An AI SRE investigates and **acts** on a live cluster, where a chatbot only explains. It gathers its own evidence from real tools — kubectl, Prometheus, Loki — reasons about what is actually failing, and then executes the fix. The difference that matters in production is the approval gate: a human authorises the change, and the whole chain is left as an audit trail.
 
-### Is Mohsen available for freelance or contract work?
+### Is Mohsen available for full-time, contract or freelance work?
 
-Yes — remote worldwide, from Bologna on CET. Engagements run in three areas: Kubernetes reliability and AIOps, MLOps and machine learning in production, and production LLM agents. Each one can start with a fixed-price audit, so you can see the work before committing to a project. Details are on the [hire page](https://mskazemi.com/hire/).
+Yes — open to relevant full-time roles, contracts and freelance projects; based in Italy and working remotely across Europe and internationally. Engagements run in three areas: Kubernetes reliability and AIOps, MLOps and machine learning in production, and production LLM agents. Each one can start with a fixed-price audit, so you can see the work before committing to a project. Details are on the [hire page](https://mskazemi.com/hire/).
 
 ### What kind of infrastructure problems does he work on?
 
