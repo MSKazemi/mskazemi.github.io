@@ -20,12 +20,14 @@ import json
 import os
 import re
 import sys
+from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://mskazemi.com/"
 TITLE = "AI Platform &amp; Agentic Systems Engineer"
 TITLE_PAGES = ["index.html", "about/index.html", "hire/index.html"]
+TITLE_MAX = 60
 
 # (pattern, why) — matched case-insensitively against HTML, Markdown twins and text files.
 BANNED = [
@@ -45,6 +47,10 @@ BANNED = [
     (r"fully offline(?! by default)", "YazSes: 'offline' carries 'by default' when it reads as a guarantee"),
     (r"never phones home", "YazSes: privacy promises carry 'by default'"),
 ]
+
+
+def skip_dir(p: Path) -> bool:
+    return bool({".git", "node_modules", "tools", "data"} & set(p.relative_to(ROOT).parts))
 
 
 def text_files() -> list[Path]:
@@ -97,6 +103,14 @@ def main() -> int:
         m = re.search(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})', page.read_text(encoding="utf-8"))
         if m and m.group(1) > lastmod:
             problems.append(f"sitemap.xml: {loc} lastmod {lastmod} is older than dateModified {m.group(1)}")
+
+    # Advisory only: long titles truncate in results. Home and About keep name + full title by design.
+    for page in sorted(ROOT.rglob("index.html")):
+        if page.relative_to(ROOT).as_posix() in {"index.html", "about/index.html"} or skip_dir(page):
+            continue
+        m = re.search(r"<title>(.*?)</title>", page.read_text(encoding="utf-8"), re.S)
+        if m and len(unescape(m.group(1).strip())) > TITLE_MAX:
+            print(f"warning: {page.relative_to(ROOT)}: title longer than {TITLE_MAX} characters")
 
     for line in problems:
         print(line)

@@ -1,4 +1,4 @@
-# AOBench — Agent Operations Benchmark for HPC · Mohsen Seyedkazemi Ardebili
+# AOBench — Agent Operations Benchmark for HPC
 
 > AOBench is a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks. By Mohsen Seyedkazemi Ardebili.
 

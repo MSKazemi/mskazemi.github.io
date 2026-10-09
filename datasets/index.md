@@ -1,4 +1,4 @@
-# Open HPC datasets — Marconi100 telemetry, job power, thermal hazards
+# Open HPC datasets: Marconi100 telemetry, job power, thermal
 
 > Three open CC-BY-4.0 datasets from CINECA's Tier-0 supercomputers: node telemetry for anomaly detection, per-job power, and thermal-hazard data.
 
