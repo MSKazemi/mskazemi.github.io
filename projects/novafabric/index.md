@@ -1,4 +1,4 @@
-# NovaFabric — Replay & Evidence Infrastructure for AI Agents · Mohsen Seyedkazemi Ardebili
+# NovaFabric — Replay & Evidence Infrastructure for AI Agents
 
 > NovaFabric is open-source, self-hosted replay and evidence infrastructure for AI agents and agentic systems. It captures agent executions as portable Run Capsules for replay, behavioral/structural diff, lineage, cryptographic provenance, assurance, and audit.
 

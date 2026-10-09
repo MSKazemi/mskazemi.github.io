@@ -1,4 +1,4 @@
-# Hire a Freelance AI Platform, Agentic AI, MLOps & Kubernetes Engineer (Remote, EU) — Mohsen Seyedkazemi Ardebili
+# Hire a Freelance MLOps & Kubernetes Engineer — Remote, EU
 
 > AI Platform & Agentic Systems Engineer · Independent Consultant — freelance AI infrastructure consultant working remotely worldwide: Kubernetes reliability and AIOps, MLOps platforms, and production LLM agents.
 
