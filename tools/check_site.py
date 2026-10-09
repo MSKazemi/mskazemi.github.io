@@ -42,6 +42,8 @@ BANNED = [
     (r"\b\d[\d,]* citations?\b", "citation counts are not shown on the site"),
     (r"\bh-index\b", "citation metrics are not shown on the site"),
     (r"unibo\.it/sitoweb/", "the University of Bologna staff page no longer exists"),
+    (r"fully offline(?! by default)", "YazSes: 'offline' carries 'by default' when it reads as a guarantee"),
+    (r"never phones home", "YazSes: privacy promises carry 'by default'"),
 ]
 
 
