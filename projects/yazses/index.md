@@ -34,7 +34,7 @@ YazSes takes the opposite position. Transcription happens on the CPU you already
 
 There is no dictation box to copy out of. Release the key and the text is injected into the focused window — editor, browser, terminal or chat — on X11, Wayland, macOS and Windows.
 
-### Fully offline speech to text
+### Offline-by-default speech to text
 
 faster-whisper runs locally in int8 on the CPU. No GPU, no network, no account, no API key. Nothing leaves the machine by default.
 
