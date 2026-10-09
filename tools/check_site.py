@@ -39,6 +39,9 @@ BANNED = [
     (r"\b(six|6) (evaluation )?dimensions\b", "AOBench is scored on 7 dimensions"),
     (r"Code-Generator agent synthesises", "runtime tool synthesis is paper architecture, not current"),
     (r"^Generates new Python tools at runtime", "runtime tool synthesis is paper architecture, not current"),
+    (r"\b\d[\d,]* citations?\b", "citation counts are not shown on the site"),
+    (r"\bh-index\b", "citation metrics are not shown on the site"),
+    (r"unibo\.it/sitoweb/", "the University of Bologna staff page no longer exists"),
 ]
 
 

@@ -1,6 +1,6 @@
 # About Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer
 
-> Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer · Independent Consultant, based in Italy and collaborating remotely across Europe and internationally.
+> Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer and independent consultant based in Italy, collaborating remotely across Europe and internationally on agentic AI, MLOps, Kubernetes/OpenShift and HPC.
 
 Source: <https://mskazemi.com/about/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -10,7 +10,7 @@ AI Platform & Agentic Systems Engineer · Independent Consultant · Italy · rem
 
 AI Platform & Agentic Systems Engineer. I build systems that operate infrastructure and preserve evidence of what autonomous systems actually did.
 
-I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and later served there as a research fellow through September 2026. Today I work across **AI platforms**, **agentic systems**, **MLOps**, Kubernetes/OpenShift and HPC as an independent consultant.
+I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and later served there as a research fellow through September 2026. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
 
 - BASED Italy · remote across Europe & internationally
 
@@ -64,8 +64,6 @@ Everything above ships publicly. [YazSes](https://mskazemi.com/projects/yazses/)
 
 Selected work: _M100 ExaData_, a data-collection campaign on CINECA's Marconi100 Tier-0 supercomputer (_Nature Scientific Data_, 2023) · _PM100_, a job power-consumption dataset of a large-scale production HPC system (SC'23 workshops) · _GRAAFE_, graph anomaly anticipation for exascale HPC (_FGCS_, 2024) · _HazardNet_, thermal hazard prediction for datacenters (_FGCS_, 2024) · multi-level anomaly prediction in a Tier-0 datacenter (_ACM Computing Frontiers_, 2022) · _KubeIntellect_ (_Journal of Grid Computing_, 2026). The complete and current list is on [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ) and [ORCID](https://orcid.org/0000-0002-1166-6559).
 
-**Impact, read from Google Scholar on 2026-08-10:** 218 citations, h-index 8, i10-index 7, across 17 published or accepted peer-reviewed works. The shape of it matters more than the total — 9 citations in 2022, 15 in 2023, 24 in 2024, 76 in 2025, and 65 in the first seven months of 2026. More arrived in the last twenty months than in the preceding eighteen years combined. (OpenAlex reports a lower figure because it indexes fewer venues; both are correct for their own index.)
-
 On the service side: programme-committee member for PDP 2025, PDP 2026 and AsHES 2026, and a reviewer for IEEE TCAD, _FGCS_, the _Journal of Grid Computing_, SC, ACM CF, DATE, PDP and AsHES. I co-advise two PhD students and have supervised five completed MSc theses at the Lab of Big Data Architectures in Bologna.
 
 // elsewhere
@@ -80,9 +78,9 @@ If you found a profile that claims to be me, this is the list it should be on. A
 
 - [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ) · [ORCID 0000-0002-1166-6559](https://orcid.org/0000-0002-1166-6559) · [dblp](https://dblp.org/pid/282/6179) · [OpenAlex](https://openalex.org/A5013086540) · [Semantic Scholar](https://www.semanticscholar.org/author/2046824417)
 
-- [University of Bologna staff page](https://www.unibo.it/sitoweb/mohsen.seyedkazemi/en) · [Wikidata Q140935575](https://www.wikidata.org/wiki/Q140935575)
+- [Wikidata Q140935575](https://www.wikidata.org/wiki/Q140935575)
 
-- [Publications](https://mskazemi.com/publications/) — the full list, with DOIs, citation counts and BibTeX
+- [Publications](https://mskazemi.com/publications/) — the full list, with DOIs and BibTeX
 
 // next
 

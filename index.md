@@ -1,6 +1,6 @@
 # Mohsen Seyedkazemi Ardebili — AI Platform & Agentic Systems Engineer
 
-> AI Platform & Agentic Systems Engineer · Independent Consultant. Building agentic AI, MLOps and reproducible execution systems across Kubernetes, OpenShift and HPC.
+> AI Platform & Agentic Systems Engineer and independent consultant building agentic AI, MLOps and reproducible execution systems across Kubernetes, OpenShift and HPC.
 
 Source: <https://mskazemi.com/> · Author: Mohsen Seyedkazemi Ardebili · This is the Markdown twin of the HTML page; the HTML is canonical.
 
@@ -18,7 +18,7 @@ Not a chatbot that explains your cluster — systems that observe it, reason abo
 
 - OSS KubeIntellect · AOBench · YazSes
 
-Deep dives [KubeIntellect](https://mskazemi.com/projects/kubeintellect/) [NovaFabric](https://mskazemi.com/projects/novafabric/) [AOBench](https://mskazemi.com/projects/aobench/)
+Deep dives [KubeIntellect](https://mskazemi.com/projects/kubeintellect/) [NovaFabric](https://mskazemi.com/projects/novafabric/) [AOBench](https://mskazemi.com/projects/aobench/) [IDKMesh](https://mskazemi.com/idkmesh/)
 
 telemetry in → root-cause reasoning → gated action → back to telemetry
 
@@ -31,14 +31,6 @@ I spent nearly nine years in enterprise IT and network operations — six of the
 That path gives me a lens most ML researchers don't have: I care about uptime, observability, and correctness _in production_ — not just benchmark numbers. Today I design autonomous control for infrastructure: systems that detect failures, reason about root cause, and propose or execute remediation behind human-approval gates.
 
 I was a Postdoctoral Research Fellow at DEI, University of Bologna from August 2022 to September 2026, working across EU Horizon and EuroHPC projects including DECICE and SEANERGYS. I now work as an independent consultant on AI platform and MLOps systems, alongside open-source systems I build and maintain.
-
-// impact — verified 2026-08-10
-
-## The work is cited, and the citations are accelerating.
-
-More citations arrived in the twenty months from January 2025 than in the preceding eighteen years combined. Every figure below is read from a primary source — Google Scholar, Crossref, the GitHub API, PyPI — and kept in [a single JSON file](https://mskazemi.com/data/metrics.json) that generates this block. Nothing here is typed by hand.
-
-Sources: [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ), [ORCID](https://orcid.org/0000-0002-1166-6559), [OpenAlex](https://openalex.org/A5013086540), Crossref, the GitHub API and PyPI — all read on 2026-08-10. The full publication list, with DOIs and BibTeX, is on the [publications page](https://mskazemi.com/publications/); the open datasets behind the research are on the [datasets page](https://mskazemi.com/datasets/).
 
 // systems — research-grade work, in the open
 
@@ -78,6 +70,18 @@ Agent Operations Benchmark — a trace-driven, role-aware, RBAC-enforced benchma
 - Scored on 7 weighted dimensions, rolled into a CLEAR scorecard (Cost · Latency · Efficacy · Assurance · Reliability)
 
 - 16 model systems evaluated on the 59-task dev split, every headline number tied to a frozen run ID
+
+Verified swarm engineering — an open research laboratory asking whether humans and AI agents can turn uncertain goals into trustworthy software by separating _generation_ from _acceptance_. Its first installable tool, `idkmesh gate-audit`, measures what a review panel is actually worth: effective independent votes rather than head-count, error-correlation structure, and the breach rate of seeded known-bad candidates.
+
+- E017 measured 25 independently seeded test oracles — programs, over a 72-candidate corpus with ground truth from executing hidden tests — at an effective panel size of 1.00
+
+- The standard `N/(1+(N−1)ρ)` heuristic predicted 1.66, so it overstates exactly where it is relied on
+
+- Changing the aggregation rule cut error 3.7×; growing the panel bought nothing
+
+- E016 is retained as a **negative result**: 20 live LLM verifiers did not verify, so no AI review panel has been measured here
+
+- Negative results and failed experiments are kept, not hidden — evidence must survive independent scrutiny
 
 Graph anomaly-anticipation for exascale HPC — topology-aware node-failure prediction running in production on CINECA's Tier-0 Marconi100, published in _FGCS_.
 
@@ -157,21 +161,21 @@ A meta-framework for taking a vague idea to production without losing context, e
 
 - `v2p` CLI + FastAPI/HTMX governance portal
 
-// research — Google Scholar, read 2026-08-10
+// research
 
 ## Peer-reviewed research in HPC, MLOps and AI operations.
 
-- Journal of Grid Computing · 2026 · 13 citations [KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management](https://doi.org/10.1007/s10723-026-09837-6)
+- Journal of Grid Computing · 2026 · first author [KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management](https://doi.org/10.1007/s10723-026-09837-6)
 
-- Scientific Data (Nature Portfolio) · 2023 · 64 citations [M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer](https://doi.org/10.1038/s41597-023-02174-3)
+- Scientific Data (Nature Portfolio) · 2023 [M100 ExaData: A Data Collection Campaign on CINECA's Marconi100 Tier-0 Supercomputer](https://doi.org/10.1038/s41597-023-02174-3)
 
-- SC'23 Workshops (ACM) · 2023 · 33 citations [PM100: A Job Power Consumption Dataset of a Large-Scale Production HPC System](https://doi.org/10.1145/3624062.3624263)
+- SC'23 Workshops (ACM) · 2023 [PM100: A Job Power Consumption Dataset of a Large-Scale Production HPC System](https://doi.org/10.1145/3624062.3624263)
 
-- Future Generation Computer Systems · 2024 · 23 citations [GRAAFE: GRaph Anomaly Anticipation Framework for Exascale HPC Systems](https://doi.org/10.1016/j.future.2024.06.032)
+- Future Generation Computer Systems · 2024 [GRAAFE: GRaph Anomaly Anticipation Framework for Exascale HPC Systems](https://doi.org/10.1016/j.future.2024.06.032)
 
 - Future Generation Computer Systems · 2026 · first author [Elevating Datacenter Resilience with ThermADNet: A Thermal Anomaly Detection System](https://doi.org/10.1016/j.future.2025.108311)
 
-- DATE · 2021 · 9 citations [Prediction of Thermal Hazards in a Real Datacenter Room Using Temporal Convolutional Networks](https://doi.org/10.23919/date51398.2021.9474116)
+- DATE · 2021 · first author [Prediction of Thermal Hazards in a Real Datacenter Room Using Temporal Convolutional Networks](https://doi.org/10.23919/date51398.2021.9474116)
 
 [All 17 publications, with DOIs and BibTeX →](https://mskazemi.com/publications/)
 
@@ -205,7 +209,7 @@ IEEE TCAD · FGCS · J. Grid Computing · SC · ACM CF · DATE · PDP · AsHES
 
 // hire me
 
-## Hire a freelance AI infrastructure, MLOps and Kubernetes engineer.
+## Hire a freelance AI platform, agentic AI, MLOps and Kubernetes engineer.
 
 Fixed-price starter audits to begin low-risk, or project work at a senior day rate. Based in Italy, I work remotely across Europe and internationally (Europe/Rome time zone). I build systems your team can maintain after I'm gone — not black boxes.
 

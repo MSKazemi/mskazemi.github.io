@@ -26,6 +26,7 @@ import argparse
 import glob
 import re
 import sys
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
@@ -188,12 +189,12 @@ def page_url(rel: Path) -> str:
 
 def title_of(html: str) -> str:
     m = re.search(r"<title>(.*?)</title>", html, re.S)
-    return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
+    return unescape(re.sub(r"\s+", " ", m.group(1)).strip()) if m else ""
 
 
 def description_of(html: str) -> str:
     m = re.search(r'<meta name="description" content="(.*?)"', html, re.S)
-    return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
+    return unescape(re.sub(r"\s+", " ", m.group(1)).strip()) if m else ""
 
 
 def convert(path: Path) -> tuple[Path, str]:

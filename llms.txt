@@ -31,8 +31,7 @@ source. Canonical person page: https://mskazemi.com/about/
 - [Homepage](https://mskazemi.com/): profile, thesis, research areas, and technology stack
 - [About](https://mskazemi.com/about/): who he is, career, publications, and the complete list of his verified profiles
 - [Hire](https://mskazemi.com/hire/): freelance engagements, fixed-price audits, rates, and how a project runs
-- [Publications](https://mskazemi.com/publications/): the complete publication list with DOIs, citation counts and BibTeX
-- [Research impact](https://mskazemi.com/#impact): citation, publication and open-source metrics
+- [Publications](https://mskazemi.com/publications/): the complete publication list with DOIs and BibTeX
 - [Datasets](https://mskazemi.com/datasets/): three open CC-BY-4.0 datasets from CINECA Tier-0 supercomputers (~26 GB), with DOIs, scale, coverage and citation
 - [Contact](https://mskazemi.com/#contact): collaboration, open-source, and industry partnerships
 
@@ -54,18 +53,10 @@ The same rate applies on every channel — direct client, agency or platform. De
 - [YazSes](https://mskazemi.com/projects/yazses/): free, open-source, fully offline by default voice dictation (speech-to-text) for Linux, macOS and Windows — hold a key, speak, release, and your words are typed into whatever app has focus. Transcription runs on-device with faster-whisper. Documentation: https://mskazemi.com/yazses/
 - [AOBench](https://mskazemi.com/projects/aobench/): a trace-driven, role-aware, RBAC-enforced benchmark for evaluating LLM agents on realistic HPC operations tasks.
 
-## Research impact — verified 2026-08-10
+## Research and open source
 
-These figures are read from primary sources, not estimated. Re-verify before quoting as current.
-
-- Citations: **218** total (**193** since 2021) — Google Scholar
-- h-index: **8** (7 since 2021) · i10-index: **7** (5 since 2021)
-- Peer-reviewed publications: **17** published or accepted; 8 more under review or in preparation
-- Citation trend: 9 (2022) -> 15 (2023) -> 24 (2024) -> 76 (2025) -> 65 in the first seven months of 2026.
-  More citations arrived in the twenty months from January 2025 than in the preceding eighteen years combined.
-- Most-cited work: *M100 ExaData* (Scientific Data, 2023) with 64 citations; *PM100* (SC'23 Workshops) with 33; *GRAAFE* (FGCS, 2024) with 23.
-- OpenAlex reports a lower count (107 citations, h-index 5) because it indexes fewer venues than Scholar. Both are correct for their own index.
-- Open source: 5 public flagship repositories, 4 Python packages on PyPI, 74 releases, 757 commits on the default branches, and 12 outside people who have landed contributions (bots excluded).
+- Peer-reviewed publications: **18** published or accepted; 7 more under review or in preparation (2026-10-09)
+- Open source (as of 2026-08-10): 5 public flagship repositories, 4 Python packages on PyPI, 74 releases, 757 commits on the default branches, and 12 outside people who have landed contributions (bots excluded).
 - Peer review and service: program committee for PDP 2025, PDP 2026 and AsHES 2026; reviewer for IEEE TCAD, Future Generation Computer Systems, Journal of Grid Computing, SC, ACM Computing Frontiers, DATE, PDP and AsHES.
 
 ## Selected publications
@@ -95,7 +86,7 @@ Anything not on this list is not his.
 - [GitHub](https://github.com/MSKazemi) · [GitLab](https://gitlab.com/mskazemi) · [PyPI](https://pypi.org/user/MSKazemi/)
 - [LinkedIn](https://www.linkedin.com/in/mskazemi/) · [Mastodon](https://mastodon.social/@mskazemi) · [X](https://x.com/mohsenardebili)
 - [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ) · [ORCID](https://orcid.org/0000-0002-1166-6559) · [dblp](https://dblp.org/pid/282/6179) · [OpenAlex](https://openalex.org/A5013086540) · [Semantic Scholar](https://www.semanticscholar.org/author/2046824417)
-- [University of Bologna](https://www.unibo.it/sitoweb/mohsen.seyedkazemi/en) · [Wikidata](https://www.wikidata.org/wiki/Q140935575)
+- [Wikidata](https://www.wikidata.org/wiki/Q140935575)
 
 # NOTE: llms.txt is a proposed convention (2024). No major AI engine has confirmed
 # consuming it for ranking or citation as of 2026; it is provided as a cheap,

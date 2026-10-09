@@ -6,15 +6,15 @@ Source: <https://mskazemi.com/publications/> · Author: Mohsen Seyedkazemi Ardeb
 
 ---
 
-verified 2026-08-10
+verified 2026-10-09
 
 Every paper, with its DOI and its BibTeX.
 
-Anomaly detection and thermal-hazard prediction on Tier-0 supercomputers, LLM agents that operate Kubernetes, MLOps at supercomputer scale, and the open datasets underneath all of it. Counts come from Google Scholar; identifiers from Crossref.
+Anomaly detection and thermal-hazard prediction on Tier-0 supercomputers, LLM agents that operate Kubernetes, MLOps at supercomputer scale, and the open datasets underneath all of it. Identifiers come from Crossref.
 
 ## Published and accepted
 
-Peer-reviewed journal articles, conference papers and workshop papers. Citation counts are Google Scholar's, read on 2026-08-10.
+Peer-reviewed journal articles, conference papers and workshop papers.
 
 - 2026
 
@@ -45,7 +45,7 @@ Accepted
 
 Future Generation Computer Systems · 108311
 
-1 citation[DOI ↗](https://doi.org/10.1016/j.future.2025.108311)
+[DOI ↗](https://doi.org/10.1016/j.future.2025.108311)
 
 ```
 
@@ -62,13 +62,34 @@ Future Generation Computer Systems · 108311
 
 - 2026
 
+### EnergetiScope: Energy Prediction for Kubernetes Workloads at Admission Time
+
+**Mohsen Seyedkazemi Ardebili**, Fatemeh Bozorgi, Andrea Bartolini
+
+Proc. of the 11th Int. Conf. on Computer Science and Engineering (IEEE UBMK 2026), Istanbul, Türkiye
+
+Accepted
+
+```
+
+@inproceedings{ardebili2026energetiscope,
+  author    = {Mohsen Seyedkazemi Ardebili and Fatemeh Bozorgi and Andrea Bartolini},
+  title     = {EnergetiScope: Energy Prediction for Kubernetes Workloads at Admission Time},
+  booktitle = {Proc. of the 11th Int. Conf. on Computer Science and Engineering (IEEE UBMK 2026), Istanbul, Türkiye},
+  year      = {2026},
+}
+
+```
+
+- 2026
+
 ### [KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management](https://doi.org/10.1007/s10723-026-09837-6)
 
 **Mohsen Seyedkazemi Ardebili**, Andrea Bartolini
 
 Journal of Grid Computing · 24(3) · 17
 
-13 citations[DOI ↗](https://doi.org/10.1007/s10723-026-09837-6)
+[DOI ↗](https://doi.org/10.1007/s10723-026-09837-6)
 
 ```
 
@@ -94,7 +115,7 @@ M. Bidollahkhani, A. K. Sharma, S. P. Nanavati, **M. Seyedkazemi Ardebili**, G. 
 
 Proc. of the Future Technologies Conference (FTC 2025), Munich, Germany
 
-1 citation[DOI ↗](https://doi.org/10.1007/978-3-032-07986-2_25)
+[DOI ↗](https://doi.org/10.1007/978-3-032-07986-2_25)
 
 ```
 
@@ -135,7 +156,7 @@ Martin Molan, **Mohsen Seyedkazemi Ardebili**, Junaid Ahmed Khan, Francesco Bene
 
 Future Generation Computer Systems
 
-23 citations[DOI ↗](https://doi.org/10.1016/j.future.2024.06.032)
+[DOI ↗](https://doi.org/10.1016/j.future.2024.06.032)
 
 ```
 
@@ -157,7 +178,7 @@ Future Generation Computer Systems
 
 Future Generation Computer Systems
 
-5 citations[DOI ↗](https://doi.org/10.1016/j.future.2024.01.031)
+[DOI ↗](https://doi.org/10.1016/j.future.2024.01.031)
 
 ```
 
@@ -179,7 +200,7 @@ Andrea Borghesi, Carmine Di Santi, Martin Molan, **Mohsen Seyedkazemi Ardebili**
 
 Nature Scientific Data · 10(1) · 288
 
-64 citations[DOI ↗](https://doi.org/10.1038/s41597-023-02174-3)
+[DOI ↗](https://doi.org/10.1038/s41597-023-02174-3)
 
 ```
 
@@ -204,7 +225,7 @@ Francesco Antici, **Mohsen Seyedkazemi Ardebili**, Andrea Bartolini, Zeynep Kizi
 
 Proc. of the SC'23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis · 1812–1819
 
-33 citations[DOI ↗](https://doi.org/10.1145/3624062.3624263)
+[DOI ↗](https://doi.org/10.1145/3624062.3624263)
 
 ```
 
@@ -227,7 +248,7 @@ Proc. of the SC'23 Workshops of The International Conference on High Performance
 
 Proc. of the 19th ACM International Conference on Computing Frontiers
 
-3 citations[DOI ↗](https://doi.org/10.1145/3528416.3530864)
+[DOI ↗](https://doi.org/10.1145/3528416.3530864)
 
 ```
 
@@ -249,7 +270,7 @@ Proc. of the 19th ACM International Conference on Computing Frontiers
 
 3rd ISC HPC International Workshop on Monitoring and Operational Data Analytics
 
-7 citations[DOI ↗](https://doi.org/10.1007/978-3-031-23220-6_18)
+[DOI ↗](https://doi.org/10.1007/978-3-031-23220-6_18)
 
 ```
 
@@ -271,7 +292,7 @@ Proc. of the 19th ACM International Conference on Computing Frontiers
 
 Design, Automation and Test in Europe Conference and Exhibition (DATE 2021), IEEE · 1256–1259
 
-9 citations[DOI ↗](https://doi.org/10.23919/date51398.2021.9474116)
+[DOI ↗](https://doi.org/10.23919/date51398.2021.9474116)
 
 ```
 
@@ -294,7 +315,7 @@ Design, Automation and Test in Europe Conference and Exhibition (DATE 2021), IEE
 
 High Performance Computing in Science and Engineering 2019, Ostrava, Czech Republic
 
-10 citations[DOI ↗](https://doi.org/10.1007/978-3-030-67077-1_1)
+[DOI ↗](https://doi.org/10.1007/978-3-030-67077-1_1)
 
 ```
 
@@ -335,8 +356,6 @@ International Iran Conference on Quantum Information, Sharif University of Techn
 
 7th International Conference on Signal Processing, Robotics and Automation, Cambridge, UK
 
-11 citations
-
 ```
 
 @inproceedings{ardebili2008designing,
@@ -355,8 +374,6 @@ International Iran Conference on Quantum Information, Sharif University of Techn
 **Mohsen Seyedkazemi Ardebili**, Adel Akbarimajd, Ali Rahnamaei, Amirreza Baghbanpourasl
 
 WSEAS Transactions on Systems and Control · 2(3)
-
-12 citations
 
 ```
 
@@ -378,8 +395,6 @@ WSEAS Transactions on Systems and Control · 2(3)
 **Mohsen Seyedkazemi Ardebili**, Farzad Sedaghati
 
 7th WSEAS International Conference on Power Systems (PE'07), Beijing, China
-
-3 citations
 
 ```
 
@@ -453,16 +468,13 @@ Under review
 
 Baibek Davletiyarov, **Mohsen Seyedkazemi Ardebili**, Andrea Bartolini
 
-PECS 2026 — Workshop on Performance Engineering for Computing Systems, co-located with Euro-Par 2026
-
-Under review
+Submitted, awaiting response
 
 ```
 
 @inproceedings{davletiyarovndthermalaware,
   author    = {Baibek Davletiyarov and Mohsen Seyedkazemi Ardebili and Andrea Bartolini},
   title     = {Thermal-Aware Power Modeling and Job Allocation for Carbon-Aware HPC},
-  booktitle = {PECS 2026 — Workshop on Performance Engineering for Computing Systems, co-located with Euro-Par 2026},
 }
 
 ```
@@ -522,24 +534,7 @@ In preparation
 
 ```
 
-- —
-
-### EnergetiScope: Predicting Kubernetes Workload Energy from Resource and Manifest Features
-
-**Mohsen Seyedkazemi Ardebili**, Fatemeh Bozorgi, Andrea Bartolini
-
-In preparation
-
-```
-
-@inproceedings{ardebilindenergetiscope,
-  author    = {Mohsen Seyedkazemi Ardebili and Fatemeh Bozorgi and Andrea Bartolini},
-  title     = {EnergetiScope: Predicting Kubernetes Workload Energy from Resource and Manifest Features},
-}
-
-```
-
-Citation counts are Google Scholar's, read on 2026-08-10; duplicate Scholar records for the same work are merged. DOIs are resolved through Crossref. Where a paper has no DOI it has not been assigned one by the publisher. [The JSON behind this page](https://mskazemi.com/data/publications.json) is the same file that generates it.
+DOIs are resolved through Crossref. Where a paper has no DOI it has not been assigned one by the publisher. [The JSON behind this page](https://mskazemi.com/data/publications.json) is the same file that generates it.
 
 // more
 
