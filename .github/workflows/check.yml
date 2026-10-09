@@ -18,5 +18,9 @@ jobs:
           python-version: '3.12'
       - name: Identity, claims and consistency
         run: python3 tools/check_site.py
+      - name: Markdown twins match their HTML
+        run: python3 tools/build_markdown_mirrors.py --check
+      - name: Publications page matches its data
+        run: python3 tools/build_publications.py --check
       - name: Sitemap is well-formed XML
         run: python3 -c "import xml.dom.minidom as m; m.parse('sitemap.xml')"
