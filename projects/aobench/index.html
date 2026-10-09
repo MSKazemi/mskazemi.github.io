@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#0A0E14" />
 
   <meta property="og:title" content="AOBench — Agent Operations Benchmark for HPC" />
-  <meta property="og:description" content="A trace-driven, role-aware, RBAC-enforced benchmark for LLM agents in HPC facilities: 88 tasks across 10 categories and 5 operator roles, 29 reproducible environments, 12 scorers rolled into a CLEAR scorecard." />
+  <meta property="og:description" content="A trace-driven, role-aware, RBAC-enforced benchmark for LLM agents in HPC facilities: 88 tasks across 10 categories and 5 operator roles, 29 reproducible environments, scored on 7 weighted dimensions and rolled into a CLEAR scorecard." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mskazemi.com/projects/aobench/" />
   <meta property="og:site_name" content="Mohsen Seyedkazemi Ardebili" />
@@ -102,8 +102,8 @@
         <a href="https://mskazemi.com/aobench/latest/" target="_blank" rel="noopener" class="btn-ghost">Docs ↗</a>
       </div>
       <ul class="status-strip" aria-label="Quick facts">
-        <li><span class="k">SCOPE</span> 88 tasks · 29 environments · 16 systems</li>
-        <li><span class="k">DESIGN</span> 5 roles × 10 categories · 12 scorers</li>
+        <li><span class="k">SCOPE</span> 88 tasks · 29 environments · 16 systems (v0.4.1)</li>
+        <li><span class="k">DESIGN</span> 5 roles × 10 categories · 7 scored dimensions</li>
         <li><span class="k">STACK</span> Python · MCP · SLURM</li>
       </ul>
     </div>
@@ -147,7 +147,7 @@
         </div>
         <div class="arch-item">
           <h3>CLEAR scorecard</h3>
-          <p>12 scorers over six evaluation dimensions, aggregated into five reported axes — <strong>C</strong>ost · <strong>L</strong>atency · <strong>E</strong>fficacy · <strong>A</strong>ssurance · <strong>R</strong>eliability — so trade-offs stay visible instead of collapsing into one number.</p>
+          <p>Seven weighted evaluation dimensions — outcome, tool use, grounding, governance, robustness, efficiency and workflow — aggregated into five reported axes — <strong>C</strong>ost · <strong>L</strong>atency · <strong>E</strong>fficacy · <strong>A</strong>ssurance · <strong>R</strong>eliability — so trade-offs stay visible instead of collapsing into one number.</p>
         </div>
         <div class="arch-item">
           <h3>Snapshot environments</h3>

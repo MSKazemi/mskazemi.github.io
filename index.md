@@ -44,7 +44,7 @@ Sources: [Google Scholar](https://scholar.google.com/citations?user=xP64pZsAAAAJ
 
 ## AI SRE and AIOps systems for Kubernetes and HPC.
 
-Things that act, with the receipts — each one runs against a real cluster, and each one stops for a human before it changes anything.
+Things that act, with the receipts — KubeIntellect works on a live Kubernetes cluster and stops for a human before it changes anything; AOBench measures whether an agent stays inside its permissions, against reproducible HPC snapshots.
 
 A modular, LLM-orchestrated multi-agent framework for **end-to-end Kubernetes operations** — root-cause analysis, diagnosis, and human-gated cluster actions across the full API surface (read, write, exec, delete, RBAC, lifecycle). A stateful LangGraph supervisor coordinates domain agents; a Code-Generator agent synthesises and validates new tools at runtime. Published in the _Journal of Grid Computing_ (2026, 24(3):17).
 
@@ -69,13 +69,13 @@ approve? [y/N] ▍
 
 Agent Operations Benchmark — a trace-driven, role-aware, RBAC-enforced benchmark for LLM agents that operate HPC systems. It asks the blunt question: _can an autonomous agent be trusted to run a supercomputer?_ — and scores the answer against real operator roles and hard policy constraints.
 
-- 88 tasks across 10 question categories × 5 operator roles
+- 88 tasks across 10 question categories × 5 operator roles (release v0.4.1)
 
 - 29 deterministic environment bundles — 23 synthetic, 6 built from real Marconi100 telemetry
 
 - Permission-enforced: a policy violation hard-fails the task, whatever the answer said
 
-- 12 scorers over 6 dimensions, rolled into a CLEAR scorecard (Cost · Latency · Efficacy · Assurance · Reliability)
+- Scored on 7 weighted dimensions, rolled into a CLEAR scorecard (Cost · Latency · Efficacy · Assurance · Reliability)
 
 - 16 model systems evaluated on the 59-task dev split, every headline number tied to a frozen run ID
 

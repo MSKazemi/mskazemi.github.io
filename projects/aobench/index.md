@@ -12,9 +12,9 @@ Agent Operations Benchmark for HPC.
 
 A **trace-driven, role-aware, RBAC-enforced** benchmark for LLM agents in HPC facilities. It asks a blunt question — _can an autonomous agent actually be trusted to operate a supercomputer?_ — and answers it against real operational traces, real operator roles, and hard policy constraints.
 
-- SCOPE 88 tasks · 29 environments · 16 systems
+- SCOPE 88 tasks · 29 environments · 16 systems (v0.4.1)
 
-- DESIGN 5 roles × 10 categories · 12 scorers
+- DESIGN 5 roles × 10 categories · 7 scored dimensions
 
 - STACK Python · MCP · SLURM
 
@@ -40,7 +40,7 @@ A task only counts if it's completed _within the operator's authority_ — any R
 
 ### CLEAR scorecard
 
-12 scorers over six evaluation dimensions, aggregated into five reported axes — **C**ost · **L**atency · **E**fficacy · **A**ssurance · **R**eliability — so trade-offs stay visible instead of collapsing into one number.
+Seven weighted evaluation dimensions — outcome, tool use, grounding, governance, robustness, efficiency and workflow — aggregated into five reported axes — **C**ost · **L**atency · **E**fficacy · **A**ssurance · **R**eliability — so trade-offs stay visible instead of collapsing into one number.
 
 ### Snapshot environments
 
