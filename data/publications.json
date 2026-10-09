@@ -1,24 +1,16 @@
 {
-  "_comment": "Publication list for the /publications/ page. Derived from work/cv/profile/cv.json in the brain repo; citation counts from Google Scholar. Regenerate rather than hand-edit.",
-  "_verifiedOn": "2026-08-10",
+  "_comment": "Publication list for the /publications/ page, exported from the author's CV record. Regenerate the page with tools/build_publications.py rather than hand-editing it.",
+  "_verifiedOn": "2026-10-09",
   "metrics": {
-    "citationsAll": 218,
-    "citationsSince2021": 193,
-    "hIndexAll": 8,
-    "hIndexSince2021": 7,
-    "i10All": 7,
-    "i10Since2021": 5,
-    "indexedWorks": 37,
-    "peerReviewedPublished": 17,
-    "underReviewOrInPreparation": 8,
-    "_note": "peerReviewedPublished = 6 journal + 11 conference entries with status Published/Accepted in cv.json. indexedWorks = distinct records on the Scholar profile, which also counts datasets, preprints and edited volumes."
+    "peerReviewedPublished": 18,
+    "underReviewOrInPreparation": 7,
+    "_note": "peerReviewedPublished = journal + conference entries with status Published/Accepted."
   },
   "identity": {
     "name": "Mohsen Seyedkazemi Ardebili",
     "scholarId": "xP64pZsAAAAJ",
     "orcid": "0000-0002-1166-6559",
     "openalexId": "A5013086540",
-    "affiliation": "University of Bologna (DEI)",
     "scholarUrl": "https://scholar.google.com/citations?user=xP64pZsAAAAJ"
   },
   "publications": {
@@ -39,8 +31,7 @@
           "pages": "17",
           "publisher": "Springer",
           "doi": "10.1007/s10723-026-09837-6",
-          "url": "https://doi.org/10.1007/s10723-026-09837-6",
-          "citations": 13
+          "url": "https://doi.org/10.1007/s10723-026-09837-6"
         },
         {
           "key": "thermadnet",
@@ -56,8 +47,7 @@
           "pages": "108311",
           "status": "Published",
           "doi": "10.1016/j.future.2025.108311",
-          "url": "https://doi.org/10.1016/j.future.2025.108311",
-          "citations": 1
+          "url": "https://doi.org/10.1016/j.future.2025.108311"
         },
         {
           "key": "graafe",
@@ -75,8 +65,7 @@
           "year": 2024,
           "status": "Published",
           "doi": "10.1016/j.future.2024.06.032",
-          "url": "https://doi.org/10.1016/j.future.2024.06.032",
-          "citations": 23
+          "url": "https://doi.org/10.1016/j.future.2024.06.032"
         },
         {
           "key": "hazardnet",
@@ -91,8 +80,7 @@
           "year": 2024,
           "status": "Published",
           "doi": "10.1016/j.future.2024.01.031",
-          "url": "https://doi.org/10.1016/j.future.2024.01.031",
-          "citations": 5
+          "url": "https://doi.org/10.1016/j.future.2024.01.031"
         },
         {
           "key": "m100exadata",
@@ -114,8 +102,7 @@
           "year": 2023,
           "status": "Published",
           "doi": "10.1038/s41597-023-02174-3",
-          "url": "https://doi.org/10.1038/s41597-023-02174-3",
-          "citations": 64
+          "url": "https://doi.org/10.1038/s41597-023-02174-3"
         },
         {
           "key": "pid2007",
@@ -131,8 +118,7 @@
           "issue": "3",
           "year": 2007,
           "issn": "1991-8763",
-          "status": "Published",
-          "citations": 12
+          "status": "Published"
         }
       ],
       "underReview": [
@@ -196,6 +182,19 @@
     "conferences": {
       "publishedOrAccepted": [
         {
+          "key": "energetiscope",
+          "authors": [
+            "Mohsen Seyedkazemi Ardebili",
+            "Fatemeh Bozorgi",
+            "Andrea Bartolini"
+          ],
+          "title": "EnergetiScope: Energy Prediction for Kubernetes Workloads at Admission Time",
+          "venue": "Proc. of the 11th Int. Conf. on Computer Science and Engineering (IEEE UBMK 2026), Istanbul, Türkiye",
+          "year": 2026,
+          "month": "Sep",
+          "status": "Accepted"
+        },
+        {
           "key": "compsac2026",
           "authors": [
             "A. K. Sharma",
@@ -226,8 +225,7 @@
           "venue": "Proc. of the 3rd Int. Workshop on Scalable Compute Continuum (WSCC 2025), co-located with Euro-Par 2025, Dresden, Germany",
           "year": 2025,
           "month": "Aug",
-          "status": "Published",
-          "citations": 0
+          "status": "Published"
         },
         {
           "key": "decice",
@@ -248,8 +246,7 @@
           "month": "Nov",
           "status": "Published",
           "doi": "10.1007/978-3-032-07986-2_25",
-          "url": "https://doi.org/10.1007/978-3-032-07986-2_25",
-          "citations": 1
+          "url": "https://doi.org/10.1007/978-3-032-07986-2_25"
         },
         {
           "key": "pm100",
@@ -265,8 +262,7 @@
           "pages": "1812–1819",
           "status": "Published",
           "doi": "10.1145/3624062.3624263",
-          "url": "https://doi.org/10.1145/3624062.3624263",
-          "citations": 33
+          "url": "https://doi.org/10.1145/3624062.3624263"
         },
         {
           "key": "poster",
@@ -280,8 +276,7 @@
           "year": 2022,
           "status": "Published",
           "doi": "10.1145/3528416.3530864",
-          "url": "https://doi.org/10.1145/3528416.3530864",
-          "citations": 3
+          "url": "https://doi.org/10.1145/3528416.3530864"
         },
         {
           "key": "rulebased",
@@ -297,8 +292,7 @@
           "month": "Jun",
           "status": "Published",
           "doi": "10.1007/978-3-031-23220-6_18",
-          "url": "https://doi.org/10.1007/978-3-031-23220-6_18",
-          "citations": 7
+          "url": "https://doi.org/10.1007/978-3-031-23220-6_18"
         },
         {
           "key": "tcn",
@@ -317,8 +311,7 @@
           "pages": "1256–1259",
           "status": "Published",
           "doi": "10.23919/date51398.2021.9474116",
-          "url": "https://doi.org/10.23919/date51398.2021.9474116",
-          "citations": 9
+          "url": "https://doi.org/10.23919/date51398.2021.9474116"
         },
         {
           "key": "datacentercharacterization",
@@ -333,8 +326,7 @@
           "year": 2019,
           "status": "Published",
           "doi": "10.1007/978-3-030-67077-1_1",
-          "url": "https://doi.org/10.1007/978-3-030-67077-1_1",
-          "citations": 10
+          "url": "https://doi.org/10.1007/978-3-030-67077-1_1"
         },
         {
           "key": "floating2012",
@@ -359,8 +351,7 @@
           "year": 2008,
           "issn": "1790-5117",
           "isbn": "978-960-6766-44-2",
-          "status": "Published",
-          "citations": 11
+          "status": "Published"
         },
         {
           "key": "statcom2007",
@@ -372,8 +363,7 @@
           "venue": "7th WSEAS International Conference on Power Systems (PE'07), Beijing, China",
           "year": 2007,
           "month": "Sep",
-          "status": "Published",
-          "citations": 3
+          "status": "Published"
         }
       ],
       "underReview": [
@@ -385,8 +375,7 @@
             "Andrea Bartolini"
           ],
           "title": "Thermal-Aware Power Modeling and Job Allocation for Carbon-Aware HPC",
-          "venue": "PECS 2026 — Workshop on Performance Engineering for Computing Systems, co-located with Euro-Par 2026",
-          "status": "Under review"
+          "status": "Submitted, awaiting response"
         }
       ],
       "inPreparation": [
@@ -399,19 +388,8 @@
           ],
           "title": "Cloud–Edge Robotics under Time Constraints: An Experimental Study with ROS 2 and Kubernetes",
           "status": "In preparation"
-        },
-        {
-          "key": "energetiscope",
-          "authors": [
-            "Mohsen Seyedkazemi Ardebili",
-            "Fatemeh Bozorgi",
-            "Andrea Bartolini"
-          ],
-          "title": "EnergetiScope: Predicting Kubernetes Workload Energy from Resource and Manifest Features",
-          "status": "In preparation"
         }
       ]
-    },
-    "_citationsNote": "citations = Google Scholar counts read 2026-08-10, duplicate Scholar records for the same work merged. Full metrics in work/cv/profile/scholar.json. Never put these numbers in job-application documents."
+    }
   }
 }

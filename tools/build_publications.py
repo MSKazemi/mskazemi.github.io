@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Generate /publications/index.html from data/publications.json.
 
-The whole page is derived — the citation counts, the DOI links, the BibTeX, and
+The whole page is derived — the publication list, the DOI links, the BibTeX, and
 the schema.org ScholarlyArticle graph all come from one JSON file, so the page
-can never drift from the CV. Re-export that file from work/cv/profile/cv.json in the
-brain repo, then re-run this.
+can never drift from the CV. Re-export that file from the CV record, then re-run this.
+Citation counts are deliberately not shown.
 
 Usage:
     python3 tools/build_publications.py
@@ -78,12 +78,6 @@ def bibtex(pub: dict, kind: str) -> str:
 
 def entry_html(pub: dict, kind: str, index: int) -> str:
     badges = []
-    if pub.get("citations"):
-        n = pub["citations"]
-        badges.append(
-            f'<span class="pb pb-cite" title="Google Scholar citations, read 2026-08-10">'
-            f'{n} citation{"s" if n != 1 else ""}</span>'
-        )
     status = pub.get("status", "")
     if status and status != "Published":
         badges.append(f'<span class="pb pb-status">{esc(status)}</span>')
@@ -202,8 +196,7 @@ def render(data: dict) -> str:
     n = 0
     s1, n = section(
         "Published and accepted",
-        "Peer-reviewed journal articles, conference papers and workshop papers. "
-        "Citation counts are Google&nbsp;Scholar's, read on " + data["_verifiedOn"] + ".",
+        "Peer-reviewed journal articles, conference papers and workshop papers.",
         published,
         n,
     )
@@ -223,7 +216,7 @@ def render(data: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>try{{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}}catch(e){{}}</script>
   <title>Publications — {ME}</title>
-  <meta name="description" content="Complete publication list for {ME}: {m['peerReviewedPublished']} peer-reviewed papers on HPC anomaly detection, LLM agents for Kubernetes, MLOps and datacenter telemetry, with {m['citationsAll']} citations and an h-index of {m['hIndexAll']}. Includes DOIs and BibTeX." />
+  <meta name="description" content="Peer-reviewed publications by {ME} on HPC anomaly detection, LLM agents for Kubernetes and MLOps — with DOIs and BibTeX." />
   <meta name="author" content="{ME}" />
   <meta name="keywords" content="Mohsen Seyedkazemi Ardebili publications, HPC anomaly detection papers, LLM agents Kubernetes, KubeIntellect paper, GRAAFE, HazardNet, ThermADNet, M100 ExaData, PM100, BibTeX" />
   <link rel="canonical" href="{SITE}/publications/" />
@@ -232,7 +225,7 @@ def render(data: dict) -> str:
   <meta name="theme-color" content="#0A0E14" />
 
   <meta property="og:title" content="Publications — {ME}" />
-  <meta property="og:description" content="{m['peerReviewedPublished']} peer-reviewed papers, {m['citationsAll']} citations, h-index {m['hIndexAll']}. HPC anomaly detection, LLM agents for Kubernetes, MLOps at supercomputer scale." />
+  <meta property="og:description" content="{m['peerReviewedPublished']} peer-reviewed papers. HPC anomaly detection, LLM agents for Kubernetes, MLOps at supercomputer scale." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{SITE}/publications/" />
   <meta property="og:site_name" content="{ME}" />
@@ -243,9 +236,9 @@ def render(data: dict) -> str:
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0E14'/%3E%3Cpath d='M9 16a7 7 0 1 1 2.05 4.95' fill='none' stroke='%23F2A93B' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='16' r='2.4' fill='%233FD79A'/%3E%3C/svg%3E" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/assets/fonts/space-grotesk-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/fonts/fonts.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../project.css" />
 
@@ -270,7 +263,6 @@ def render(data: dict) -> str:
         <span></span><span></span><span></span>
       </button>
       <nav class="nav-links" id="navLinks" aria-label="Primary">
-        <a href="../#impact">Impact</a>
         <a href="../#systems">Systems</a>
         <a href="../projects/kubeintellect/">KubeIntellect</a>
         <a href="../projects/aobench/">AOBench</a>
@@ -298,7 +290,7 @@ def render(data: dict) -> str:
       <p class="proj-lede">
         Anomaly detection and thermal-hazard prediction on Tier-0 supercomputers, LLM agents that
         operate Kubernetes, MLOps at supercomputer scale, and the open datasets underneath all of it.
-        Counts come from Google&nbsp;Scholar; identifiers from Crossref.
+        Identifiers come from Crossref.
       </p>
       <div class="proj-links">
         <a href="{data['identity']['scholarUrl']}" target="_blank" rel="noopener" class="btn-primary">Google Scholar ↗</a>
@@ -311,8 +303,6 @@ def render(data: dict) -> str:
   <section class="panel-section">
     <div class="container">
       <div class="stat-row">
-        <div class="stat"><span class="stat-v">{m['citationsAll']}</span><span class="stat-k">citations</span><span class="stat-sub">{m['citationsSince2021']} since 2021</span></div>
-        <div class="stat"><span class="stat-v">{m['hIndexAll']}</span><span class="stat-k">h-index</span><span class="stat-sub">i10-index {m['i10All']}</span></div>
         <div class="stat"><span class="stat-v">{m['peerReviewedPublished']}</span><span class="stat-k">peer-reviewed</span><span class="stat-sub">published or accepted</span></div>
         <div class="stat"><span class="stat-v">{m['underReviewOrInPreparation']}</span><span class="stat-k">in the pipeline</span><span class="stat-sub">under review or in preparation</span></div>
       </div>
@@ -324,8 +314,7 @@ def render(data: dict) -> str:
 {s3}
 
       <p class="chart-source">
-        Citation counts are Google&nbsp;Scholar's, read on {data['_verifiedOn']}; duplicate Scholar
-        records for the same work are merged. DOIs are resolved through Crossref. Where a paper has no
+        DOIs are resolved through Crossref. Where a paper has no
         DOI it has not been assigned one by the publisher.
         <a href="../data/publications.json">The JSON behind this page</a> is the same file that
         generates it.
@@ -340,7 +329,6 @@ def render(data: dict) -> str:
       <div class="contact-links">
         <a href="../projects/kubeintellect/" class="clink">KubeIntellect →</a>
         <a href="../projects/aobench/" class="clink">AOBench →</a>
-        <a href="../#impact" class="clink">Research impact →</a>
         <a href="../#contact" class="clink">Get in touch →</a>
       </div>
     </div>
@@ -356,7 +344,7 @@ def render(data: dict) -> str:
         <a href="../hire/">Hire</a>
         <a href="../">Home</a>
       </nav>
-      <span class="foot-meta">By <a href="../about/" class="back-link">{ME}</a> &middot; Bologna, Italy</span>
+      <span class="foot-meta">By <a href="../about/" class="back-link">{ME}</a> &middot; Italy</span>
     </div>
   </footer>
 

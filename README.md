@@ -18,6 +18,14 @@ deployed to GitHub Pages by `.github/workflows/deploy-pages.yml` on every push t
 - Project claims link to their primary evidence (repository, documentation, paper or DOI).
 - Update a page's `sitemap.xml` `lastmod` only when its content changes.
 
+## Checks
+
+```bash
+python3 tools/check_site.py   # identity, claims, JSON-LD, Markdown twins, sitemap dates
+```
+
+The same check runs on every pull request (`.github/workflows/check.yml`).
+
 ## Review before merging
 
 Check the homepage, About and Hire pages at desktop and mobile widths, and confirm that copy, social
