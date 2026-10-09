@@ -6,7 +6,7 @@ Source: <https://mskazemi.com/hire/> · Author: Mohsen Seyedkazemi Ardebili · T
 
 ---
 
-available · remote · EU
+available · remote · Europe & international
 
 Freelance AI SRE, MLOps and Kubernetes engineering — remote, worldwide.
 
