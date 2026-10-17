@@ -30,3 +30,9 @@ The same check runs on every pull request (`.github/workflows/check.yml`).
 
 Check the homepage, About and Hire pages at desktop and mobile widths, and confirm that copy, social
 descriptions, Markdown alternatives and JSON-LD agree. Merging into `main` deploys publicly.
+
+<!-- legal-notice: start -->
+### Legal notice and responsible use
+
+The materials in this repository are made available without warranties to the extent permitted by applicable law. **Please read the [Disclaimer and Responsible-Use Notice](DISCLAIMER.md)** before relying on or deploying them. This notice does not change any existing software license or limit rights that cannot legally be waived.
+<!-- legal-notice: end -->
