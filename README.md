@@ -36,3 +36,9 @@ descriptions, Markdown alternatives and JSON-LD agree. Merging into `main` deplo
 
 The materials in this repository are made available without warranties to the extent permitted by applicable law. **Please read the [Disclaimer and Responsible-Use Notice](DISCLAIMER.md)** before relying on or deploying them. This notice does not change any existing software license or limit rights that cannot legally be waived.
 <!-- legal-notice: end -->
+
+<!-- licensing-status: start -->
+### Licensing and reuse status
+
+**No repository-root license has yet been confirmed for this project.** Read [Rights and Licensing Status](LICENSING_STATUS.md) before copying, redistributing, or adapting code or content. A public repository and its disclaimer do not by themselves grant new reuse permissions. Existing valid third-party rights and licenses remain in effect.
+<!-- licensing-status: end -->
