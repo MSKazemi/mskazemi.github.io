@@ -14,7 +14,7 @@ Not a chatbot that explains your cluster — systems that observe it, reason abo
 
 - BASED Italy · remote across Europe & internationally
 
-- EXP 6 yrs 1,000 MW plant → PhD HPC
+- EXP 6 yrs 1,000 MW plant → PhD, HPC anomaly detection
 
 - OSS KubeIntellect · AOBench · YazSes
 
@@ -26,7 +26,7 @@ telemetry in → root-cause reasoning → gated action → back to telemetry
 
 ## From a power plant's networks to the control plane of a datacenter.
 
-I spent nearly nine years in enterprise IT and network operations — six of them as the **IT & Network Administrator** of a 1,000+ MW combined-cycle power plant, running the network across eleven operational zones, where downtime is not an abstraction. Then I did a PhD in High-Performance Computing at the University of Bologna.
+I spent nearly nine years in enterprise IT and network operations — six of them as the **IT & Network Administrator** of a 1,000+ MW combined-cycle power plant, running the network across eleven operational zones, where downtime is not an abstraction. Then I did a PhD at the University of Bologna on detecting and predicting thermal anomalies in a Tier-0 supercomputer.
 
 That path gives me a lens most ML researchers don't have: I care about uptime, observability, and correctness _in production_ — not just benchmark numbers. Today I design autonomous control for infrastructure: systems that detect failures, reason about root cause, and propose or execute remediation behind human-approval gates.
 
@@ -249,7 +249,7 @@ Kubernetes incident root-cause analysis, observability and hardening; model regi
 
 ### What is the background behind the research?
 
-Nearly nine years in enterprise IT and network operations, six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW — an environment with no staging and no undo — followed by a PhD in high-performance computing at the University of Bologna. Operations first, research second, which is why the systems ask before they act.
+Nearly nine years in enterprise IT and network operations, six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW — an environment with no staging and no undo — followed by a PhD at the University of Bologna on detecting and predicting thermal anomalies in a Tier-0 supercomputer. Operations first, research second, which is why the systems ask before they act.
 
 // contact
 

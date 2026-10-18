@@ -10,7 +10,7 @@ AI Platform & Agentic Systems Engineer · Independent Consultant · Italy · rem
 
 AI Platform & Agentic Systems Engineer. I build systems that operate infrastructure and preserve evidence of what autonomous systems actually did.
 
-I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD in high-performance computing at the **University of Bologna** and later served there as a research fellow through September 2026. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
+I spent nearly nine years in enterprise IT and network operations — six of them as the IT and network administrator of a combined-cycle power plant of more than 1,000 MW, where an outage is measured in megawatts rather than in error budgets. Then I did a PhD at the **University of Bologna** on thermal anomaly detection and prediction in Tier-0 supercomputers and later served there as a research fellow through September 2026. Today I work at the seam between those two worlds: **AI SRE** and **AIOps** for Kubernetes, **MLOps** that survives contact with production, and machine learning that predicts failures on **Tier-0 supercomputers**.
 
 - BASED Italy · remote across Europe & internationally
 
@@ -24,7 +24,7 @@ I spent nearly nine years in enterprise IT and network operations — six of the
 
 Most people arrive at AI infrastructure from machine learning and discover operations later. I arrived the other way round. My first career was keeping an industrial plant's networks, servers and control systems alive — a place with no staging environment, where the cost of a bad change is not a rolled-back deploy but a unit off the grid. That background is why I am sceptical of autonomy without a gate, and why the systems I build ask a human before they do anything they cannot undo.
 
-The research half came second. My doctorate at the University of Bologna was on the design, analysis and management of high-performance computing systems, working with the operational telemetry of CINECA's Tier-0 supercomputers. That work has continued through a run of EU-funded projects — DECICE, Graph-Massivizer, EUROPEAN PILOT, REGALE, EPI SGA1 and, currently, the EuroHPC-JU project **SEANERGYS**, where I am the architect and lead developer of the MLOps platform and a work-package task lead.
+The research half came second. My Ph.D. in Electronics, Telecommunications, and Information Technologies Engineering at the University of Bologna (2018–2022) was on monitoring and predicting thermal emergencies in high-performance computing systems, working with the operational telemetry of CINECA's Tier-0 supercomputers. That work has continued through a run of EU-funded projects — DECICE, Graph-Massivizer, EUROPEAN PILOT, REGALE, EPI SGA1 and, currently, the EuroHPC-JU project **SEANERGYS**, where I am the architect and lead developer of the MLOps platform and a work-package task lead.
 
 I am based in Bologna, Italy and collaborate remotely with teams across Europe and internationally.
 
