@@ -14,7 +14,7 @@ Not a chatbot that explains your cluster — systems that observe it, reason abo
 
 - BASED Italy · remote across Europe & internationally
 
-- EXP 6 yrs 1,000 MW plant → PhD, HPC anomaly detection
+- EXP 6 yrs 1,000 MW plant → PhD (engineering) · HPC thermal research
 
 - OSS KubeIntellect · AOBench · YazSes
 
