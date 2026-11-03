@@ -94,6 +94,26 @@ def main() -> int:
         if TITLE not in (ROOT / page).read_text(encoding="utf-8"):
             problems.append(f"{page}: current title '{TITLE}' missing")
 
+    # Counts that appear in prose must agree with the data they summarise.
+    metrics = json.loads((ROOT / "data" / "publications.json").read_text(encoding="utf-8"))["metrics"]
+    home = (ROOT / "index.html").read_text(encoding="utf-8")
+    m = re.search(r'<span class="sv">(\d+)</span><span class="sl">peer-reviewed</span>', home)
+    if not m or int(m.group(1)) != metrics["peerReviewedPublished"]:
+        problems.append(
+            f"index.html: peer-reviewed count {m.group(1) if m else 'missing'} != "
+            f"data/publications.json metrics.peerReviewedPublished {metrics['peerReviewedPublished']}"
+        )
+    for p in text_files():
+        for hit in re.finditer(r"\bAll (\d+) publications\b", p.read_text(encoding="utf-8")):
+            problems.append(f"{rel(p)}: hand-typed count '{hit.group(0)}'; link text must not carry a count")
+    tasks = {
+        n
+        for page in ("index.html", "index.md", "projects/aobench/index.html", "projects/aobench/index.md")
+        for n in re.findall(r"\b(\d+) tasks\b", (ROOT / page).read_text(encoding="utf-8"))
+    }
+    if len(tasks) > 1:
+        problems.append(f"AOBench task count differs between homepage and /projects/aobench/: {sorted(tasks)}")
+
     sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
     for loc, lastmod in re.findall(r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", sitemap):
         path = loc.removeprefix(SITE)

@@ -177,7 +177,7 @@ A meta-framework for taking a vague idea to production without losing context, e
 
 - DATE · 2021 · first author [Prediction of Thermal Hazards in a Real Datacenter Room Using Temporal Convolutional Networks](https://doi.org/10.23919/date51398.2021.9474116)
 
-[All 17 publications, with DOIs and BibTeX →](https://mskazemi.com/publications/)
+[All publications, with DOIs and BibTeX →](https://mskazemi.com/publications/)
 
 ### Program committee
 

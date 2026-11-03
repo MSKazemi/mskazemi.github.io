@@ -536,6 +536,8 @@ In preparation
 
 DOIs are resolved through Crossref. Where a paper has no DOI it has not been assigned one by the publisher. [The JSON behind this page](https://mskazemi.com/data/publications.json) is the same file that generates it.
 
+The systems in these papers are the same ones offered as [freelance MLOps and Kubernetes consulting](https://mskazemi.com/hire/) for teams running AI on HPC or cloud infrastructure.
+
 // more
 
 ## The systems behind the papers.
