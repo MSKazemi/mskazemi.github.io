@@ -17,12 +17,12 @@
   --line-2:   #D7DBE3;
   --text:     #14161C;   /* near-black ink */
   --muted:    #586070;
-  --muted-2:  #8B93A1;
+  --muted-2:  #5F6878;   /* >= 4.8:1 on every light surface (WCAG 2 AA text) */
 
   --amber:    #4F46E5;   /* PRIMARY ACCENT — indigo (name kept for compat) */
   --amber-2:  #4338CA;   /* darker accent for hover */
   --amber-dim:#EEF0FE;   /* accent tint background */
-  --mint:     #0E9E8C;   /* secondary — teal, used for "live"/metrics */
+  --mint:     #0A7567;   /* secondary — teal, used for "live"/metrics; >= 4.8:1 as text on the tint */
   --mint-dim: #E4F6F2;   /* teal tint */
   --red:      #E5484D;
 
@@ -57,7 +57,7 @@
   --line-2:   #333A48;
   --text:     #EAECF2;
   --muted:    #9AA3B2;
-  --muted-2:  #6B7482;
+  --muted-2:  #8A93A3;   /* >= 4.5:1 on every dark surface */
 
   --amber:    #8B93F8;
   --amber-2:  #A5ABFA;
@@ -641,7 +641,7 @@ footer { border-top: 1px solid var(--line); padding: 30px 0; position: relative;
   max-width: 78ch;
   line-height: 1.6;
 }
-.chart-source a { color: var(--muted); }
+.chart-source a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 
 /* =========================================================================
    PROJECT FLOW DIAGRAMS — small animated SVG schematics inside the cards
@@ -764,3 +764,7 @@ footer { border-top: 1px solid var(--line); padding: 30px 0; position: relative;
 @media (prefers-reduced-motion: reduce) {
   .fl-travel-hold, .fl-blocked { animation: none; display: none; }
 }
+
+/* inline links inside running text must not rely on colour alone (WCAG 1.4.1) */
+.text-link { text-decoration: underline; text-underline-offset: 2px; }
+main p a:not([class]), main li a:not([class]) { text-decoration: underline; text-underline-offset: 2px; }

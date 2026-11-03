@@ -252,7 +252,7 @@ def render(data: dict) -> str:
 
   <header id="nav">
     <div class="nav-inner">
-      <a href="../" class="nav-logo" aria-label="Home">
+      <a href="../" class="nav-logo">
         <svg class="logo-mark" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
           <path d="M9 16a7 7 0 1 1 2.05 4.95" fill="none" stroke="var(--amber)" stroke-width="2.6" stroke-linecap="round"/>
           <circle cx="9" cy="16" r="2.6" fill="var(--mint)"/>
@@ -318,6 +318,10 @@ def render(data: dict) -> str:
         DOI it has not been assigned one by the publisher.
         <a href="../data/publications.json">The JSON behind this page</a> is the same file that
         generates it.
+      </p>
+      <p class="chart-source">
+        The systems in these papers are the same ones offered as
+        <a href="../hire/">freelance MLOps and Kubernetes consulting</a> for teams running AI on HPC or cloud infrastructure.
       </p>
     </div>
   </section>
