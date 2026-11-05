@@ -30,7 +30,7 @@ I spent nearly nine years in enterprise IT and network operations — six of the
 
 That path gives me a lens most ML researchers don't have: I care about uptime, observability, and correctness _in production_ — not just benchmark numbers. Today I design autonomous control for infrastructure: systems that detect failures, reason about root cause, and propose or execute remediation behind human-approval gates.
 
-I was a Postdoctoral Research Fellow at DEI, University of Bologna from August 2022 to September 2026, working across EU Horizon and EuroHPC projects including DECICE and SEANERGYS. I now work as an independent consultant on AI platform and MLOps systems, alongside open-source systems I build and maintain.
+I was a Postdoctoral Research Fellow at DEI, University of Bologna from August 2022 to September 2026, working across EU Horizon and EuroHPC projects including DECICE and SEANERGYS. I now work as an independent consultant on AI platform and MLOps systems, alongside open-source systems I build and maintain. My current engagement, with a European AI/HPC infrastructure client, is as an Application & MLOps Engineer on an AI platform: model serving, observability and runbooks.
 
 // systems — research-grade work, in the open
 
