@@ -18,7 +18,7 @@ Not a chatbot that explains your cluster — systems that observe it, reason abo
 
 - OSS KubeIntellect · AOBench · YazSes
 
-Deep dives [KubeIntellect](https://mskazemi.com/projects/kubeintellect/) [NovaFabric](https://mskazemi.com/projects/novafabric/) [AOBench](https://mskazemi.com/projects/aobench/) [IDKMesh](https://mskazemi.com/idkmesh/)
+Deep dives [KubeIntellect](https://mskazemi.com/projects/kubeintellect/) [NovaFabric](https://mskazemi.com/projects/novafabric/) [AOBench](https://mskazemi.com/projects/aobench/)
 
 telemetry in → root-cause reasoning → gated action → back to telemetry
 
@@ -70,18 +70,6 @@ Agent Operations Benchmark — a trace-driven, role-aware, RBAC-enforced benchma
 - Scored on 7 weighted dimensions, rolled into a CLEAR scorecard (Cost · Latency · Efficacy · Assurance · Reliability)
 
 - 16 model systems evaluated on the 59-task dev split, every headline number tied to a frozen run ID
-
-Verified swarm engineering — an open research laboratory asking whether humans and AI agents can turn uncertain goals into trustworthy software by separating _generation_ from _acceptance_. Its first installable tool, `idkmesh gate-audit`, measures what a review panel is actually worth: effective independent votes rather than head-count, error-correlation structure, and the breach rate of seeded known-bad candidates.
-
-- E017 measured 25 independently seeded test oracles — programs, over a 72-candidate corpus with ground truth from executing hidden tests — at an effective panel size of 1.00
-
-- The standard `N/(1+(N−1)ρ)` heuristic predicted 1.66, so it overstates exactly where it is relied on
-
-- Changing the aggregation rule cut error 3.7×; growing the panel bought nothing
-
-- E016 is retained as a **negative result**: 20 live LLM verifiers did not verify, so no AI review panel has been measured here
-
-- Negative results and failed experiments are kept, not hidden — evidence must survive independent scrutiny
 
 Graph anomaly-anticipation for exascale HPC — topology-aware node-failure prediction running in production on CINECA's Tier-0 Marconi100, published in _FGCS_.
 
